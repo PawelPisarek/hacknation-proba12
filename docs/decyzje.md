@@ -44,3 +44,4 @@ P11 18:15 Artur: Czy potwierdzasz dwa najryzykowniejsze założenia: (A) terminy
 P9 18:18 odpowiedź: nic nie zmieniać w 2–6; dopisać do kolejki widok etapów jednej oceny (Artur w pokoju)
 P10 18:18 odpowiedź: etapy z pomysłu 1 jako pasek postępu w „Mojej ocenie”; reszta odrzuconych odpada (Artur w pokoju)
 P11 18:18 odpowiedź: założenia A i B potwierdzone jako najryzykowniejsze; dodatkowo: człowiek może zmienić wszystko, jeśli system się pomyli (Artur w pokoju)
+18:18 Prezenter: hacktribe.md uwzględnia odpowiedzi na pytania 5–8 (status i potwierdzenie zapoznania, przypomnienia produktu, brak widoku kadr w v1, zakres: pomysły 2–6).
