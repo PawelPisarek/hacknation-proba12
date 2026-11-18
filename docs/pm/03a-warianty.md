@@ -4,7 +4,7 @@ Podstawa: `docs/pm/02-discover.md` (pomysły 2–6, oś etapów jednej oceny w k
 
 ## Wspólne zasady (dla Programisty)
 - Data „dziś” w makiecie: **18.11.2026** (stała, żeby demo było powtarzalne). Urząd: Urząd Wojewódzki w Przykładowie (dane sztuczne).
-- Role: **przełożony** (Marek Zieliński — kieruje zespołem, arkusz B; w makiecie ocenia 5 osób poniżej) i **pracownik** (widzi tylko swoją ocenę). Przełącznik roli u góry („Zobacz jako: przełożony / pracownik: <imię>”). Bez widoku kadr.
+- Role: **przełożony** (Marek Zieliński — dyrektor zespołu, w makiecie ocenia wszystkie 6 osób z tabeli) i **pracownik** (widzi tylko swoją ocenę). Przełącznik roli u góry („Zobacz jako: przełożony / pracownik: <imię>”). Bez widoku kadr.
 - Człowiek może zmienić wszystko (P11): termin, data zatrudnienia, każda ocena cząstkowa, średnia i poziom mają przy sobie przycisk „popraw”; poprawiona wartość dostaje znaczek „ustawione ręcznie” i oryginał z systemu widać w podpowiedzi.
 - Przypomnienia (P6): lista w aplikacji (dzwonek z liczbą), bez wysyłki na zewnątrz; treść np. „Anna Kowalska: rozmowa oceniająca do 20.01.2027 — zostało 63 dni”.
 - **Uwaga do `dane/` i `app/dane.js`:** obecne dane używają skali 1–5 i kryteriów spoza rozporządzenia; trzeba je zastąpić danymi z tego pliku i `docs/materialy.md`: skala **1/3/5/7/9**, 14 kryteriów z załącznika 1, obowiązkowe według arkusza A/B/C, **do 3 dodatkowych**, średnia arytmetyczna, poziomy: 1–2 / >2–4 / >4–6 / >6–8 / >8–9; ocena pozytywna = poziom „na poziomie oczekiwań” lub wyższy **i** żadna ocena cząstkowa nie jest 1.
@@ -15,15 +15,13 @@ Etapy (z `docs/materialy.md`, sekcja 4): ① rozmowa wstępna ② zapoznanie z k
 | Pracownik | Stanowisko, arkusz | Sytuacja (dziś 18.11.2026) | Etap | Najbliższy termin | Poprzednia ocena (warunkowo, P12) |
 |---|---|---|---|---|---|
 | Piotr Wiśniewski | Specjalista, C | negatywna ocena sporządzona i przekazana 12.11.2026 | ⑤ (sprzeciw) i nowa rozmowa wstępna | **19.11.2026** — 7 dni na rozmowę wstępną i na sprzeciw (jutro) | 12.11.2026, poniżej oczekiwań (jedna ocena „1”) |
-| Marek Zieliński (przełożony) | Kierownik zespołu, B — oceniany przez dyrektora, w makiecie tylko wiersz | — | — | — | — |
 | Katarzyna Lis | Specjalista, C | zmiana stanowiska 02.11.2026, poprzednia ocena 15.03.2026 (>6 mies.) → ocena poza cyklem | ② kryteria ustalone | **02.12.2026** (do 30 dni po zmianie) — 14 dni | 15.03.2026, na poziomie oczekiwań |
 | Ewa Nowak | Starszy specjalista, C | zatrudniona na czas nieokreślony 03.11.2026 | ① czeka na rozmowę wstępną | **03.12.2026** (30 dni) — 15 dni | brak (pierwsza ocena) |
 | Jan Bielecki | Kierownik wydziału, B | poprzednia ocena 10.12.2024 → ocena co 24 mies. | ③ rozmowa oceniająca zaplanowana, arkusz w toku | **10.12.2026** — 22 dni | 10.12.2024, powyżej oczekiwań (6,8) |
 | Anna Kowalska | Starszy specjalista ds. zamówień publicznych, C | poprzednia ocena 20.01.2025 | ② kryteria ustalone | **20.01.2027** — 63 dni | 20.01.2025, na poziomie oczekiwań (5,6) |
 | Tomasz Mazur | Inspektor, C | ocena pozytywna 05.11.2026, zapoznany 05.11, sprzeciw nie wniesiony | zamknięta | następna 05.11.2028 | 05.11.2026, na poziomie oczekiwań (6,0) |
 
-Uwaga: wiersz „Marek Zieliński” w tabeli jest tylko kontekstem roli; w makiecie ocenia on **pięć osób** (Wiśniewski, Lis, Nowak, Bielecki, Kowalska, Mazur — razem 6 w kolejce, bez niego).
-Ocena „Piotr Wiśniewski” — ocena cząstkowa: wykorzystywanie wiedzy 5, rzetelność **1**, organizacja pracy 7, współpraca 7, komunikacja 5 → średnia 5,0 = „na poziomie oczekiwań”, **ale wynik negatywny, bo jest ocena „1”** (reguła do pokazania). Ocena „Jan Bielecki” w toku: zarządzanie ludźmi 7, podejmowanie decyzji 7, organizacja 7, współpraca 7, komunikacja 7, dodatkowe: myślenie analityczne 7, negocjowanie 5 → średnia 6,7 = „powyżej oczekiwań”, pozytywna.
+Ocena „Piotr Wiśniewski”: ocena cząstkowa: wykorzystywanie wiedzy 5, rzetelność **1**, organizacja pracy 7, współpraca 7, komunikacja 5 → średnia 5,0 = „na poziomie oczekiwań”, **ale wynik negatywny, bo jest ocena „1”** (reguła do pokazania). Ocena „Jan Bielecki” w toku: zarządzanie ludźmi 7, podejmowanie decyzji 7, organizacja 7, współpraca 7, komunikacja 7, dodatkowe: myślenie analityczne 7, negocjowanie 5 → średnia 6,7 = „powyżej oczekiwań”, pozytywna.
 
 ---
 
