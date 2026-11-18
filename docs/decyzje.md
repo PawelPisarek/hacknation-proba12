@@ -25,3 +25,4 @@ P3 18:10 odpowiedź: mieć aktualne informacje o ocenie: etapy, kryteria, termin
 P4 18:10 odpowiedź: terminy zależą od daty zatrudnienia; nie ma potrzeby zbierać notatek przez cały rok (Artur w pokoju; zamiast rekomendacji „przez cały rok”)
 18:10 Szef: krok 1a poprawka R1 (0cb220c), znacznik jest → recenzja R2 (Analityk).
 18:10 Szef: krok 1a recenzja R2 (Analityk): 4 braki (P1–P4 Artura zmieniają nacisk: historia i terminy zamiast notatek z roku) → poprawka Projektanta, potem R3 (ostatnia).
+18:11 Projektant: podpis „Opera on Mac” = Paweł (odp. Opera on Mac w pokoju); odpowiada też za Artura (zgodnie z wpisem Szefa 18:06)
