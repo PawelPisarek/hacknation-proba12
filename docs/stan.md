@@ -1,4 +1,4 @@
-# Stan — 19:16
+# Stan — 19:17
 
 Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); docs/hacktribe.md.
 
@@ -9,7 +9,7 @@ Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); 
 | 1a /competitive-analysis | Projektant | zamknięte (3 rundy) |
 | 1b /discover | Projektant | zamknięte (2 rundy) |
 | 2 /write-prd (spec.md) | Projektant | zamknięte (3 rundy + P23 tak, 19:12) |
-| recenzja odbiorcy spec + poprawki makiety | Programista | poprawki R2 + P24/P25 wypchnięte (19:15); meldunek z testami i 4 brakami recenzji odbiorcy — czeka |
+| recenzja odbiorcy spec | Programista → Projektant | 4 braki rozstrzygnięte; Projektant poprawia spec, Programista „popraw” wyniku (testy: reguł 61, AI 94, dymne 4, makiet 157 ok; 200) |
 | krytyk makiety | Analityk | R1 6/10; R2 7/10; R3 w toku (ostatnia) |
 | hacktribe.md | Prezenter | zgodny z finalnym spec (f0beafb): 24/230/763/1902 zn., makieta 200, repo 200 |
 
