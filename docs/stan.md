@@ -5,7 +5,7 @@ Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); 
 | zadanie | kto | status |
 |---|---|---|
 | 0 materiały | Analityk | zamknięte (c519969; terminy T1–T13 0aaa768) |
-| 0P co jest pewne | Programista | w toku (szkielet+dane wypchnięte, czeka meldunek) |
+| 0P co jest pewne | Programista | zamknięte (gh-pages 200, 98 rekordów, testy 3 ok); w toku: dane pod materialy.md |
 | 1a /competitive-analysis | Projektant | zamknięte (3 rundy) |
 | 1b /discover | Projektant | recenzja 2 (Analityk) — poprawka 2ff2acc; czeka P12 (Artur, historia) |
 | przesłuchanie Artura (pokój Produkt) | Projektant | P1–P11 odpowiedziane |
