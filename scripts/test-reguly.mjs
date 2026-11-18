@@ -25,15 +25,15 @@ t('T5 po negatywnej 17.06', terminRozmowyWstepnej('2026-06-10', true) === '2026-
 // Spójność danych
 const d = JSON.parse(readFileSync('dane/wszystko.json', 'utf8'));
 for (const a of d.arkusze) {
-  const II = a.czesc_II; const oceny = II.oceny.map((o) => o.ocena); const r = wynikOceny(oceny);
-  t(`${a.id} kryteria obowiązkowe ${a.typ_arkusza}`, JSON.stringify(a.czesc_I.kryteria_obowiazkowe) === JSON.stringify(OBOWIAZKOWE[a.typ_arkusza]));
-  t(`${a.id} ≤3 dodatkowe`, a.czesc_I.kryteria_dodatkowe.length <= MAX_DODATKOWYCH);
+  const oceny = a.oceny.map((o) => o.ocena); const r = wynikOceny(oceny); const kr = a.oceny.map((o) => o.kryterium);
+  t(`${a.id} kryteria obowiązkowe ${a.typ_arkusza}`, JSON.stringify(kr.slice(0, OBOWIAZKOWE[a.typ_arkusza].length)) === JSON.stringify(OBOWIAZKOWE[a.typ_arkusza]));
+  t(`${a.id} ≤3 dodatkowe`, a.kryteria_dodatkowe.length <= MAX_DODATKOWYCH && kr.length === OBOWIAZKOWE[a.typ_arkusza].length + a.kryteria_dodatkowe.length);
   t(`${a.id} skala 1/3/5/7/9`, oceny.every((o) => o in SKALA));
-  t(`${a.id} średnia/wynik`, r.srednia === II.srednia && r.wynik === II.wynik && r.poziom === II.ogolny_poziom);
-  t(`${a.id} uzasadnienie przy negatywnej`, II.wynik === 'pozytywna' || !!II.uzasadnienie);
+  t(`${a.id} średnia/wynik`, r.srednia === a.srednia && r.wynik === a.wynik && r.poziom === a.poziom);
+  t(`${a.id} uzasadnienie przy negatywnej`, a.wynik === 'pozytywna' || !!a.uzasadnienie);
 }
-t('dane: jest „1” przy średniej > 4', d.arkusze.some((a) => a.czesc_II.wynik === 'negatywna' && a.czesc_II.srednia > 4));
-t('dane: jest sprzeciw', d.sprzeciwy.length >= 1);
+t('dane: jest „1” przy średniej > 4', d.arkusze.some((a) => a.wynik === 'negatywna' && a.srednia > 4));
+t('dane: brak sprzeciwów (spec §3)', d.sprzeciwy.length === 0);
 t('dane: brak znaczników DO POPRAWY', !readFileSync('dane/wszystko.json', 'utf8').includes('DO POPRAWY'));
 // docs/spec.md T4/T5: Wiśniewski (C), ocena na piśmie 12.11.2026, dziś 18.11.2026, zapoznanie jeszcze nie nastąpiło
 const nast = (w) => (w.wynik === 'pozytywna' ? dodajMiesiace('2026-11-12', 24) : ponownaOcenaPo('2026-11-18'));

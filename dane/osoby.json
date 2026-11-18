@@ -1,179 +1,159 @@
 [
   {
-    "id": "o1",
-    "imie": "Halina",
-    "nazwisko": "Grabowska",
-    "stanowisko": "s2",
-    "przelozony": "dg",
-    "korpus": "urzędnik służby cywilnej",
-    "mianowanie": {
-      "rok": 2015,
-      "stopien": "radca",
-      "stopien_od": "2019-05-01"
-    },
-    "czas_nieokreslony_od": "2012-03-01",
-    "poprzednia_ocena": "2024-09-16",
-    "terminy": {
-      "rozmowa_wstepna_do": "2024-10-16",
-      "zrodlo": "T5, T6, T6a, T8",
-      "bazowy": "2026-09-16",
-      "przedluzenie_dni": 0,
-      "termin": "2026-09-16"
-    }
-  },
-  {
-    "id": "o2",
-    "imie": "Robert",
-    "nazwisko": "Mazur",
-    "stanowisko": "s3",
-    "przelozony": "dg",
-    "korpus": "pracownik służby cywilnej",
-    "czas_nieokreslony_od": "2016-07-01",
-    "poprzednia_ocena": "2024-10-01",
-    "terminy": {
-      "rozmowa_wstepna_do": "2024-10-31",
-      "zrodlo": "T5, T6, T6a, T8",
-      "bazowy": "2026-10-01",
-      "przedluzenie_dni": 0,
-      "termin": "2026-10-01"
-    }
-  },
-  {
-    "id": "o3",
-    "imie": "Katarzyna",
-    "nazwisko": "Wiśniewska",
-    "stanowisko": "s4",
-    "przelozony": "o1",
-    "korpus": "urzędnik służby cywilnej",
-    "mianowanie": {
-      "rok": 2020,
-      "stopien": "starszy specjalista",
-      "stopien_od": "2020-11-01"
-    },
-    "czas_nieokreslony_od": "2018-04-01",
-    "poprzednia_ocena": "2025-03-15",
-    "nieobecnosci": [
-      [
-        "2025-09-01",
-        "2025-12-31",
-        "urlop rodzicielski"
-      ]
+    "id": "wisniewski",
+    "imie": "Piotr",
+    "nazwisko": "Wiśniewski",
+    "stanowisko": "s1",
+    "przelozony": "zielinski",
+    "czas_nieokreslony_od": "2018-09-03",
+    "poprzednia_ocena": "2024-11-12",
+    "etap": 5,
+    "etapy_daty": [
+      "2024-12-05",
+      "2024-12-05",
+      "2026-11-06",
+      "2026-11-12",
+      null
     ],
-    "zmiana_oceniajacego": {
-      "data": "2026-10-10",
-      "nowy": "o1",
-      "poprzedni": "Jan Pietrzak (odszedł z urzędu)"
+    "termin": {
+      "data": "2026-11-19",
+      "czynnosc": "rozmowa wstępna po negatywnej ocenie",
+      "zrodlo": "7 dni od negatywnej oceny (§ 7 pkt 2 rozp.); sprzeciw — 7 dni od dnia, w którym pracownik potwierdzi zapoznanie (art. 83 ust. 1 ustawy)"
     },
-    "terminy": {
-      "rozmowa_wstepna_do": "2025-04-14",
-      "zrodlo": "T5, T6, T6a, T8",
-      "bazowy": "2027-03-15",
-      "przedluzenie_dni": 122,
-      "termin": "2027-07-15",
-      "uwaga_T10": "ocena wg kryteriów wybranych wcześniej (§ 9 ust. 3 [R])"
+    "poprzednia": {
+      "data": "2024-11-12",
+      "opis": "na poziomie oczekiwań (5,00)"
     }
   },
   {
-    "id": "o4",
-    "imie": "Tomasz",
-    "nazwisko": "Wójcik",
-    "stanowisko": "s5",
-    "przelozony": "o2",
-    "korpus": "urzędnik służby cywilnej",
-    "mianowanie": {
-      "rok": 2021,
-      "stopien": "specjalista",
-      "stopien_od": "2021-06-01"
-    },
-    "czas_nieokreslony_od": "2019-02-01",
-    "poprzednia_ocena": "2026-06-10",
-    "terminy": {
-      "rozmowa_wstepna_do": "2026-06-17",
-      "zrodlo": "T5 (7 dni po negatywnej), T11",
-      "bazowy": "2028-06-10",
-      "przedluzenie_dni": 0,
-      "termin": "2028-06-10",
-      "ponowna_ocena_nie_wczesniej_niz": "2026-12-10"
-    }
-  },
-  {
-    "id": "o5",
-    "imie": "Magdalena",
-    "nazwisko": "Kamińska",
-    "stanowisko": "s6",
-    "przelozony": "o2",
-    "korpus": "pracownik służby cywilnej",
-    "pierwsze_zatrudnienie": "2026-02-02",
-    "terminy": {
-      "umowa_do": "2027-02-01",
-      "sluzba_przygotowawcza_najpozniej": "2026-10-02",
-      "pierwsza_ocena_po": "2026-10-02",
-      "pierwsza_ocena_najpozniej": "2027-01-01",
-      "czas_nieokreslony_od": "2027-02-02",
-      "zrodlo": "T1–T4",
-      "rozmowa_wstepna_do": "2027-03-04",
-      "pierwsza_ocena_okresowa": "2029-02-02"
-    }
-  },
-  {
-    "id": "o6",
-    "imie": "Marcin",
-    "nazwisko": "Lewandowski",
-    "stanowisko": "s4",
-    "przelozony": "o1",
-    "korpus": "pracownik służby cywilnej",
-    "czas_nieokreslony_od": "2017-09-01",
-    "poprzednia_ocena": "2026-03-20",
-    "terminy": {
-      "rozmowa_wstepna_do": "2026-04-19",
-      "zrodlo": "T5, T6, T6a, T8",
-      "bazowy": "2028-03-20",
-      "przedluzenie_dni": 0,
-      "termin": "2028-03-20"
-    }
-  },
-  {
-    "id": "o7",
-    "imie": "Agnieszka",
-    "nazwisko": "Zielińska",
-    "stanowisko": "s5",
-    "przelozony": "o2",
-    "korpus": "pracownik służby cywilnej",
-    "czas_nieokreslony_od": "2014-01-02",
-    "poprzednia_ocena": "2025-01-20",
+    "id": "lis",
+    "imie": "Katarzyna",
+    "nazwisko": "Lis",
+    "stanowisko": "s1",
+    "przelozony": "zielinski",
+    "czas_nieokreslony_od": "2019-03-01",
+    "poprzednia_ocena": "2026-03-15",
     "zmiana_stanowiska": {
-      "data": "2026-05-04",
-      "z": "s6",
-      "na": "s5",
+      "data": "2026-11-02",
       "istotna": true
     },
-    "terminy": {
-      "rozmowa_wstepna_do": "2025-02-19",
-      "zrodlo": "T5, T6, T6a, T8, T7",
-      "bazowy": "2027-01-20",
-      "przedluzenie_dni": 0,
-      "termin": "2027-01-20",
-      "ocena_przy_zmianie_stanowiska": {
-        "od": "2026-04-27",
-        "do": "2026-06-03"
-      }
+    "etap": 2,
+    "etapy_daty": [
+      "2026-11-10",
+      null,
+      null,
+      null,
+      null
+    ],
+    "termin": {
+      "data": "2026-12-02",
+      "czynnosc": "ocena poza cyklem (zmiana stanowiska)",
+      "zrodlo": "do 30 dni po zmianie stanowiska 02.11.2026 (art. 81 ust. 6 ustawy; § 9 ust. 2 rozp.)"
+    },
+    "poprzednia": {
+      "data": "2026-03-15",
+      "opis": "na poziomie oczekiwań"
     }
   },
   {
-    "id": "o8",
-    "imie": "Paweł",
-    "nazwisko": "Szymański",
-    "stanowisko": "s6",
-    "przelozony": "o2",
-    "korpus": "pracownik służby cywilnej",
-    "czas_nieokreslony_od": "2020-10-01",
-    "poprzednia_ocena": "2025-11-28",
-    "terminy": {
-      "rozmowa_wstepna_do": "2025-12-28",
-      "zrodlo": "T5, T6, T6a, T8",
-      "bazowy": "2027-11-28",
-      "przedluzenie_dni": 0,
-      "termin": "2027-11-28"
+    "id": "nowak",
+    "imie": "Ewa",
+    "nazwisko": "Nowak",
+    "stanowisko": "s2",
+    "przelozony": "zielinski",
+    "czas_nieokreslony_od": "2026-11-03",
+    "poprzednia_ocena": null,
+    "etap": 1,
+    "etapy_daty": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "termin": {
+      "data": "2026-12-03",
+      "czynnosc": "rozmowa wstępna",
+      "zrodlo": "30 dni od zatrudnienia na czas nieokreślony 03.11.2026 (§ 7 pkt 1 rozp.)"
+    },
+    "poprzednia": null
+  },
+  {
+    "id": "bielecki",
+    "imie": "Jan",
+    "nazwisko": "Bielecki",
+    "stanowisko": "s3",
+    "przelozony": "zielinski",
+    "czas_nieokreslony_od": "2015-05-15",
+    "poprzednia_ocena": "2024-12-10",
+    "etap": 3,
+    "etapy_daty": [
+      "2024-12-20",
+      "2024-12-20",
+      null,
+      null,
+      null
+    ],
+    "termin": {
+      "data": "2026-12-10",
+      "czynnosc": "ocena okresowa (rozmowa oceniająca zaplanowana)",
+      "zrodlo": "24 mies. od poprzedniej oceny 10.12.2024 (art. 81 ust. 4 ustawy)"
+    },
+    "poprzednia": {
+      "data": "2024-12-10",
+      "opis": "powyżej oczekiwań (6,71)"
+    }
+  },
+  {
+    "id": "kowalska",
+    "imie": "Anna",
+    "nazwisko": "Kowalska",
+    "stanowisko": "s4",
+    "przelozony": "zielinski",
+    "czas_nieokreslony_od": "2017-02-01",
+    "poprzednia_ocena": "2025-01-20",
+    "etap": 2,
+    "etapy_daty": [
+      "2025-02-10",
+      null,
+      null,
+      null,
+      null
+    ],
+    "termin": {
+      "data": "2027-01-20",
+      "czynnosc": "rozmowa oceniająca",
+      "zrodlo": "24 mies. od poprzedniej oceny 20.01.2025 (art. 81 ust. 4 ustawy)"
+    },
+    "poprzednia": {
+      "data": "2025-01-20",
+      "opis": "na poziomie oczekiwań (5,57)"
+    }
+  },
+  {
+    "id": "mazur",
+    "imie": "Tomasz",
+    "nazwisko": "Mazur",
+    "stanowisko": "s5",
+    "przelozony": "zielinski",
+    "czas_nieokreslony_od": "2022-06-02",
+    "poprzednia_ocena": "2026-11-05",
+    "etap": 0,
+    "etapy_daty": [
+      "2024-11-12",
+      "2024-11-12",
+      "2026-10-30",
+      "2026-11-05",
+      "2026-11-05"
+    ],
+    "termin": {
+      "data": "2028-11-05",
+      "czynnosc": "następna ocena okresowa",
+      "zrodlo": "24 mies. od oceny 05.11.2026"
+    },
+    "poprzednia": {
+      "data": "2026-11-05",
+      "opis": "na poziomie oczekiwań (6,00)"
     }
   }
 ]

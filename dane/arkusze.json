@@ -1,622 +1,391 @@
 [
   {
-    "id": "a1",
-    "osoba": "o3",
+    "id": "a-wisniewski-2026",
+    "osoba": "wisniewski",
     "typ_arkusza": "C",
-    "scenariusz": "(a) pozytywna, na poziomie oczekiwań",
-    "czesc_I": {
-      "urzad": "Urząd Wojewódzki w Przykładowie (fikcyjny)",
-      "oceniany": {
-        "imie": "Katarzyna",
-        "nazwisko": "Wiśniewska",
-        "stanowisko": "Starszy specjalista ds. zamówień publicznych"
+    "status": "sporządzona, czeka na potwierdzenie zapoznania",
+    "kryteria_dodatkowe": [],
+    "oceny": [
+      {
+        "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "oceniajacy": {
-        "imie": "Halina",
-        "nazwisko": "Grabowska",
-        "stanowisko": "Naczelnik Wydziału Administracji i Zamówień"
+      {
+        "kryterium": "rzetelność",
+        "ocena": 1,
+        "opis": "znacznie poniżej oczekiwań"
       },
-      "kryteria_obowiazkowe": [
-        "wykorzystywanie wiedzy i doskonalenie zawodowe",
-        "rzetelność",
-        "organizacja pracy i orientacja na osiąganie celów",
-        "współpraca",
-        "komunikacja"
-      ],
-      "kryteria_dodatkowe": [
-        "myślenie analityczne"
-      ],
-      "termin_sporzadzenia_oceny": "2025-03-15",
-      "data_rozmowy_wstepnej": "2023-04-12",
-      "oswiadczenie_ocenianego": {
-        "miejscowosc": "Przykładowo",
-        "data": "2023-04-12",
-        "podpisano": true
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       }
-    },
-    "czesc_II": {
-      "data_rozmowy_oceniajacej": "2025-03-10",
-      "okres_od": "2023-04-12",
-      "okres_do": "2025-03-15",
-      "oceny": [
-        {
-          "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "rzetelność",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "organizacja pracy i orientacja na osiąganie celów",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "współpraca",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "komunikacja",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "myślenie analityczne",
-          "obowiazkowe": false,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        }
-      ],
-      "srednia": 5.33,
-      "ogolny_poziom": "na poziomie oczekiwań",
-      "wynik": "pozytywna",
-      "powod_negatywnej": null,
-      "uzasadnienie": null,
-      "wnioski_iprz": {
-        "kierunki": "rozwój w obszarze: nowelizacja Pzp",
-        "obszary": [
-          "nowelizacja Pzp"
-        ],
-        "formy": [
-          "szkolenie sz3 (2 dni)"
-        ],
-        "termin": "2025-06-30",
-        "jakosc": "dobre"
-      },
-      "poprzednia_ocena": {
-        "wynik": "pozytywna",
-        "poziom": "na poziomie oczekiwań",
-        "data": "2023-03-14"
-      },
-      "wniosek_o_stopien": "NIE",
-      "data_sporzadzenia": "2025-03-15",
-      "data_zapoznania_ocenianego": "2025-03-15",
-      "pouczenie": "Sprzeciw do dyrektora generalnego urzędu (Grażyna Wierzbicka) w terminie 7 dni od zapoznania z oceną — art. 83 ust. 1 [U]."
-    },
-    "czesc_III": null
+    ],
+    "srednia": 5,
+    "poziom": "na poziomie oczekiwań",
+    "wynik": "negatywna",
+    "data_sporzadzenia": "2026-11-12",
+    "data_zapoznania": null,
+    "uzasadnienie": "Ocena negatywna wynika z oceny „znacznie poniżej oczekiwań” w kryterium rzetelność (§ 11 rozporządzenia). W okresie ocenianym w trzech sprawach pisma wymagały poprawek formalnych przed wysyłką, mimo omówienia problemu na rozmowie bieżącej. Pozostałe kryteria — na poziomie oczekiwań lub powyżej; mocną stroną jest współpraca w zespole.",
+    "wnioski_iprz": [
+      "Kierunek rozwoju: rzetelność — staranność i kontrola jakości pism przed wysyłką.",
+      "Obszary wiedzy i umiejętności do doskonalenia: wymogi formalne pism w KPA, sprawdzanie dat, adresatów i załączników, planowanie czasu na korektę.",
+      "Formy i metody realizacji: 1) szkolenie „Kontrola jakości dokumentów” (1 dzień, do 31.03.2027); 2) lista kontrolna pisma przed wysyłką i przegląd z przełożonym co 2 tygodnie przez 3 mies.; 3) mentoring starszego specjalisty z zespołu, do 30.06.2027."
+    ]
   },
   {
-    "id": "a2",
-    "osoba": "o1",
+    "id": "a-bielecki-2026",
+    "osoba": "bielecki",
     "typ_arkusza": "B",
-    "scenariusz": "(b) pozytywna, powyżej oczekiwań, wniosek o stopień",
-    "czesc_I": {
-      "urzad": "Urząd Wojewódzki w Przykładowie (fikcyjny)",
-      "oceniany": {
-        "imie": "Halina",
-        "nazwisko": "Grabowska",
-        "stanowisko": "Naczelnik Wydziału Administracji i Zamówień"
+    "status": "w toku",
+    "kryteria_dodatkowe": [
+      "myślenie analityczne",
+      "negocjowanie"
+    ],
+    "oceny": [
+      {
+        "kryterium": "zarządzanie ludźmi",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
       },
-      "oceniajacy": {
-        "imie": "Grażyna",
-        "nazwisko": "Wierzbicka",
-        "stanowisko": "Dyrektor generalny"
+      {
+        "kryterium": "podejmowanie decyzji i odpowiedzialność",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
       },
-      "kryteria_obowiazkowe": [
-        "zarządzanie ludźmi",
-        "podejmowanie decyzji i odpowiedzialność",
-        "organizacja pracy i orientacja na osiąganie celów",
-        "współpraca",
-        "komunikacja"
-      ],
-      "kryteria_dodatkowe": [
-        "zarządzanie strategiczne",
-        "negocjowanie"
-      ],
-      "termin_sporzadzenia_oceny": "2024-09-16",
-      "data_rozmowy_wstepnej": "2022-10-10",
-      "oswiadczenie_ocenianego": {
-        "miejscowosc": "Przykładowo",
-        "data": "2022-10-10",
-        "podpisano": true
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "myślenie analityczne",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "negocjowanie",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       }
-    },
-    "czesc_II": {
-      "data_rozmowy_oceniajacej": "2024-09-11",
-      "okres_od": "2022-10-10",
-      "okres_do": "2024-09-16",
-      "oceny": [
-        {
-          "kryterium": "zarządzanie ludźmi",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "podejmowanie decyzji i odpowiedzialność",
-          "obowiazkowe": true,
-          "ocena": 9,
-          "opis": "znacznie powyżej oczekiwań"
-        },
-        {
-          "kryterium": "organizacja pracy i orientacja na osiąganie celów",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "współpraca",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "komunikacja",
-          "obowiazkowe": true,
-          "ocena": 9,
-          "opis": "znacznie powyżej oczekiwań"
-        },
-        {
-          "kryterium": "zarządzanie strategiczne",
-          "obowiazkowe": false,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "negocjowanie",
-          "obowiazkowe": false,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        }
-      ],
-      "srednia": 7.57,
-      "ogolny_poziom": "powyżej oczekiwań",
-      "wynik": "pozytywna",
-      "powod_negatywnej": null,
-      "uzasadnienie": null,
-      "wnioski_iprz": {
-        "kierunki": "rozwój w obszarze: zarządzanie zmianą",
-        "obszary": [
-          "zarządzanie zmianą"
-        ],
-        "formy": [
-          "studia podyplomowe"
-        ],
-        "termin": "2025-12-31",
-        "jakosc": "dobre"
-      },
-      "poprzednia_ocena": {
-        "wynik": "pozytywna",
-        "poziom": "powyżej oczekiwań",
-        "data": "2022-09-20"
-      },
-      "wniosek_o_stopien": "TAK",
-      "data_sporzadzenia": "2024-09-16",
-      "data_zapoznania_ocenianego": "2024-09-16",
-      "pouczenie": "Sprzeciw do dyrektora generalnego urzędu (Grażyna Wierzbicka) w terminie 7 dni od zapoznania z oceną — art. 83 ust. 1 [U]."
-    },
-    "czesc_III": {
-      "imie": "Halina",
-      "nazwisko": "Grabowska",
-      "rok_mianowania": 2015,
-      "stopien": "radca",
-      "stopien_od": "2019-05-01",
-      "wniosek": "Wnioskuję o stopień „główny radca” — wdrożenie e-zamówień w całym urzędzie, zespół bez rotacji przez 2 lata."
-    }
+    ],
+    "srednia": 6.71,
+    "poziom": "powyżej oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": null,
+    "data_zapoznania": null,
+    "uzasadnienie": null,
+    "wnioski_iprz": null
   },
   {
-    "id": "a3",
-    "osoba": "o6",
+    "id": "a-kowalska-2026",
+    "osoba": "kowalska",
     "typ_arkusza": "C",
-    "scenariusz": "(c) negatywna przez jedną ocenę 1 przy średniej > 4 (§ 11)",
-    "czesc_I": {
-      "urzad": "Urząd Wojewódzki w Przykładowie (fikcyjny)",
-      "oceniany": {
-        "imie": "Marcin",
-        "nazwisko": "Lewandowski",
-        "stanowisko": "Starszy specjalista ds. zamówień publicznych"
+    "status": "w toku",
+    "kryteria_dodatkowe": [
+      "orientacja na klienta/interesanta"
+    ],
+    "oceny": [
+      {
+        "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "oceniajacy": {
-        "imie": "Halina",
-        "nazwisko": "Grabowska",
-        "stanowisko": "Naczelnik Wydziału Administracji i Zamówień"
+      {
+        "kryterium": "rzetelność",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "kryteria_obowiazkowe": [
-        "wykorzystywanie wiedzy i doskonalenie zawodowe",
-        "rzetelność",
-        "organizacja pracy i orientacja na osiąganie celów",
-        "współpraca",
-        "komunikacja"
-      ],
-      "kryteria_dodatkowe": [
-        "orientacja na klienta/interesanta"
-      ],
-      "termin_sporzadzenia_oceny": "2026-03-20",
-      "data_rozmowy_wstepnej": "2024-04-15",
-      "oswiadczenie_ocenianego": {
-        "miejscowosc": "Przykładowo",
-        "data": "2024-04-15",
-        "podpisano": true
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "orientacja na klienta/interesanta",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       }
-    },
-    "czesc_II": {
-      "data_rozmowy_oceniajacej": "2026-03-16",
-      "okres_od": "2024-04-15",
-      "okres_do": "2026-03-20",
-      "oceny": [
-        {
-          "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "rzetelność",
-          "obowiazkowe": true,
-          "ocena": 1,
-          "opis": "znacznie poniżej oczekiwań"
-        },
-        {
-          "kryterium": "organizacja pracy i orientacja na osiąganie celów",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "współpraca",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "komunikacja",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "orientacja na klienta/interesanta",
-          "obowiazkowe": false,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        }
-      ],
-      "srednia": 5.67,
-      "ogolny_poziom": "na poziomie oczekiwań",
-      "wynik": "negatywna",
-      "powod_negatywnej": "ocena cząstkowa 1 (znacznie poniżej oczekiwań) — § 11",
-      "uzasadnienie": "Rzetelność: w 3 postępowaniach błędy w ogłoszeniach wymagające sprostowania (notatki z 12.05.2025, 03.09.2025, 18.11.2025), mimo wcześniejszego omówienia.",
-      "wnioski_iprz": {
-        "kierunki": "rozwój w obszarze: rzetelność dokumentacji",
-        "obszary": [
-          "rzetelność dokumentacji"
-        ],
-        "formy": [
-          "mentoring z o3 + szkolenie sz3"
-        ],
-        "termin": "2026-09-30",
-        "jakosc": "dobre"
-      },
-      "poprzednia_ocena": {
-        "wynik": "pozytywna",
-        "poziom": "na poziomie oczekiwań",
-        "data": "2024-03-18"
-      },
-      "wniosek_o_stopien": "NIE DOTYCZY",
-      "data_sporzadzenia": "2026-03-20",
-      "data_zapoznania_ocenianego": "2026-03-23",
-      "pouczenie": "Sprzeciw do dyrektora generalnego urzędu (Grażyna Wierzbicka) w terminie 7 dni od zapoznania z oceną — art. 83 ust. 1 [U]."
-    },
-    "czesc_III": null
+    ],
+    "srednia": 5.33,
+    "poziom": "na poziomie oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": null,
+    "data_zapoznania": null,
+    "uzasadnienie": null,
+    "wnioski_iprz": null
   },
   {
-    "id": "a4",
-    "osoba": "o4",
+    "id": "a-mazur-2026",
+    "osoba": "mazur",
     "typ_arkusza": "C",
-    "scenariusz": "(d) negatywna ze średniej, z uzasadnieniem; sprzeciw",
-    "czesc_I": {
-      "urzad": "Urząd Wojewódzki w Przykładowie (fikcyjny)",
-      "oceniany": {
-        "imie": "Tomasz",
-        "nazwisko": "Wójcik",
-        "stanowisko": "Specjalista ds. skarg i wniosków"
+    "status": "zamknięta",
+    "kryteria_dodatkowe": [
+      "myślenie analityczne"
+    ],
+    "oceny": [
+      {
+        "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "oceniajacy": {
-        "imie": "Robert",
-        "nazwisko": "Mazur",
-        "stanowisko": "Naczelnik Wydziału Spraw Obywatelskich"
+      {
+        "kryterium": "rzetelność",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
       },
-      "kryteria_obowiazkowe": [
-        "wykorzystywanie wiedzy i doskonalenie zawodowe",
-        "rzetelność",
-        "organizacja pracy i orientacja na osiąganie celów",
-        "współpraca",
-        "komunikacja"
-      ],
-      "kryteria_dodatkowe": [],
-      "termin_sporzadzenia_oceny": "2026-06-10",
-      "data_rozmowy_wstepnej": "2024-07-08",
-      "oswiadczenie_ocenianego": {
-        "miejscowosc": "Przykładowo",
-        "data": "2024-07-08",
-        "podpisano": true
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "myślenie analityczne",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
       }
-    },
-    "czesc_II": {
-      "data_rozmowy_oceniajacej": "2026-06-05",
-      "okres_od": "2024-07-08",
-      "okres_do": "2026-06-10",
-      "oceny": [
-        {
-          "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
-          "obowiazkowe": true,
-          "ocena": 3,
-          "opis": "poniżej oczekiwań"
-        },
-        {
-          "kryterium": "rzetelność",
-          "obowiazkowe": true,
-          "ocena": 3,
-          "opis": "poniżej oczekiwań"
-        },
-        {
-          "kryterium": "organizacja pracy i orientacja na osiąganie celów",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "współpraca",
-          "obowiazkowe": true,
-          "ocena": 3,
-          "opis": "poniżej oczekiwań"
-        },
-        {
-          "kryterium": "komunikacja",
-          "obowiazkowe": true,
-          "ocena": 1,
-          "opis": "znacznie poniżej oczekiwań"
-        }
-      ],
-      "srednia": 3,
-      "ogolny_poziom": "poniżej oczekiwań",
-      "wynik": "negatywna",
-      "powod_negatywnej": "średnia poniżej oczekiwań — § 11",
-      "uzasadnienie": "Komunikacja: 14 odpowiedzi na skargi po terminie KPA; wykorzystywanie wiedzy: brak udziału w zaplanowanych szkoleniach; organizacja pracy na poziomie oczekiwań.",
-      "wnioski_iprz": {
-        "kierunki": "rozwój w obszarze: terminowość w KPA",
-        "obszary": [
-          "terminowość w KPA"
-        ],
-        "formy": [
-          "szkolenie sz1 + cotygodniowy przegląd terminów z przełożonym"
-        ],
-        "termin": "2026-11-30",
-        "jakosc": "dobre"
-      },
-      "poprzednia_ocena": {
-        "wynik": "pozytywna",
-        "poziom": "na poziomie oczekiwań",
-        "data": "2024-06-14"
-      },
-      "wniosek_o_stopien": "NIE",
-      "data_sporzadzenia": "2026-06-10",
-      "data_zapoznania_ocenianego": "2026-06-10",
-      "pouczenie": "Sprzeciw do dyrektora generalnego urzędu (Grażyna Wierzbicka) w terminie 7 dni od zapoznania z oceną — art. 83 ust. 1 [U]."
-    },
-    "czesc_III": null
+    ],
+    "srednia": 6,
+    "poziom": "na poziomie oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": "2026-11-05",
+    "data_zapoznania": "2026-11-05",
+    "uzasadnienie": null,
+    "wnioski_iprz": [
+      "Kierunek rozwoju: myślenie analityczne — wnioski z danych o obsłudze wniosków.",
+      "Obszary wiedzy i umiejętności do doskonalenia: arkusz kalkulacyjny (tabele przestawne), analiza przyczyn powtarzających się błędów, raportowanie.",
+      "Formy i metody realizacji: 1) warsztat „Excel w analizie danych” (do 31.03.2027); 2) mentoring u starszego inspektora przez 3 mies., do 30.06.2027; 3) udział w zespole kontroli zarządczej, do 30.09.2027."
+    ]
   },
   {
-    "id": "a5",
-    "osoba": "o8",
+    "id": "p-wisniewski-2024",
+    "osoba": "wisniewski",
     "typ_arkusza": "C",
-    "scenariusz": "pozytywna, IPRZ słabe (puste formy — jak w NIK)",
-    "czesc_I": {
-      "urzad": "Urząd Wojewódzki w Przykładowie (fikcyjny)",
-      "oceniany": {
-        "imie": "Paweł",
-        "nazwisko": "Szymański",
-        "stanowisko": "Referent ds. obsługi klienta (paszporty)"
+    "status": "poprzednia",
+    "kryteria_dodatkowe": [],
+    "oceny": [
+      {
+        "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "oceniajacy": {
-        "imie": "Robert",
-        "nazwisko": "Mazur",
-        "stanowisko": "Naczelnik Wydziału Spraw Obywatelskich"
+      {
+        "kryterium": "rzetelność",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "kryteria_obowiazkowe": [
-        "wykorzystywanie wiedzy i doskonalenie zawodowe",
-        "rzetelność",
-        "organizacja pracy i orientacja na osiąganie celów",
-        "współpraca",
-        "komunikacja"
-      ],
-      "kryteria_dodatkowe": [],
-      "termin_sporzadzenia_oceny": "2025-11-28",
-      "data_rozmowy_wstepnej": "2023-12-20",
-      "oswiadczenie_ocenianego": {
-        "miejscowosc": "Przykładowo",
-        "data": "2023-12-20",
-        "podpisano": true
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       }
-    },
-    "czesc_II": {
-      "data_rozmowy_oceniajacej": "2025-11-24",
-      "okres_od": "2023-12-20",
-      "okres_do": "2025-11-28",
-      "oceny": [
-        {
-          "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "rzetelność",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "organizacja pracy i orientacja na osiąganie celów",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "współpraca",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "komunikacja",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        }
-      ],
-      "srednia": 5.4,
-      "ogolny_poziom": "na poziomie oczekiwań",
-      "wynik": "pozytywna",
-      "powod_negatywnej": null,
-      "uzasadnienie": null,
-      "wnioski_iprz": {
-        "kierunki": "dalszy rozwój",
-        "obszary": [],
-        "formy": [],
-        "termin": null,
-        "jakosc": "słabe"
-      },
-      "poprzednia_ocena": null,
-      "wniosek_o_stopien": "NIE DOTYCZY",
-      "data_sporzadzenia": "2025-11-28",
-      "data_zapoznania_ocenianego": "2025-11-28",
-      "pouczenie": "Sprzeciw do dyrektora generalnego urzędu (Grażyna Wierzbicka) w terminie 7 dni od zapoznania z oceną — art. 83 ust. 1 [U]."
-    },
-    "czesc_III": null
+    ],
+    "srednia": 5,
+    "poziom": "na poziomie oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": "2024-11-12",
+    "data_zapoznania": "2024-11-12",
+    "uzasadnienie": null,
+    "wnioski_iprz": null
   },
   {
-    "id": "a6",
-    "osoba": "o2",
+    "id": "p-bielecki-2024",
+    "osoba": "bielecki",
     "typ_arkusza": "B",
-    "scenariusz": "pozytywna, powyżej oczekiwań (pracownik — stopień nie dotyczy)",
-    "czesc_I": {
-      "urzad": "Urząd Wojewódzki w Przykładowie (fikcyjny)",
-      "oceniany": {
-        "imie": "Robert",
-        "nazwisko": "Mazur",
-        "stanowisko": "Naczelnik Wydziału Spraw Obywatelskich"
+    "status": "poprzednia",
+    "kryteria_dodatkowe": [
+      "myślenie analityczne",
+      "negocjowanie"
+    ],
+    "oceny": [
+      {
+        "kryterium": "zarządzanie ludźmi",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
       },
-      "oceniajacy": {
-        "imie": "Grażyna",
-        "nazwisko": "Wierzbicka",
-        "stanowisko": "Dyrektor generalny"
+      {
+        "kryterium": "podejmowanie decyzji i odpowiedzialność",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
       },
-      "kryteria_obowiazkowe": [
-        "zarządzanie ludźmi",
-        "podejmowanie decyzji i odpowiedzialność",
-        "organizacja pracy i orientacja na osiąganie celów",
-        "współpraca",
-        "komunikacja"
-      ],
-      "kryteria_dodatkowe": [
-        "radzenie sobie w sytuacjach kryzysowych"
-      ],
-      "termin_sporzadzenia_oceny": "2024-10-01",
-      "data_rozmowy_wstepnej": "2022-10-24",
-      "oswiadczenie_ocenianego": {
-        "miejscowosc": "Przykładowo",
-        "data": "2022-10-24",
-        "podpisano": true
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "myślenie analityczne",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "negocjowanie",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       }
-    },
-    "czesc_II": {
-      "data_rozmowy_oceniajacej": "2024-09-26",
-      "okres_od": "2022-10-24",
-      "okres_do": "2024-10-01",
-      "oceny": [
-        {
-          "kryterium": "zarządzanie ludźmi",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "podejmowanie decyzji i odpowiedzialność",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "organizacja pracy i orientacja na osiąganie celów",
-          "obowiazkowe": true,
-          "ocena": 5,
-          "opis": "na poziomie oczekiwań"
-        },
-        {
-          "kryterium": "współpraca",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "komunikacja",
-          "obowiazkowe": true,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        },
-        {
-          "kryterium": "radzenie sobie w sytuacjach kryzysowych",
-          "obowiazkowe": false,
-          "ocena": 7,
-          "opis": "powyżej oczekiwań"
-        }
-      ],
-      "srednia": 6.67,
-      "ogolny_poziom": "powyżej oczekiwań",
-      "wynik": "pozytywna",
-      "powod_negatywnej": null,
-      "uzasadnienie": null,
-      "wnioski_iprz": {
-        "kierunki": "rozwój w obszarze: zarządzanie ludźmi",
-        "obszary": [
-          "zarządzanie ludźmi"
-        ],
-        "formy": [
-          "szkolenie sz7"
-        ],
-        "termin": "2025-04-30",
-        "jakosc": "dobre"
+    ],
+    "srednia": 6.71,
+    "poziom": "powyżej oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": "2024-12-10",
+    "data_zapoznania": "2024-12-10",
+    "uzasadnienie": null,
+    "wnioski_iprz": null
+  },
+  {
+    "id": "p-kowalska-2025",
+    "osoba": "kowalska",
+    "typ_arkusza": "C",
+    "status": "poprzednia",
+    "kryteria_dodatkowe": [
+      "orientacja na klienta/interesanta",
+      "negocjowanie"
+    ],
+    "oceny": [
+      {
+        "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "poprzednia_ocena": {
-        "wynik": "pozytywna",
-        "poziom": "na poziomie oczekiwań",
-        "data": "2022-09-30"
+      {
+        "kryterium": "rzetelność",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
       },
-      "wniosek_o_stopien": "NIE DOTYCZY",
-      "data_sporzadzenia": "2024-10-01",
-      "data_zapoznania_ocenianego": "2024-10-02",
-      "pouczenie": "Sprzeciw do dyrektora generalnego urzędu (Grażyna Wierzbicka) w terminie 7 dni od zapoznania z oceną — art. 83 ust. 1 [U]."
-    },
-    "czesc_III": null
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "orientacja na klienta/interesanta",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "negocjowanie",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      }
+    ],
+    "srednia": 5.57,
+    "poziom": "na poziomie oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": "2025-01-20",
+    "data_zapoznania": "2025-01-20",
+    "uzasadnienie": null,
+    "wnioski_iprz": null
+  },
+  {
+    "id": "p-lis-2026",
+    "osoba": "lis",
+    "typ_arkusza": "C",
+    "status": "poprzednia",
+    "kryteria_dodatkowe": [],
+    "oceny": [
+      {
+        "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "rzetelność",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      },
+      {
+        "kryterium": "współpraca",
+        "ocena": 7,
+        "opis": "powyżej oczekiwań"
+      },
+      {
+        "kryterium": "komunikacja",
+        "ocena": 5,
+        "opis": "na poziomie oczekiwań"
+      }
+    ],
+    "srednia": 5.4,
+    "poziom": "na poziomie oczekiwań",
+    "wynik": "pozytywna",
+    "data_sporzadzenia": "2026-03-15",
+    "data_zapoznania": "2026-03-16",
+    "uzasadnienie": null,
+    "wnioski_iprz": null
   }
 ]

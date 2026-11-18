@@ -1,53 +1,36 @@
 [
   {
     "id": "s1",
-    "nazwa": "Kierownik urzędu (tło)",
-    "komorka": null,
-    "arkusz": "A",
+    "nazwa": "Specjalista",
+    "komorka": "k1",
+    "arkusz": "C",
     "obowiazki": [
-      "Kierowanie urzędem",
-      "Planowanie strategiczne",
-      "Nadzór nad budżetem"
-    ],
-    "wymagania": [
-      "wykształcenie wyższe",
-      "6 lat stażu, w tym 3 na stanowisku kierowniczym"
-    ],
-    "klienci": "administracja rządowa, samorządy"
+      "Przygotowanie projektów pism i odpowiedzi",
+      "Prowadzenie rejestru spraw",
+      "Pilnowanie terminów KPA"
+    ]
   },
   {
     "id": "s2",
-    "nazwa": "Naczelnik Wydziału Administracji i Zamówień",
+    "nazwa": "Starszy specjalista",
     "komorka": "k1",
-    "arkusz": "B",
+    "arkusz": "C",
     "obowiazki": [
-      "Kierowanie zespołem 6 osób",
-      "Zatwierdzanie dokumentacji zamówień",
-      "Planowanie zamówień rocznych",
-      "Współpraca z komórką finansową"
-    ],
-    "wymagania": [
-      "wykształcenie wyższe",
-      "4 lata stażu",
-      "znajomość Pzp"
-    ],
-    "klienci": "komórki urzędu, wykonawcy"
+      "Samodzielne prowadzenie spraw",
+      "Analiza dokumentacji",
+      "Wsparcie merytoryczne zespołu"
+    ]
   },
   {
     "id": "s3",
-    "nazwa": "Naczelnik Wydziału Spraw Obywatelskich",
-    "komorka": "k2",
+    "nazwa": "Kierownik wydziału",
+    "komorka": "k1",
     "arkusz": "B",
     "obowiazki": [
-      "Kierowanie zespołem obsługi klienta",
-      "Nadzór nad wydawaniem paszportów",
-      "Rozpatrywanie skarg na obsługę"
-    ],
-    "wymagania": [
-      "wykształcenie wyższe",
-      "4 lata stażu"
-    ],
-    "klienci": "obywatele"
+      "Kierowanie zespołem 8 osób",
+      "Planowanie pracy wydziału",
+      "Uzgodnienia z innymi komórkami"
+    ]
   },
   {
     "id": "s4",
@@ -56,47 +39,19 @@
     "arkusz": "C",
     "obowiazki": [
       "Przygotowanie dokumentacji postępowań",
-      "Prowadzenie rejestru zamówień",
-      "Udział w komisjach przetargowych",
-      "Sprawozdania do UZP"
-    ],
-    "wymagania": [
-      "wykształcenie wyższe",
-      "3 lata stażu",
-      "znajomość Pzp i KPA"
-    ],
-    "klienci": "wykonawcy, komórki urzędu"
+      "Badanie i ocena ofert",
+      "Kontakt z wykonawcami"
+    ]
   },
   {
     "id": "s5",
-    "nazwa": "Specjalista ds. skarg i wniosków",
-    "komorka": "k2",
+    "nazwa": "Inspektor",
+    "komorka": "k1",
     "arkusz": "C",
     "obowiazki": [
-      "Rejestracja i analiza skarg",
-      "Projekty odpowiedzi",
-      "Pilnowanie terminów KPA",
-      "Raporty kwartalne"
-    ],
-    "wymagania": [
-      "wykształcenie wyższe",
-      "1 rok stażu"
-    ],
-    "klienci": "obywatele"
-  },
-  {
-    "id": "s6",
-    "nazwa": "Referent ds. obsługi klienta (paszporty)",
-    "komorka": "k2",
-    "arkusz": "C",
-    "obowiazki": [
-      "Przyjmowanie wniosków paszportowych",
-      "Wydawanie dokumentów",
-      "Udzielanie informacji"
-    ],
-    "wymagania": [
-      "wykształcenie średnie"
-    ],
-    "klienci": "obywatele"
+      "Obsługa interesantów",
+      "Kontrola kompletności wniosków",
+      "Sprawozdania miesięczne"
+    ]
   }
 ]

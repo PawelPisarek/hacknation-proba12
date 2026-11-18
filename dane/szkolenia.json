@@ -20,11 +20,6 @@
     "kryterium": "rzetelność"
   },
   {
-    "id": "sz5",
-    "nazwa": "Trudny klient — obsługa i deeskalacja",
-    "kryterium": "orientacja na klienta/interesanta"
-  },
-  {
     "id": "sz6",
     "nazwa": "Planowanie pracy i priorytety",
     "kryterium": "organizacja pracy i orientacja na osiąganie celów"
@@ -43,10 +38,5 @@
     "id": "sz9",
     "nazwa": "Negocjacje z wykonawcami",
     "kryterium": "negocjowanie"
-  },
-  {
-    "id": "sz10",
-    "nazwa": "Wystąpienia publiczne dla urzędników",
-    "kryterium": "wystąpienia publiczne"
   }
 ]
