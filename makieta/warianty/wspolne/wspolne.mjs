@@ -21,7 +21,7 @@ export const osoby = [
     sytuacja: 'zmiana stanowiska 02.11.2026, poprzednia ocena 15.03.2026 (> 6 mies.)', poprzednia: { data: '2026-03-15', opis: 'na poziomie oczekiwań' } },
   { id: 'nowak', imie: 'Ewa', nazwisko: 'Nowak', stanowisko: 'Starszy specjalista', arkusz: 'C', dodatkowe: [],
     oceny: ob(C), teraz: 1, zrobione: [null, null, null, null, null], zatrudnienie: '2026-11-03', terminZZatrudnienia: 30,
-    termin: '2026-12-03', czynnosc: 'rozmowa wstępna', zrodlo: '30 dni od zatrudnienia na czas nieokreślony 03.11.2026 (§ 7 pkt 1 rozp.)',
+    termin: '2026-12-03', czynnosc: 'rozmowa wstępna', zrodlo: '30 dni od zatrudnienia na czas nieokreślony 03.11.2026 (§ 7 pkt 1 rozp.)', // tekst liczony z pola zatrudnienia: zrodloTerminu()
     sytuacja: 'zatrudniona na czas nieokreślony 03.11.2026', poprzednia: null },
   { id: 'bielecki', imie: 'Jan', nazwisko: 'Bielecki', stanowisko: 'Kierownik wydziału', arkusz: 'B', dodatkowe: ['myślenie analityczne', 'negocjowanie'],
     oceny: ob([...B, 'myślenie analityczne', 'negocjowanie'], [7, 7, 7, 7, 7, 7, 5]), teraz: 3, zrobione: ['2024-12-20', '2024-12-20', null, null, null], zatrudnienie: '2015-05-15',
@@ -40,6 +40,8 @@ export const osoby = [
 export const ZATR = Object.fromEntries(osoby.map((o) => [o.id, o.zatrudnienie]));
 export const isoZ = (t) => { const m = /^(\d{1,2})\.(\d{1,2})\.(\d{4})$/.exec(String(t).trim()); return m ? `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}` : null; };
 export function ustawZatrudnienie(o, isoData) { o.zatrudnienie = isoData; if (o.terminZZatrudnienia) o.termin = dodajDni(isoData, o.terminZZatrudnienia); }
+// „Z czego wynika” liczone z bieżącej daty zatrudnienia — jedna data w polu, terminie, dzwonku (R3)
+export const zrodloTerminu = (o) => o.terminZZatrudnienia ? `${o.terminZZatrudnienia} dni od zatrudnienia na czas nieokreślony ${fmt(o.zatrudnienie)} (§ 7 pkt 1 rozp.)` : o.zrodlo;
 export const kartaZatrudnienia = (o, edycja = true) => { const k = `${o.id}:zatrudnienie`;
   return `<div class="blok" id="zatr"><span class="male">Zatrudnienie od:</span> <strong>${esc(fmt(o.zatrudnienie))}</strong>${znaczek(k, fmt(ZATR[o.id]))}${edycja ? '<button class="link" data-popraw="zatrudnienie">popraw</button>' : ''}</div>`; };
 
@@ -73,13 +75,15 @@ export const AI = {
     wisniewski: "Ocena negatywna wynika z oceny „znacznie poniżej oczekiwań” w kryterium rzetelność (§ 11 rozporządzenia). W okresie ocenianym w trzech sprawach pisma wymagały poprawek formalnych przed wysyłką, mimo omówienia problemu na rozmowie bieżącej. Pozostałe kryteria — na poziomie oczekiwań lub powyżej; mocną stroną jest współpraca w zespole.",
   },
   iprz: {
-    // wnioski do IPRZ (część II arkusza) — tekst ze spec §3; Lis, Nowak, Kowalska: brak (ostrzeżenie, T16)
-    wisniewski: 'Szkolenie z rzetelności i kontroli jakości dokumentów (forma: kurs, do 31.03.2027)',
-    mazur: 'Warsztat z analizy danych, mentoring u starszego inspektora (do 30.06.2027)',
-    bielecki: 'Szkolenie z negocjacji (do 28.02.2027)',
+    // wnioski do IPRZ (część II arkusza): 3 formy rozwoju (spec §3 R2, źródło: dane/podpowiedzi-ai.json); Lis, Nowak, Kowalska: brak (ostrzeżenie, T16)
+    // T16 (R3): kierunek rozwoju, obszary wiedzy i umiejętności, formy i metody realizacji (3 formy)
+    wisniewski: ["Kierunek rozwoju: rzetelność — staranność i kontrola jakości pism przed wysyłką.", "Obszary wiedzy i umiejętności do doskonalenia: wymogi formalne pism w KPA, sprawdzanie dat, adresatów i załączników, planowanie czasu na korektę.", "Formy i metody realizacji: 1) szkolenie „Kontrola jakości dokumentów” (1 dzień, do 31.03.2027); 2) lista kontrolna pisma przed wysyłką i przegląd z przełożonym co 2 tygodnie przez 3 mies.; 3) mentoring starszego specjalisty z zespołu, do 30.06.2027."],
+    bielecki: ["Kierunek rozwoju: negocjowanie i kierowanie zespołem przy rosnącej liczbie postępowań.", "Obszary wiedzy i umiejętności do doskonalenia: przygotowanie do negocjacji z wykonawcami i komórkami, delegowanie zadań, rozmowy rozwojowe z podwładnymi.", "Formy i metody realizacji: 1) warsztat „Negocjacje z wykonawcami” (2 dni, do 28.02.2027); 2) szkolenie „Przywództwo dla kierowników zespołów” (do 30.06.2027); 3) coaching kierowniczy — 4 sesje, do 31.05.2027."],
+    mazur: ["Kierunek rozwoju: myślenie analityczne — wnioski z danych o obsłudze wniosków.", "Obszary wiedzy i umiejętności do doskonalenia: arkusz kalkulacyjny (tabele przestawne), analiza przyczyn powtarzających się błędów, raportowanie.", "Formy i metody realizacji: 1) warsztat „Excel w analizie danych” (do 31.03.2027); 2) mentoring u starszego inspektora przez 3 mies., do 30.06.2027; 3) udział w zespole kontroli zarządczej, do 30.09.2027."],
   },
 };
-for (const o of osoby) { o.iprz = AI.iprz[o.id] || ''; o.uzasadnienie = AI.uzasadnienie[o.id] || ''; } // treść startowa = podpowiedź AI; przełożony ją zmienia i zatwierdza
+export const iprzAI = (id) => (AI.iprz[id] || []).join('\n');
+for (const o of osoby) { o.iprz = iprzAI(o.id); o.uzasadnienie = AI.uzasadnienie[o.id] || ''; } // treść startowa = podpowiedź AI; przełożony ją zmienia i zatwierdza
 export const znakAI = "<span class=\"ai\" title=\"Tekst przygotowany wcześniej przez AI; możesz go zmienić\">podpowiedź AI</span>";
 export const fmt = (iso) => iso ? iso.split('-').reverse().join('.') : '—';
 export const dniDo = (iso) => Math.round((new Date(iso + 'T00:00:00Z') - new Date(DZIS + 'T00:00:00Z')) / 864e5);
@@ -132,7 +136,7 @@ export const zmienioneOceny = (o) => kryteria(o).filter((k) => ORYG[o.id][k] != 
 export function kartaTerminu(o, edycja = true) {
   const k = `${o.id}:termin`; const t = pokaz(k, fmt(o.termin)); const dni = dniDo(o.termin);
   return `<div><div class="male">${esc(o.czynnosc)}</div><div class="termin ${kolor(o)}">do ${esc(t)}${o.teraz ? ` — ${dni} ${dni === 1 ? 'dzień' : 'dni'}` : ''}${znaczek(k, fmt(o.termin))}
-    ${edycja ? '<button class="link" data-popraw="termin">popraw</button>' : ''}</div><div class="male">Z czego wynika: ${esc(o.zrodlo)}</div></div>`;
+    ${edycja ? '<button class="link" data-popraw="termin">popraw</button>' : ''}</div><div class="male">Z czego wynika: ${esc(zrodloTerminu(o))}</div></div>`;
 }
 export const poprzedniaHTML = (o) => `<div class="info" style="margin:.4rem 0"><strong>Poprzednia ocena:</strong> ${o.poprzednia ? `${fmt(o.poprzednia.data)}, ${esc(o.poprzednia.opis)}` : "brak (pierwsza ocena)"}</div>`;
 export function arkusz(o, { edycja = true, poprzednia = true, wszystkiePopraw = false } = {}) {
@@ -161,8 +165,8 @@ const OSTRZ_IPRZ = 'brak wniosków do IPRZ — to element oceny (§ 11 ust. 1 pk
 export function iprzHTML(o, edycja) {
   if (!edycja && !o.zrobione[3]) return ''; // pracownik widzi je dopiero po ocenie na piśmie (④)
   if (!edycja) return o.iprz.trim() ? `<div class="blok" id="iprz"><strong>Wnioski do IPRZ</strong><p class="tresc">${esc(o.iprz)}</p></div>` : '';
-  return `<label class="blok" id="iprz"><strong>Wnioski do IPRZ</strong> ${AI.iprz[o.id] && o.iprz === AI.iprz[o.id] ? znakAI : ''} <span class="male">kierunki rozwoju, obszary wiedzy i umiejętności do doskonalenia, formy i metody realizacji</span>
-    <textarea rows="3" data-iprz>${esc(o.iprz)}</textarea></label><div class="ostrz" id="iprz-ostrz"${o.iprz.trim() ? ' hidden' : ''}>${OSTRZ_IPRZ}</div>`;
+  return `<label class="blok" id="iprz"><strong>Wnioski do IPRZ</strong> ${AI.iprz[o.id] && o.iprz === iprzAI(o.id) ? znakAI : ''} <span class="male">kierunki rozwoju, obszary wiedzy i umiejętności do doskonalenia, formy i metody realizacji</span>
+    <textarea rows="4" data-iprz>${esc(o.iprz)}</textarea></label><div class="ostrz" id="iprz-ostrz"${o.iprz.trim() ? ' hidden' : ''}>${OSTRZ_IPRZ}</div>`;
 }
 const dopasuj = (x) => { x.style.height = 'auto'; x.style.height = `${x.scrollHeight + 2}px`; }; // pole rośnie z tekstem (R1: uzasadnienie czytelne)
 export function podepnij(root, o, odswiez) {

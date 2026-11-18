@@ -44,7 +44,7 @@ function moja() {
 function kalendarz() {
   const lista = [...W.kolejka()].sort((a, b) => a.termin.localeCompare(b.termin));
   return `<div class="karta"><h2>Kalendarz terminów</h2><table>${lista.map((o) => `<tr><td class="${W.kolor(o)}"><strong>${W.fmt(o.termin)}</strong><div class="male">${dni(o)}</div></td>
-    <td>${W.esc(W.nazwa(o))}<div class="male">${W.esc(o.czynnosc)} · ${W.esc(o.zrodlo)}</div></td><td><button data-osoba="${o.id}">Przejdź</button></td></tr>`).join('')}</table></div>`;
+    <td>${W.esc(W.nazwa(o))}<div class="male">${W.esc(o.czynnosc)} · ${W.esc(W.zrodloTerminu(o))}</div></td><td><button data-osoba="${o.id}">Przejdź</button></td></tr>`).join('')}</table></div>`;
 }
 function rysuj() {
   const pr = st.rola === 'przelozony';
