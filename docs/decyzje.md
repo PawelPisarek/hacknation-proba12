@@ -23,3 +23,4 @@ P1 18:10 odpowiedź: przełożony najczęściej, pracownik jako drugi użytkowni
 P2 18:10 odpowiedź: brak jasnej historii — wszystko jest na papierze (Artur w pokoju; zamiast rekomendacji „ogólnikowe uzasadnienia”)
 P3 18:10 odpowiedź: mieć aktualne informacje o ocenie: etapy, kryteria, terminy (Artur w pokoju)
 P4 18:10 odpowiedź: terminy zależą od daty zatrudnienia; nie ma potrzeby zbierać notatek przez cały rok (Artur w pokoju; zamiast rekomendacji „przez cały rok”)
+18:10 Szef: krok 1a poprawka R1 (0cb220c), znacznik jest → recenzja R2 (Analityk).
