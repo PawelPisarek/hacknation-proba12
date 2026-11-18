@@ -34,3 +34,10 @@ P6 18:12 Artur: Czy produkt ma sam przypominać o terminach, czy wystarczy widok
 P7 18:12 Artur: Czy dział kadr ma mieć swój widok? Polecam: nie w pierwszej wersji — czeka
 P8 18:12 Artur: Które 3–5 pomysłów z 10 bierzemy do dalszej pracy (albo wszystkie)? Polecam: 1, 2, 3, 4, 5 — czeka
 18:14 Prezenter: hacktribe.md dopasowany do P1–P4 (przełożony główny, pracownik drugi; brak historii/papier; aktualne etapy, kryteria, terminy od daty zatrudnienia; bez notatek z roku). P5–P8 jeszcze czekają — nie ujęte.
+P5 18:15 odpowiedź: pracownik widzi status i potwierdza zapoznanie z oceną (Artur w pokoju)
+P6 18:15 odpowiedź: produkt sam przypomina o terminach (Artur w pokoju; więcej niż rekomendacja „sam widok”)
+P7 18:15 odpowiedź: kadry bez własnego widoku w pierwszej wersji (Artur w pokoju)
+P8 18:15 odpowiedź: bierzemy pomysły 2, 3, 4, 5, 6 (Artur w pokoju; zamiast rekomendacji 1–5: dodane 6, odpada 1)
+P9 18:15 Artur: Co w wybranych pomysłach (2–6) zmienić albo dodać? Polecam: nic nie zmieniać, tylko dopisać do kolejki widok osi etapów jednej oceny — czeka
+P10 18:15 Artur: Czy któryś odrzucony pomysł (1, 7–10) warto wziąć choć w części? Polecam: etapy z pomysłu 1 jako pasek postępu w „Mojej ocenie”, reszta odpada — czeka
+P11 18:15 Artur: Czy potwierdzasz dwa najryzykowniejsze założenia: (A) terminy policzone z daty zatrudnienia przełożony uzna za wiarygodne i ważniejsze od papieru; (B) przełożony wpisze oceny w arkusz i zaufa automatycznej średniej i poziomowi? Polecam: tak, oba do sprawdzenia w demo — czeka
