@@ -130,13 +130,13 @@ export function arkusz(o, { edycja = true, poprzednia = true } = {}) {
   const w = wynik(o); const ks = kryteria(o);
   const wiersze = ks.map((k, i) => {
     const v = o.oceny[k]; const zm = ORYG[o.id][k] !== v && ORYG[o.id][k] != null;
-    return `<tr><td>${esc(k)}${i >= OBOWIAZKOWE[o.arkusz].length ? ' <span class="male">(dodatkowe)</span>' : ''}${zm ? `<span class="reczne" title="Z systemu: ${ORYG[o.id][k]}">ustawione ręcznie</span>` : ''}</td>
+    return `<tr><td>${esc(k)}${i >= OBOWIAZKOWE[o.arkusz].length ? ' <span class="male">(dodatkowe)</span>' : ''}${zm ? `<span class="reczne zmiana" title="Ustawione ręcznie — z systemu: ${ORYG[o.id][k]}">✎<span class="tx"> ustawione ręcznie</span></span>` : ''}</td>
       <td>${edycja ? `<div class="skala">${[1, 3, 5, 7, 9].map((n) => `<button data-kryt="${esc(k)}" data-ocena="${n}" class="${v === n ? 'wyb' : ''} ${n === 1 ? 'jeden' : ''}" title="${SKALA[n]}">${n}</button>`).join('')}</div>`
         : `<strong class="${v === 1 ? 'negatywna' : ''}">${v ?? '—'}</strong> <span class="male">${v ? SKALA[v] : 'jeszcze bez oceny'}</span>`}</td></tr>`;
   }).join('');
   const sr = w ? w.srednia.toFixed(2).replace('.', ',') : '—';
   const ks2 = `${o.id}:srednia`, kp = `${o.id}:poziom`;
-  return `${poprzednia ? poprzedniaHTML(o) : ""}<table><thead><tr><th>Kryterium (arkusz ${o.arkusz})</th><th>Ocena</th></tr></thead><tbody>${wiersze}</tbody></table>
+  return `${poprzednia ? poprzedniaHTML(o) : ""}<table class="tab-ark"><thead><tr><th>Kryterium (arkusz ${o.arkusz})</th><th>Ocena</th></tr></thead><tbody>${wiersze}</tbody></table>
     <div class="wynik"><div><div class="male">Średnia</div><span class="duzy">${esc(pokaz(ks2, sr))}</span>${znaczek(ks2, sr)}${edycja && w ? '<button class="link" data-popraw="srednia">popraw</button>' : ''}</div>
     <div><div class="male">Poziom</div><strong>${esc(pokaz(kp, w ? w.poziom : '—'))}</strong>${znaczek(kp, w?.poziom)}${edycja && w ? '<button class="link" data-popraw="poziom">popraw</button>' : ''}</div>
     <div><div class="male">Wynik</div>${w ? `<span class="${w.wynik}">${w.wynik}</span>` : '<span class="male">uzupełnij wszystkie oceny</span>'}</div></div>

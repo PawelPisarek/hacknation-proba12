@@ -1,7 +1,7 @@
 // Generator sztucznych danych (wszystko fikcyjne) zgodnych z docs/materialy.md (pkt 5, 10, 11).
 // Uruchom: node scripts/generuj-dane.mjs  -> dane/*.json + app/dane.js
 // Pola wyliczane (średnia, poziom, wynik, terminy) liczy app/zasady.mjs — te same reguły co w aplikacji.
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { OBOWIAZKOWE, SKALA, KRYTERIA, wynikOceny, terminRozmowyWstepnej, terminOceny, terminyPierwszegoZatrudnienia,
   oknoOcenyPrzyZmianie, ponownaOcenaPo, terminySprzeciwu } from '../app/zasady.mjs';
 
@@ -154,7 +154,8 @@ const szkolenia = [
 for (const k of [...notatki.map((n) => n.kryterium), ...szkolenia.map((s) => s.kryterium)]) if (k && !KRYTERIA.includes(k)) throw new Error('kryterium spoza wykazu: ' + k);
 
 const dane = { zrodlo: 'docs/materialy.md (18.11.2026); wszystkie osoby i urząd fikcyjne', urzad, skala: SKALA, kryteria: KRYTERIA, kryteria_obowiazkowe: OBOWIAZKOWE,
-  stanowiska, osoby, arkusze, sprzeciwy, notatki, cele, szkolenia };
+  stanowiska, osoby, arkusze, sprzeciwy, notatki, cele, szkolenia,
+  podpowiedzi_ai: JSON.parse(readFileSync('dane/podpowiedzi-ai.json', 'utf8')) }; // teksty AI pisane ręcznie z góry (P13)
 mkdirSync('dane', { recursive: true });
 for (const k of ['stanowiska', 'osoby', 'arkusze', 'sprzeciwy', 'notatki', 'cele', 'szkolenia']) writeFileSync(`dane/${k}.json`, JSON.stringify(dane[k], null, 2) + '\n');
 writeFileSync('dane/wszystko.json', JSON.stringify(dane, null, 2) + '\n');

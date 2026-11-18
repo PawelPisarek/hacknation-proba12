@@ -1,0 +1,41 @@
+{
+  "opis": "Teksty „podpowiedź AI” przygotowane z góry (Claude, P13 w docs/decyzje.md) — aplikacja nie woła modelu. W UI oznaczone „podpowiedź AI”, człowiek może je zmienić (P11). Pisane ręcznie, nie nadpisuje ich generator.",
+  "oznaczenie": "podpowiedź AI",
+  "kryteria_dodatkowe": {
+    "s2": [
+      { "kryterium": "negocjowanie", "dlaczego": "uzgodnienia z wykonawcami i komórką finansową przy planie zamówień" },
+      { "kryterium": "zarządzanie strategiczne", "dlaczego": "roczny plan zamówień całego urzędu" },
+      { "kryterium": "myślenie analityczne", "dlaczego": "zatwierdzanie dokumentacji wymaga oceny ryzyk postępowań" }
+    ],
+    "s3": [
+      { "kryterium": "radzenie sobie w sytuacjach kryzysowych", "dlaczego": "awarie systemu paszportowego i szczyty wniosków przed wakacjami" },
+      { "kryterium": "orientacja na klienta/interesanta", "dlaczego": "wydział obsługuje obywateli i rozpatruje skargi na obsługę" },
+      { "kryterium": "wystąpienia publiczne", "dlaczego": "informowanie mediów i obywateli o zmianach w obsłudze" }
+    ],
+    "s4": [
+      { "kryterium": "myślenie analityczne", "dlaczego": "badanie i ocena ofert" },
+      { "kryterium": "negocjowanie", "dlaczego": "wyjaśnienia z wykonawcami" },
+      { "kryterium": "orientacja na klienta/interesanta", "dlaczego": "kontakt z wykonawcami i komórkami zamawiającymi" }
+    ],
+    "s5": [
+      { "kryterium": "orientacja na klienta/interesanta", "dlaczego": "odpowiedzi na skargi i wnioski obywateli" },
+      { "kryterium": "myślenie analityczne", "dlaczego": "analiza skarg i raporty kwartalne" }
+    ],
+    "s6": [
+      { "kryterium": "orientacja na klienta/interesanta", "dlaczego": "bezpośrednia obsługa interesantów przy okienku" },
+      { "kryterium": "radzenie sobie w sytuacjach kryzysowych", "dlaczego": "obsługa w dniach awarii systemu i kolejek" }
+    ]
+  },
+  "uzasadnienie": {
+    "a3": "Ocena negatywna wynika z oceny „znacznie poniżej oczekiwań” w kryterium rzetelność (§ 11 rozporządzenia), mimo średniej 5,67. W okresie ocenianym trzy ogłoszenia lub SWZ wymagały sprostowania (notatki z 12.05.2025, 03.09.2025, 18.11.2025), w tym po omówieniu problemu na rozmowie bieżącej. Pozostałe kryteria na poziomie oczekiwań lub powyżej; mocną stroną są szybkie odpowiedzi wykonawcom.",
+    "a4": "Ocena negatywna wynika ze średniej 3,00 — poziom „poniżej oczekiwań” (§ 11 rozporządzenia). Najsłabiej wypadła komunikacja: odpowiedzi na skargi po terminie KPA (np. 04.03.2025). W kryterium wykorzystywanie wiedzy — nieobecność na zaplanowanym szkoleniu z KPA (08.10.2025). Odnotowano poprawę organizacji pracy od lutego 2026 (rejestr terminów)."
+  },
+  "iprz": {
+    "a1": ["Nowelizacja Prawa zamówień publicznych (sz3) — 2 dni, do 30.06.2025", "Excel w analizie danych (sz8) — wsparcie oceny ofert"],
+    "a2": ["Studia podyplomowe: zarządzanie zmianą — do 31.12.2025", "Negocjacje z wykonawcami (sz9) — jako prowadząca dla zespołu"],
+    "a3": ["Kontrola jakości dokumentów (sz4) — 1 dzień, do 30.06.2026", "Mentoring: Katarzyna Wiśniewska, przegląd ogłoszeń przed publikacją przez 3 mies.", "Lista kontrolna SWZ przed publikacją — do 30.09.2026"],
+    "a4": ["KPA w praktyce — terminy i odpowiedzi (sz1) — do 31.08.2026", "Cotygodniowy przegląd rejestru terminów z przełożonym przez 3 mies.", "Prosty język w pismach urzędowych (sz2) — do 30.11.2026"],
+    "a5": ["Trudny klient — obsługa i deeskalacja (sz5) — do 31.03.2026", "Wdrożenie w obsługę systemu ŹRÓDŁO z opiekunem — do 28.02.2026", "Udział w zastępstwach przy wydawaniu dokumentów (rozwój: rzetelność)"],
+    "a6": ["Przywództwo dla kierowników zespołów (sz7) — do 30.04.2025", "Planowanie pracy i priorytety (sz6) — z zespołem wydziału"]
+  }
+}

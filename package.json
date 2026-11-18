@@ -5,6 +5,6 @@
   "scripts": {
     "start": "node server.mjs",
     "dane": "node scripts/generuj-dane.mjs",
-    "test": "node scripts/test-reguly.mjs && node scripts/test-dymny.mjs"
+    "test": "node scripts/test-reguly.mjs && node scripts/test-podpowiedzi.mjs && node scripts/test-dymny.mjs"
   }
 }
