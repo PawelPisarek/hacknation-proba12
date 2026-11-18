@@ -96,3 +96,4 @@ P22 19:02 Artur: Na telefonie termin i data następnej oceny są dziś pod arkus
 19:02 Projektant: krok 2 R2 poprawiony: IPRZ z podpowiedzią AI (widzi tylko przełożony), T14/T16/§8/PRD; data następnej oceny wstępna do ④ także przy pozytywnej; P22 (układ telefonu) zadane Arturowi
 P21 19:02 odpowiedź: tak, wszystkie trzy miary zgodnie z rekomendacją (Artur w pokoju)
 P22 19:03 odpowiedź: nie — termin i data następnej oceny zostają na telefonie pod arkuszem, bez przenoszenia (Artur w pokoju)
+19:04 Szef: P22 — Programista zostawia termin pod arkuszem wg wpisu 19:03; Projektant sprawdza sprzeczność z „wszysko za rekomendacja” (19:02). Krok 2 recenzja R3 (ostatnia) → Analityk.
