@@ -111,3 +111,5 @@ P25 19:09 Artur: Na telefonie górny pasek zostaje przyklejony i zajmuje ok. pi�
 P24 19:11 odpowiedź: tak — pracownik po potwierdzeniu widzi tylko swój termin na sprzeciw, termin przełożonego znika z jego widoku (Artur w pokoju)
 P25 19:11 odpowiedź: tak — górny pasek na telefonie przewija się razem z treścią (Artur w pokoju)
 19:12 Szef: P24 i P25 (tak, tak) → Programista wprowadza z testami, nadpisuje zrzuty R3; krytyk R3 po meldunku.
+P23 19:12 odpowiedź: tak, puszczamy dalej
+19:12 Szef: krok 2 (/write-prd) zamknięty po 3 rundach + P23 (tak); spec do budowy po recenzji odbiorcy (Programista, 4 braki w meldunku). Od 19:12 za Pawła i Artura odpowiada Claude (Paweł wyszedł).
