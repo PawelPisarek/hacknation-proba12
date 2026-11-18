@@ -13,3 +13,4 @@ P1 18:05 Artur: Kto ma z produktu korzystać najczęściej — przełożony ocen
 P2 18:05 Artur: Co dziś najbardziej boli w ocenie okresowej? Polecam: ogólnikowe uzasadnienia i brak notatek z całego okresu — czeka
 P3 18:05 Artur: Co ma zyskać użytkownik? Polecam: rzetelną ocenę z konkretnymi przykładami szybciej i plan rozwoju po rozmowie — czeka
 P4 18:05 Artur: Czy produkt zbiera notatki przez cały rok, czy zaczyna dopiero przy ocenie? Polecam: notatki przez cały rok — czeka
+18:07 Szef: krok 1a — znacznik przeplywy-pm jest; recenzja przejścia R1 → Analityk.
