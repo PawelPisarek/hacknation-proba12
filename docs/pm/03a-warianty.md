@@ -14,7 +14,7 @@ Etapy (z `docs/materialy.md`, sekcja 4): ① rozmowa wstępna ② zapoznanie z k
 
 | Pracownik | Stanowisko, arkusz | Sytuacja (dziś 18.11.2026) | Etap | Najbliższy termin | Poprzednia ocena (P12: tak) |
 |---|---|---|---|---|---|
-| Piotr Wiśniewski | Specjalista, C | negatywna ocena sporządzona i przekazana 12.11.2026 | ⑤ (sprzeciw) i nowa rozmowa wstępna | **19.11.2026** — 7 dni na rozmowę wstępną i na sprzeciw (jutro) | 12.11.2026, średnia 5,00 = na poziomie oczekiwań, wynik negatywny przez ocenę „1” (§ 11) |
+| Piotr Wiśniewski | Specjalista, C | negatywna ocena sporządzona i przekazana 12.11.2026 | ⑤ (sprzeciw) i nowa rozmowa wstępna | **19.11.2026** — 7 dni na rozmowę wstępną i na sprzeciw (jutro) | 12.11.2024 (24 mies. przed bieżącą), na poziomie oczekiwań (5,00); bieżąca ocena z 12.11.2026 jest negatywna przez ocenę „1” (§ 11) |
 | Katarzyna Lis | Specjalista, C | zmiana stanowiska 02.11.2026, poprzednia ocena 15.03.2026 (>6 mies.) → ocena poza cyklem | ② kryteria ustalone | **02.12.2026** (do 30 dni po zmianie) — 14 dni | 15.03.2026, na poziomie oczekiwań |
 | Ewa Nowak | Starszy specjalista, C | zatrudniona na czas nieokreślony 03.11.2026 | ① czeka na rozmowę wstępną | **03.12.2026** (30 dni) — 15 dni | brak (pierwsza ocena) |
 | Jan Bielecki | Kierownik wydziału, B | poprzednia ocena 10.12.2024 → ocena co 24 mies. | ③ rozmowa oceniająca zaplanowana, arkusz w toku | **10.12.2026** — 22 dni | 10.12.2024, powyżej oczekiwań (6,71) |
@@ -73,4 +73,6 @@ Demo (≤ 2 min): ekran 1 Kowalska → przełożony zmienia ocenę, średnia i p
 
 Odpowiedź P12 (Artur: tak, w części): data i poziom poprzedniej oceny wchodzą do wszystkich trzech wariantów jako zwykłe pole, nie warunkowe.
 
+
+**Aktualizacja 18:56:** wybór Artura — wariant 1 (P14); poprzednia ocena Wiśniewskiego to 12.11.2024, „na poziomie oczekiwań (5,00)” (wpis Szefa 18:52); Bielecki 6,71, Kowalska 5,57. Dalsze ustalenia: `docs/spec.md`.
 <!-- skill: przeplywy-pm -->

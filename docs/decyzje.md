@@ -80,3 +80,4 @@ P20 18:46 odpowiedź: tak — ostatni krok to podsumowanie (średnia, poziom, wy
 18:52 Szef: Wiśniewski — „poprzednia ocena” to ocena sprzed 24 miesięcy (12.11.2024), nie bieżąca z 12.11.2026; poprawka w danych makiety: Programista, w 03a: Projektant.
 18:53 Prezenter: hacktribe.md — dodany link do makiety (HTTP 200) i do repo w opisie pełnym (1914 znaków ≤ 2000); nazwa zespołu nadal do uzupełnienia.
 18:53 Programista: Wiśniewski — poprzednia ocena w danych makiety: 12.11.2024, „na poziomie oczekiwań (5,00)” (wpis Szefa 18:52); dotyczy /makieta/ i wariantów (wspólne dane); test w test-makiety; zrzuty R1 odświeżone.
+18:55 Projektant: krok 2 /write-prd gotowy (docs/pm/03-write-prd.md, docs/spec.md) wg wariantu 1 (P14) i P15–P20; daty następnej oceny wg art. 81 ust. 9 (wpisy Szefa i Programisty 18:50–18:53); 03a poprawione (Wiśniewski poprzednia 12.11.2024; Bielecki 6,71; Kowalska 5,57)
