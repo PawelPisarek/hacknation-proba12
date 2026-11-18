@@ -76,7 +76,7 @@ Atrapy: przyciski poza opisanymi nic nie zapisują.
 ## 8. Ryzyka i eksperymenty (z `/discover`)
 - **A (terminy wiarygodne):** kryterium sukcesu: T2–T5, T12 zgodne z przepisami; przy każdym terminie widać źródło i „popraw”.
 - **B (zaufanie do średniej i poziomu):** T3–T4, T7, T8: zmiana oceny zmienia wyniki od razu, reguła „1” widoczna.
-- Ryzyko (T18, P22 — układ telefonu): na telefonie termin i data następnej oceny tuż pod paskiem etapów, nad arkuszem (do potwierdzenia przez Artura; odpowiedź zapisać tu po P22).
+- Układ telefonu (T18, P22 — odpowiedź Artura: „nie musisz, nie trzeba”): termin i data następnej oceny zostają pod arkuszem, bez przenoszenia; ryzyko przyjęte — na demo pokazujemy je na komputerze albo po przewinięciu.
 - Ryzyko: interpretacje [I] (T6a, liczenie dni) mogą różnić się od praktyki urzędów — oznaczone, do potwierdzenia; produkt nie jest poradą prawną.
 - Poza zakresem: kadry, osoby na czas określony (ocena okresowa dotyczy zatrudnionych na czas nieokreślony — [U] art. 81 ust. 1; pierwsza ocena z art. 37–38 to inny proces), pełna historia, wysyłka przypomnień poza aplikacją, logowanie, prawdziwe dane.
 
