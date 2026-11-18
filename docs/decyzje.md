@@ -33,3 +33,4 @@ P5 18:12 Artur: Co robi pracownik w produkcie — tylko widzi status, czy też p
 P6 18:12 Artur: Czy produkt ma sam przypominać o terminach, czy wystarczy widok „co przed Tobą”? Polecam: widok z wyróżnionymi bliskimi terminami — czeka
 P7 18:12 Artur: Czy dział kadr ma mieć swój widok? Polecam: nie w pierwszej wersji — czeka
 P8 18:12 Artur: Które 3–5 pomysłów z 10 bierzemy do dalszej pracy (albo wszystkie)? Polecam: 1, 2, 3, 4, 5 — czeka
+18:14 Prezenter: hacktribe.md dopasowany do P1–P4 (przełożony główny, pracownik drugi; brak historii/papier; aktualne etapy, kryteria, terminy od daty zatrudnienia; bez notatek z roku). P5–P8 jeszcze czekają — nie ujęte.
