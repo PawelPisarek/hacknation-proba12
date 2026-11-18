@@ -6,7 +6,7 @@ Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: wybór Ar
 - **Co badamy:** jak pomóc przełożonemu i pracownikowi przejść ustawową ocenę okresową dobrze, w urzędach służby cywilnej (`docs/zadanie.md`).
 - **Co już wiemy:** użytkownik to przełożony, pracownik jako drugi (P1); boli brak jasnej historii, wszystko na papierze (P2); zysk to aktualne informacje o etapach, kryteriach i terminach (P3); terminy zależą od daty zatrudnienia, notatki przez rok niepotrzebne (P4); kryteria, skala, etapy i terminy są ustawowe (`docs/materialy.md`); konkurenci: `docs/pm/01-competitive-analysis.md`.
 - **Jaką decyzję ustawia:** które funkcje wchodzą do makiety i demo oraz do `docs/spec.md`. Pokaz produktu trwa do 2 min — ustalenie Szefa (`docs/decyzje.md`, commit f38d0b9).
-- **Skąd kontekst (zamiast pytań):** „co już wiemy” pochodzi z odpowiedzi Artura P1–P4 i z zadania, „jaką decyzję ustawia” — z zadania (zbudować makietę i demo ustawowej oceny); wpis w `docs/decyzje.md` z 18:2x.
+- **Skąd kontekst (zamiast pytań):** „co już wiemy” pochodzi z odpowiedzi Artura P1–P4 i z zadania, „jaką decyzję ustawia” — z zadania (zbudować makietę i demo ustawowej oceny); wpis w `docs/decyzje.md` z 18:20.
 
 ## 10 pomysłów (PM, projektant, inżynier)
 1. **Oś oceny** — etapy procesu (rozmowa wstępna → zapoznanie z kryteriami → rozmowa oceniająca → ocena na piśmie → zapoznanie) i status jednej oceny.
