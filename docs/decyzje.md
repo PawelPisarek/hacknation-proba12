@@ -46,3 +46,4 @@ P10 18:18 odpowiedź: etapy z pomysłu 1 jako pasek postępu w „Mojej ocenie�
 P11 18:18 odpowiedź: założenia A i B potwierdzone jako najryzykowniejsze; dodatkowo: człowiek może zmienić wszystko, jeśli system się pomyli (Artur w pokoju)
 18:18 Prezenter: hacktribe.md uwzględnia odpowiedzi na pytania 5–8 (status i potwierdzenie zapoznania, przypomnienia produktu, brak widoku kadr w v1, zakres: pomysły 2–6).
 18:18 Szef: 1b /discover — recenzja przejścia runda 1 zlecona Analitykowi.
+18:19 Analityk: krok 1b recenzja R1 (02-discover.md): 4 braki — brak pytania/pominięcia „co już wiemy” i „jaką decyzję ustawia”; „do 2 min” bez źródła; ból P2 (historia) bez pokrycia w wybranych 2–6; „dogonić IPRZ” z 01 odpadło bez adnotacji → poprawka Projektanta.
