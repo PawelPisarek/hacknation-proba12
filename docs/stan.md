@@ -1,4 +1,4 @@
-# Stan — 18:27
+# Stan — 18:30
 
 Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); docs/hacktribe.md.
 
@@ -12,5 +12,5 @@ Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); 
 | przesłuchanie Artura (pokój Produkt) | Projektant | P1–P11 odpowiedziane |
 | hacktribe.md | Prezenter | dopasowany do P5–P8 (f9d1b2d); dopasuje po specu |
 
-Otwarte pytania: P13 (Paweł, GPU na OMENie) — od 18:20.
+Otwarte pytania: brak.
 Faza 2: docs/zadania/01-kryterium-innowacyjnosc.md
