@@ -41,3 +41,6 @@ P8 18:15 odpowiedź: bierzemy pomysły 2, 3, 4, 5, 6 (Artur w pokoju; zamiast re
 P9 18:15 Artur: Co w wybranych pomysłach (2–6) zmienić albo dodać? Polecam: nic nie zmieniać, tylko dopisać do kolejki widok osi etapów jednej oceny — czeka
 P10 18:15 Artur: Czy któryś odrzucony pomysł (1, 7–10) warto wziąć choć w części? Polecam: etapy z pomysłu 1 jako pasek postępu w „Mojej ocenie”, reszta odpada — czeka
 P11 18:15 Artur: Czy potwierdzasz dwa najryzykowniejsze założenia: (A) terminy policzone z daty zatrudnienia przełożony uzna za wiarygodne i ważniejsze od papieru; (B) przełożony wpisze oceny w arkusz i zaufa automatycznej średniej i poziomowi? Polecam: tak, oba do sprawdzenia w demo — czeka
+P9 18:18 odpowiedź: nic nie zmieniać w 2–6; dopisać do kolejki widok etapów jednej oceny (Artur w pokoju)
+P10 18:18 odpowiedź: etapy z pomysłu 1 jako pasek postępu w „Mojej ocenie”; reszta odrzuconych odpada (Artur w pokoju)
+P11 18:18 odpowiedź: założenia A i B potwierdzone jako najryzykowniejsze; dodatkowo: człowiek może zmienić wszystko, jeśli system się pomyli (Artur w pokoju)
