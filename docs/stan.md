@@ -1,4 +1,4 @@
-# Stan — 18:13
+# Stan — 18:14
 
 Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); docs/hacktribe.md.
 
@@ -9,6 +9,8 @@ Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); 
 | 1a /competitive-analysis | Projektant | zamknięte (3 rundy) |
 | 1b /discover | Projektant | w toku — czeka P5–P8 (Artur) |
 | przesłuchanie Artura (pokój Produkt) | Projektant | P1–P4 odpowiedziane 18:10 |
-| hacktribe.md | Prezenter | DRAFT gotowy; dopasuje po specu |
+| hacktribe.md | Prezenter | dopasowany do P1–P4 (ed0ff8d) |
+| materiały: terminy | Analityk | zlecone |
 
 Otwarte pytania: P5–P8 (Artur, pokój Produkt) — czekają.
+Faza 2: docs/zadania/01-kryterium-innowacyjnosc.md
