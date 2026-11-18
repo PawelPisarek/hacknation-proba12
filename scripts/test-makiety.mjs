@@ -30,7 +30,7 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
       t(`${nazwa} M P18 poprzednia ocena tuż pod paskiem etapów`, await s.evaluate(() => { const e = document.querySelector('.etapy'); return !!e && e.nextElementSibling?.textContent.includes('Poprzednia ocena:'); }));
       t(`${nazwa} M Wiśniewski: poprzednia ocena 12.11.2024, 5,00`, await widac('text=Poprzednia ocena: 12.11.2024, na poziomie oczekiwań (5,00)'));
       const pop = await s.$$eval('[data-popraw]', (l) => l.map((b) => b.dataset.popraw).sort().join(','));
-      t(`${nazwa} M P19 „popraw” przy każdej wartości (${pop})`, pop === 'nastepna,poziom,srednia,termin,wynik');
+      t(`${nazwa} M P19 „popraw” przy każdej wartości (${pop})`, pop === 'nastepna,poziom,srednia,termin,wynik,zatrudnienie');
       await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'pozytywna'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]');
       t(`${nazwa} M P19 poprawiony wynik ma znaczek`, await widac('.wynik .reczne'));
       await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'negatywna'); await s.click('dialog button[value=ok]');
@@ -58,7 +58,35 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     await s2.click('button[data-kryt="rzetelność"][data-ocena="3"]'); await s2.click('button[data-idz="podsumowanie"]'); const p4 = await s2.textContent('#podsumowanie');
     t(`${nazwa} M spec T4: 5,40, pozytywna, 12.11.2028`, p4.includes('5,40') && p4.includes('na poziomie oczekiwań') && p4.includes('pozytywna') && p4.includes('12.11.2028'));
     await s2.click('button[data-idz="ocena"]'); await s2.click('button[data-kryt="rzetelność"][data-ocena="1"]'); await s2.click('button[data-idz="podsumowanie"]'); const p5 = await s2.textContent('#podsumowanie');
-    t(`${nazwa} M spec T5: negatywna, 18.05.2027`, p5.includes('negatywna') && p5.includes('18.05.2027'));
+    t(`${nazwa} M spec T5: negatywna, 18.05.2027 wstępna`, p5.includes('negatywna') && p5.includes('18.05.2027') && p5.includes('wstępna — po potwierdzeniu zapoznania'));
+    await s2.click('button[data-idz="ocena"]');
+    if (nazwa === 'telefon') { const g = await s2.evaluate(() => { const r = (q) => document.querySelector(q)?.getBoundingClientRect(); return { t: r('.termin'), n: r('#terminy .blok'), a: r('#ark'), e: r('.etapy') }; });
+      t('telefon M P22 (Artur 19:03) termin i data następnej oceny pod arkuszem', g.t && g.n && g.t.top >= g.a.bottom - 1 && g.n.top >= g.a.bottom - 1); }
+    t(`${nazwa} M spec T16: Wiśniewski IPRZ z §3 (podpowiedź AI), bez ostrzeżenia`, (await s2.inputValue('[data-iprz]')) === 'Szkolenie z rzetelności i kontroli jakości dokumentów (forma: kurs, do 31.03.2027)' && (await s2.textContent('#iprz')).includes('podpowiedź AI') && await s2.isHidden('#iprz-ostrz'));
+    t(`${nazwa} M R1: pole uzasadnienia czytelne (≥ 5 wierszy, bez przewijania)`, await s2.evaluate(() => { const x = document.querySelector('[data-uzas]'); return x && x.clientHeight >= 5 * 18 && x.scrollHeight <= x.clientHeight + 2; }));
+    await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="bielecki"]');
+    t(`${nazwa} M R1: Bielecki data następnej „wstępna — do sporządzenia oceny na piśmie”`, (await s2.textContent('main')).includes('wstępna — do sporządzenia oceny na piśmie'));
+    await s2.click('button[data-idz="podsumowanie"]'); const pb = await s2.textContent('#podsumowanie');
+    t(`${nazwa} M R1: podsumowanie Bieleckiego ze stanu spec 6,71, bez znaczka`, pb.includes('6,71') && (await s2.$$('#podsumowanie .reczne')).length === 0);
+    await s2.click('button[data-idz="ocena"]'); await s2.click('button[data-kryt="negocjowanie"][data-ocena="9"]'); await s2.click('button[data-idz="podsumowanie"]');
+    t(`${nazwa} M R1: po zmianie oceny znaczek na podsumowaniu`, (await s2.textContent('#podsumowanie')).includes('7,29') && (await s2.$$('#podsumowanie .reczne')).length >= 1);
+    await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="lis"]');
+    t(`${nazwa} M spec T16: Lis puste IPRZ → ostrzeżenie`, (await s2.inputValue('[data-iprz]')) === '' && (await s2.textContent('#iprz-ostrz')).includes('brak wniosków do IPRZ') && await s2.isVisible('#iprz-ostrz'));
+    await s2.fill('[data-iprz]', 'Plan wdrożenia 3 mies.'); t(`${nazwa} M spec T16: po wpisaniu ostrzeżenie znika`, await s2.isHidden('#iprz-ostrz'));
+    await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="lis"]');
+    t(`${nazwa} M spec T16: tekst IPRZ zostaje po zmianie ekranu`, (await s2.inputValue('[data-iprz]')) === 'Plan wdrożenia 3 mies.');
+    await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="nowak"]');
+    t(`${nazwa} M spec T17: Nowak zatrudnienie 03.11.2026, termin 03.12.2026`, (await s2.textContent('#zatr')).includes('03.11.2026') && (await s2.textContent('.termin')).includes('03.12.2026'));
+    await s2.click('button[data-popraw="zatrudnienie"]'); await s2.fill('dialog input[name=w]', '10.11.2026'); await s2.click('dialog button[value=ok]');
+    t(`${nazwa} M spec T17: po poprawie termin 10.12.2026 i znaczek`, (await s2.textContent('.termin')).includes('10.12.2026') && (await s2.textContent('#zatr')).includes('10.11.2026') && (await s2.$$('#zatr .reczne')).length === 1);
+    await s2.click('.dzwonek'); t(`${nazwa} M spec T17: dzwonek Nowak 10.12.2026`, (await s2.$$eval('.przyp', (l) => l.map((x) => x.textContent).join('|'))).includes('Ewa Nowak: rozmowa wstępna do 10.12.2026')); await s2.click('.dzwonek');
+    await s2.selectOption('#rola select', 'wisniewski'); const m9 = await s2.textContent('main');
+    t(`${nazwa} M spec T9: przed potwierdzeniem bez komunikatu i daty sprzeciwu, bez „popraw” i ocen`, !m9.includes('Masz 7 dni') && !m9.includes('25.11.2026') && (await s2.$$('[data-popraw], button[data-ocena], textarea')).length === 0);
+    t(`${nazwa} M R1: pracownik bez „podpowiedź AI”, widzi zatwierdzone uzasadnienie i IPRZ`, !m9.includes('podpowiedź AI') && (await s2.textContent('#uzas')).includes('rzetelność') && (await s2.textContent('#iprz')).includes('kontroli jakości'));
+    await s2.click('[data-potwierdz]'); const m10 = await s2.textContent('main');
+    t(`${nazwa} M spec T10: sprzeciw do 25.11.2026, przycisk znika`, m10.includes('Masz 7 dni na sprzeciw') && m10.includes('do 25.11.2026') && m10.includes('Potwierdzono zapoznanie z oceną: 18.11.2026') && (await s2.$$('[data-potwierdz]')).length === 0);
+    await s2.selectOption('#rola select', 'przelozony'); await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="wisniewski"]'); await s2.click('button[data-idz="podsumowanie"]'); const p10 = await s2.textContent('#podsumowanie');
+    t(`${nazwa} M spec T10: następna ostateczna 18.05.2027`, p10.includes('18.05.2027') && !p10.includes('wstępna') && p10.includes('potwierdzenia przez pracownika'));
     for (const [kto, txt] of [['bielecki', '10.12.2024, powyżej oczekiwań (6,71)'], ['kowalska', '20.01.2025, na poziomie oczekiwań (5,57)']]) {
       await s2.click('button[data-idz="lista"]'); await s2.click(`button[data-osoba="${kto}"]`); t(`${nazwa} M spec T12: ${kto} poprzednia ${txt}`, (await s2.textContent('main')).includes(txt)); }
     await s2.close(); }

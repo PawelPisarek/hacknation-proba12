@@ -11,11 +11,12 @@ const NR = '①②③④⑤';
 for (const o of W.osoby) o.nastepna = () => {
   const w = W.wynik(o); if (!w) return null;
   const wyn = W.pokaz(`${o.id}:wynik`, w.wynik);
-  if (wyn === 'negatywna') return { data: ponownaOcenaPo(o.zrobione[4] || W.DZIS), skad: 'ponowna ocena 6 mies. po zapoznaniu z negatywną (art. 81 ust. 9 ustawy)' };
-  return { data: dodajMiesiace(o.zrobione[3] || W.DZIS, 24), skad: 'następna ocena okresowa 24 mies. po sporządzeniu (art. 81 ust. 4 ustawy)' };
+  if (wyn === 'negatywna') return { data: ponownaOcenaPo(o.zrobione[4] || W.DZIS), wstepna: o.zrobione[4] ? '' : 'wstępna — po potwierdzeniu zapoznania', skad: o.zrobione[4] ? 'ponowna ocena 6 mies. od zapoznania (potwierdzenia przez pracownika) z negatywną (art. 81 ust. 9 ustawy)' : 'ponowna ocena 6 mies. od zapoznania — liczone od dziś, dopóki pracownik nie potwierdzi (art. 81 ust. 9 ustawy)' };
+  return { data: dodajMiesiace(o.zrobione[3] || W.DZIS, 24), wstepna: o.zrobione[3] ? '' : 'wstępna — do sporządzenia oceny na piśmie', skad: 'następna ocena okresowa 24 mies. po sporządzeniu (art. 81 ust. 4 ustawy)' };
 };
+const WST = (n) => ` <span class="wstepna male">${n.wstepna}</span>`;
 const kartaNastepnej = (o) => { const n = o.nastepna(); if (!n) return ''; const k = `${o.id}:nastepna`;
-  return `<div class="blok"><div class="male">Data następnej oceny</div><strong>${W.esc(W.pokaz(k, W.fmt(n.data)))}</strong>${W.znaczek(k, W.fmt(n.data))}<button class="link" data-popraw="nastepna">popraw</button><div class="male">Z czego wynika: ${W.esc(n.skad)}</div></div>`; };
+  return `<div class="blok"><div class="male">Data następnej oceny</div><strong>${W.esc(W.pokaz(k, W.fmt(n.data)))}</strong>${n.wstepna && !W.reczne[k] ? WST(n) : ''}${W.znaczek(k, W.fmt(n.data))}<button class="link" data-popraw="nastepna">popraw</button><div class="male">Z czego wynika: ${W.esc(n.skad)}</div></div>`; };
 
 function lista() {
   return `<main><div class="karta"><h2>Wybierz osobę do oceny</h2><p class="male">Terminy wszystkich osób — w dzwonku z przypomnieniami.</p>
@@ -26,28 +27,29 @@ function lista() {
 }
 function ocena(o) {
   const pr = st.rola === 'przelozony'; const w = W.wynik(o);
+  const terminy = `<div id="terminy">${W.kartaTerminu(o, pr)}${pr ? kartaNastepnej(o) : ''}</div>`; // P22 (Artur 19:03): na telefonie zostaje pod arkuszem
   return `<main><nav class="okruchy">${pr ? '<button class="link" data-idz="lista">← Lista osób</button>' : ''}</nav>
     <div class="karta"><h2>${pr ? 'Ocena' : 'Moja ocena'}: ${W.esc(W.nazwa(o))} <span class="male">· ${W.esc(o.stanowisko)}, arkusz ${o.arkusz}</span></h2>
       ${W.pasekEtapow(o)}${W.poprzedniaHTML(o)}</div>
     <div class="dwie">
       <div class="karta" id="ark"><h2>Arkusz</h2>${W.arkusz(o, { edycja: pr, poprzednia: false, wszystkiePopraw: true })}</div>
-      <div class="karta"><h2>Co dalej</h2>${W.kartaTerminu(o)}${pr ? kartaNastepnej(o) : ''}
+      <div class="karta"><h2>Co dalej</h2>${terminy}${pr ? W.kartaZatrudnienia(o) : ''}
         <p>Etap teraz: <strong>${o.teraz ? NR[o.teraz - 1] + ' ' + W.ETAPY[o.teraz - 1] : 'ocena zamknięta'}</strong></p>
         ${pr ? (w ? '<button class="glowny" data-idz="podsumowanie">Dalej: podsumowanie →</button>' : '<p class="male">Podsumowanie po wpisaniu wszystkich ocen.</p>')
-          : (o.teraz === 5 ? `${W.potwierdzenie(o)}<p class="info" style="margin-top:.6rem">Masz 7 dni na sprzeciw do dyrektora generalnego — do <strong>${W.fmt(o.termin)}</strong> (art. 83 ust. 1 ustawy).</p>` : '<p class="male">Potwierdzenie pojawi się po ocenie na piśmie.</p>')}
+          : (o.teraz === 5 ? `${W.potwierdzenie(o)}${W.sprzeciwHTML(o)}` : '<p class="male">Potwierdzenie pojawi się po ocenie na piśmie.</p>')}
       </div></div></main>`;
 }
 // P20: podsumowanie tylko do odczytu — bez przycisków i pól; wartości poprawione ręcznie mają znaczek.
 function podsumowanie(o) {
   const w = W.wynik(o); const n = o.nastepna(); const P = (k, v) => `${W.esc(W.pokaz(`${o.id}:${k}`, v))}${W.znaczek(`${o.id}:${k}`, v)}`;
-  const sr = w.srednia.toFixed(2).replace('.', ','); const wyn = W.pokaz(`${o.id}:wynik`, w.wynik);
+  const sr = w.srednia.toFixed(2).replace('.', ','); const zm = W.zmienioneOceny(o); const wyn = W.pokaz(`${o.id}:wynik`, w.wynik);
   return `<main><nav class="okruchy"><button class="link" data-idz="lista">← Lista osób</button> <button class="link" data-idz="ocena">← Wróć do oceny</button></nav>
     <div class="karta" id="podsumowanie"><h2>Podsumowanie oceny: ${W.esc(W.nazwa(o))}</h2><p class="male">${W.esc(o.stanowisko)}, arkusz ${o.arkusz} · tylko do odczytu</p>
       <dl class="podsum">
-        <div><dt>Średnia</dt><dd class="duzy">${P('srednia', sr)}</dd></div>
+        <div><dt>Średnia</dt><dd class="duzy">${P('srednia', sr)}${zm.length ? `<span class="reczne zmiana" title="Oceny zmienione ręcznie: ${W.esc(zm.join(', '))}">✎<span class="tx"> ustawione ręcznie</span></span>` : ''}</dd></div>
         <div><dt>Poziom</dt><dd>${P('poziom', w.poziom)}</dd></div>
         <div><dt>Wynik</dt><dd class="${W.esc(wyn)}">${P('wynik', w.wynik)}</dd></div>
-        <div><dt>Data następnej oceny</dt><dd>${P('nastepna', W.fmt(n.data))}<div class="male">${W.esc(n.skad)}</div></dd></div>
+        <div><dt>Data następnej oceny</dt><dd>${P('nastepna', W.fmt(n.data))}${n.wstepna && !W.reczne[`${o.id}:nastepna`] ? WST(n) : ''}<div class="male">${W.esc(n.skad)}</div></dd></div>
       </dl>
       ${w.wynik === 'negatywna' && w.srednia > 4 ? '<p class="ostrz">Wynik negatywny przez ocenę „1” (§ 11 rozporządzenia), mimo średniej na poziomie oczekiwań.</p>' : ''}
     </div></main>`;

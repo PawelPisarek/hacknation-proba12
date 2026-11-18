@@ -13,10 +13,10 @@ function rysuj() {
       ${W.poprzedniaHTML(o)}</div>
     <div class="dwie">
       <div class="karta" id="ark"><h2>Arkusz</h2>${W.arkusz(o, { edycja: pr, poprzednia: false })}</div>
-      <div class="karta"><h2>Co dalej</h2>${W.kartaTerminu(o)}
+      <div class="karta"><h2>Co dalej</h2>${W.kartaTerminu(o, pr)}
         <p>Etap teraz: <strong>${o.teraz ? '①②③④⑤'[o.teraz - 1] + ' ' + W.ETAPY[o.teraz - 1] : 'ocena zamknięta'}</strong></p>
         ${pr ? (o.teraz && o.teraz < 5 ? `<button class="glowny" id="dalej">Zakończ etap ${'①②③④⑤'[o.teraz - 1]} → następny</button>` : '')
-          : (o.teraz === 5 ? `${W.potwierdzenie(o)}<p class="info" style="margin-top:.6rem">Masz 7 dni na sprzeciw do dyrektora generalnego — do <strong>${W.fmt(o.termin)}</strong> (art. 83 ust. 1 ustawy).</p>` : '<p class="male">Potwierdzenie pojawi się po ocenie na piśmie.</p>')}
+          : (o.teraz === 5 ? `${W.potwierdzenie(o)}${W.sprzeciwHTML(o)}` : '<p class="male">Potwierdzenie pojawi się po ocenie na piśmie.</p>')}
       </div></div></main>`;
   W.dzwonek(document.getElementById('dzw'), (id) => { st.osoba = id; rysuj(); });
   W.przelacznikRoli(document.getElementById('rola'), st.rola, st.osoba, (v) => { if (v === 'przelozony') st.rola = v; else { st.rola = 'pracownik'; st.osoba = v; } rysuj(); });
