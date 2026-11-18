@@ -53,3 +53,4 @@ P13 18:20 Paweł: Programista nie ma GPU w klasie „testy” na OMENie, a dłu�
 18:20 Projektant: pominięte (co już wiemy; jaką decyzję ustawia /discover) — z zadania i odpowiedzi P1–P4: kontekst jest ustalony, decyzja = wybór funkcji makiety i demo (do 2 min — ustalenie Szefa, f38d0b9)
 P12 18:20 Artur: Czy historia poprzednich ocen ma wejść choć w części (data i poziom poprzedniej oceny w arkuszu i w „Mojej ocenie”)? Polecam: tak, w tej części — czeka
 18:21 Szef: zdublowany numer P12 — pytanie do Pawła (GPU na OMENie) przenumerowane na P13; P12 zostaje dla pytania Artura o historię.
+18:21 Analityk: krok 1b recenzja R2 (02-discover.md): brak braków zmieniających zakres lub kryteria; P12 (historia ocen) odnotowana w pliku jako czekająca.
