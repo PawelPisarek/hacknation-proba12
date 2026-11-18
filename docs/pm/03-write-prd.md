@@ -35,10 +35,11 @@ Poza zakresem v1: kadry (P7); osoby zatrudnione na czas określony — ocena okr
 - **Ekran oceny:** pasek etapów, poprzednia ocena pod paskiem (P12, P18), arkusz (kryteria obowiązkowe wg A/B/C i do 3 dodatkowe, oceny 1/3/5/7/9, średnia, poziom, wynik), karta terminu z uzasadnieniem źródła i data następnej oceny; „popraw” przy każdej wartości (P19).
 - **Podsumowanie (ostatni krok, P20):** średnia, poziom, wynik, data następnej oceny; tylko do odczytu.
 - **Moja ocena (pracownik):** ten sam ekran w odczycie, potwierdzenie zapoznania, 7 dni na sprzeciw (P5).
-- **Pole „Wnioski do IPRZ”** w arkuszu (część II, `materialy.md`, [R] § 11 ust. 1 pkt 5): wpisywane przez człowieka, puste → ostrzeżenie; bez generowania przez AI.
+- **Pole „Wnioski do IPRZ”** w arkuszu (część II, `materialy.md`, [R] § 11 ust. 1 pkt 5): z gotową podpowiedzią AI (3 formy rozwoju, P13; napisana z góry, oznaczona, edytowalna), widoczną tylko dla przełożonego; pracownik widzi treść zatwierdzoną; puste → ostrzeżenie.
 - **Data zapoznania z oceną** = dzień, w którym pracownik potwierdza (decyzja Szefa 18:58); od niej 7 dni na sprzeciw i 6 mies. do ponownej oceny po negatywnej. **Data zatrudnienia** na czas nieokreślony jest w danych i da się ją poprawić (terminy z niej wynikające się przeliczają).
-- **Teksty AI** (podpowiedzi do kryteriów dodatkowych, uzasadnienia) pisane z góry, oznaczone „podpowiedź AI”, edytowalne; aplikacja nie woła modelu (P13).
-**Poza v1:** widok kadr (P7), pełna historia ocen, generowanie wniosków IPRZ przez AI, notatki z okresu, wysyłka e-mail/SMS, prawdziwe dane i logowanie.
+- **Data następnej oceny** jest „wstępna” do sporządzenia oceny na piśmie (④), także przy pozytywnej; potem ostateczna.
+- **Teksty AI** (podpowiedzi do kryteriów dodatkowych, uzasadnienia, wniosków IPRZ; widzi je tylko przełożony) pisane z góry, oznaczone „podpowiedź AI”, edytowalne; aplikacja nie woła modelu (P13).
+**Poza v1:** widok kadr (P7), pełna historia ocen, generowanie podpowiedzi AI w locie (wszystkie są napisane z góry), notatki z okresu, wysyłka e-mail/SMS, prawdziwe dane i logowanie.
 **Założenia i pytania otwarte:** (1) bieg 24 mies. od sporządzenia oceny — interpretacja zespołu, nie przepis (`materialy.md` T6a); (2) dni liczone kalendarzowo (T-uwagi); (3) pole IPRZ w arkuszu zostaje jako zwykłe pole tekstowe; (4) zmiany ręczne mają znaczek „ustawione ręcznie”, nie ma dziennika zmian.
 Szczegóły (dane, reguły, testy akceptacji): `docs/spec.md`.
 
@@ -46,7 +47,7 @@ Szczegóły (dane, reguły, testy akceptacji): `docs/spec.md`.
 1. Makieta główna (jest): lista → ocena → podsumowanie → Moja ocena.
 2. MVP w nocy, w kolejności: lista + pasek etapów; terminy i dzwonek; arkusz z regułami; Moja ocena i potwierdzenie (plan z `02-discover.md`).
 3. Demo ≤ 2 min: lista → Wiśniewski → zmiana „1” na „3” → „popraw” termin → podsumowanie → przełącznik na pracownika → potwierdzenie.
-Intencjonalnie pominięte: widok kadr, historia, IPRZ z AI, powiadomienia poza aplikacją.
+Intencjonalnie pominięte: widok kadr, historia, AI wywoływane w locie, powiadomienia poza aplikacją.
 
 <!-- skill: przeplywy-pm -->
 <!-- skill: create-prd -->
