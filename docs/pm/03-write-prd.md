@@ -14,15 +14,16 @@ Ocena okresowa jest ustawowa, kryteria i skala są dane z góry (`docs/materialy
 
 ## 4. Objective
 **Cel:** przełożony przechodzi ocenę zgodnie z przepisami, a pracownik wie, na jakim jest etapie.
-**Mierniki (założenia do sprawdzenia na demo, bez danych z rzeczywistości):**
-- Terminy w makiecie zgodne z przepisami w 6 z 6 sztucznych przypadków (założenie A, P11).
-- Po zmianie jednej oceny średnia, poziom i wynik zmieniają się od razu, a „1” daje wynik negatywny nawet przy średniej > 4 (założenie B, P11).
-- Główna ścieżka pokazu mieści się w 2 min (ustalenie Szefa, `docs/decyzje.md`, f38d0b9).
+**Mierniki — ZAŁOŻENIE do odpowiedzi Artura na P21** (pytanie zadane 18:59; bez odpowiedzi po 10 min przyjmujemy rekomendację). Nie mamy danych z rzeczywistości, więc to mierniki pokazu na danych sztucznych:
+1. Przełożony znajduje najpilniejszą ocenę i otwiera arkusz w mniej niż 20 s (założenie, P21).
+2. Po zmianie jednej oceny widzi nowy wynik od razu i rozumie, czemu jest negatywny (reguła „1”; założenie B z P11; P21).
+3. Pokaz główny ścieżki mieści się w 2 min (ustalenie Szefa, `docs/decyzje.md`, f38d0b9).
+Dodatkowo kontrola zgodności (nie miernik użytkownika): terminy w makiecie zgodne z przepisami w 6 z 6 sztucznych przypadków (założenie A, P11).
 
 ## 5. Market Segment(s)
 1. **Przełożony** (kierownik komórki, naczelnik) oceniający 3–10 osób — użytkownik główny (P1). 
 2. **Pracownik oceniany** (urzędnik i pracownik na czas nieokreślony) — użytkownik drugi (P1).
-Poza zakresem v1: kadry (P7), osoby zatrudnione na czas określony (pierwsza ocena z art. 38 — nie ta ustawowa ocena okresowa).
+Poza zakresem v1: kadry (P7); osoby zatrudnione na czas określony — ocena okresowa dotyczy zatrudnionych na czas nieokreślony ([U] art. 81 ust. 1), a pierwsza ocena z art. 37–38 to inny proces.
 
 ## 6. Value Proposition(s)
 **Przełożony.** *Kto:* kierownik oceniający zespół. *Dlaczego:* musi pamiętać terminy 30/7 dni, 24 mies. i wyjątki, a oceny prowadzi na papierze. *Przed:* papier/Excel, brak statusu. *Jak:* lista osób z etapem, dzwonek z terminami, arkusz z liczoną średnią i regułą „1”. *Po:* wie, co zrobić dziś, i ma gotowe podsumowanie. *Alternatywy:* Excel/papier, system KPRM (ewidencja).
@@ -34,8 +35,10 @@ Poza zakresem v1: kadry (P7), osoby zatrudnione na czas określony (pierwsza oce
 - **Ekran oceny:** pasek etapów, poprzednia ocena pod paskiem (P12, P18), arkusz (kryteria obowiązkowe wg A/B/C i do 3 dodatkowe, oceny 1/3/5/7/9, średnia, poziom, wynik), karta terminu z uzasadnieniem źródła i data następnej oceny; „popraw” przy każdej wartości (P19).
 - **Podsumowanie (ostatni krok, P20):** średnia, poziom, wynik, data następnej oceny; tylko do odczytu.
 - **Moja ocena (pracownik):** ten sam ekran w odczycie, potwierdzenie zapoznania, 7 dni na sprzeciw (P5).
+- **Pole „Wnioski do IPRZ”** w arkuszu (część II, `materialy.md`, [R] § 11 ust. 1 pkt 5): wpisywane przez człowieka, puste → ostrzeżenie; bez generowania przez AI.
+- **Data zapoznania z oceną** = dzień, w którym pracownik potwierdza (decyzja Szefa 18:58); od niej 7 dni na sprzeciw i 6 mies. do ponownej oceny po negatywnej. **Data zatrudnienia** na czas nieokreślony jest w danych i da się ją poprawić (terminy z niej wynikające się przeliczają).
 - **Teksty AI** (podpowiedzi do kryteriów dodatkowych, uzasadnienia) pisane z góry, oznaczone „podpowiedź AI”, edytowalne; aplikacja nie woła modelu (P13).
-**Poza v1:** widok kadr (P7), pełna historia ocen, wnioski do IPRZ generowane z AI, notatki z okresu, wysyłka e-mail/SMS, prawdziwe dane i logowanie.
+**Poza v1:** widok kadr (P7), pełna historia ocen, generowanie wniosków IPRZ przez AI, notatki z okresu, wysyłka e-mail/SMS, prawdziwe dane i logowanie.
 **Założenia i pytania otwarte:** (1) bieg 24 mies. od sporządzenia oceny — interpretacja zespołu, nie przepis (`materialy.md` T6a); (2) dni liczone kalendarzowo (T-uwagi); (3) pole IPRZ w arkuszu zostaje jako zwykłe pole tekstowe; (4) zmiany ręczne mają znaczek „ustawione ręcznie”, nie ma dziennika zmian.
 Szczegóły (dane, reguły, testy akceptacji): `docs/spec.md`.
 
