@@ -28,6 +28,7 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     if (kto === 'wisniewski') {
       t(`${nazwa} M otwarta ocena Wiśniewskiego`, (await s.textContent('h2')).includes('Wiśniewski'));
       t(`${nazwa} M P18 poprzednia ocena tuż pod paskiem etapów`, await s.evaluate(() => { const e = document.querySelector('.etapy'); return !!e && e.nextElementSibling?.textContent.includes('Poprzednia ocena:'); }));
+      t(`${nazwa} M Wiśniewski: poprzednia ocena 12.11.2024, 5,00`, await widac('text=Poprzednia ocena: 12.11.2024, na poziomie oczekiwań (5,00)'));
       const pop = await s.$$eval('[data-popraw]', (l) => l.map((b) => b.dataset.popraw).sort().join(','));
       t(`${nazwa} M P19 „popraw” przy każdej wartości (${pop})`, pop === 'nastepna,poziom,srednia,termin,wynik');
       await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'pozytywna'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]');

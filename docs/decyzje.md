@@ -79,3 +79,4 @@ P20 18:46 odpowiedź: tak — ostatni krok to podsumowanie (średnia, poziom, wy
 18:52 Szef: makieta R1 https://pawelpisarek.github.io/hacknation-proba12/makieta/ (200; zrzuty docs/zrzuty/R1/; krytyk po docs/spec.md)
 18:52 Szef: Wiśniewski — „poprzednia ocena” to ocena sprzed 24 miesięcy (12.11.2024), nie bieżąca z 12.11.2026; poprawka w danych makiety: Programista, w 03a: Projektant.
 18:53 Prezenter: hacktribe.md — dodany link do makiety (HTTP 200) i do repo w opisie pełnym (1914 znaków ≤ 2000); nazwa zespołu nadal do uzupełnienia.
+18:53 Programista: Wiśniewski — poprzednia ocena w danych makiety: 12.11.2024, „na poziomie oczekiwań (5,00)” (wpis Szefa 18:52); dotyczy /makieta/ i wariantów (wspólne dane); test w test-makiety; zrzuty R1 odświeżone.

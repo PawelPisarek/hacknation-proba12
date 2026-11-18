@@ -14,7 +14,7 @@ export const osoby = [
   { id: 'wisniewski', imie: 'Piotr', nazwisko: 'Wiśniewski', stanowisko: 'Specjalista', arkusz: 'C', dodatkowe: [],
     oceny: ob(C, [5, 1, 7, 7, 5]), teraz: 5, zrobione: ['2024-12-05', '2024-12-05', '2026-11-06', '2026-11-12', null],
     termin: '2026-11-19', czynnosc: 'rozmowa wstępna i koniec terminu na sprzeciw', zrodlo: '7 dni od negatywnej oceny (§ 7 pkt 2 rozp.; art. 83 ust. 1 ustawy)',
-    sytuacja: 'negatywna ocena sporządzona i przekazana 12.11.2026', poprzednia: { data: '2026-11-12', opis: 'na poziomie oczekiwań, wynik negatywny (jedna ocena „1”)' } },
+    sytuacja: 'negatywna ocena sporządzona i przekazana 12.11.2026', poprzednia: { data: '2024-11-12', opis: 'na poziomie oczekiwań (5,00)' } },
   { id: 'lis', imie: 'Katarzyna', nazwisko: 'Lis', stanowisko: 'Specjalista', arkusz: 'C', dodatkowe: [],
     oceny: ob(C), teraz: 3, zrobione: ['2026-11-10', '2026-11-10', null, null, null],
     termin: '2026-12-02', czynnosc: 'ocena poza cyklem (zmiana stanowiska)', zrodlo: 'do 30 dni po zmianie stanowiska 02.11.2026 (art. 81 ust. 6 ustawy; § 9 ust. 2 rozp.)',
