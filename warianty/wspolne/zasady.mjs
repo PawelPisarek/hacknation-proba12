@@ -70,6 +70,10 @@ export function oknoOcenyPrzyZmianie(ostatniaOcena, zmiana) {
 }
 // T11: ponowna ocena po negatywnej ([U] art. 81 ust. 9)
 export const ponownaOcenaPo = (zapoznanie) => dodajMiesiace(zapoznanie, 6);
+// Zapoznanie z oceną = dzień, w którym pracownik je potwierdza (Szef, docs/decyzje.md 18:58).
+// Od tej daty: 7 dni na sprzeciw ([U] art. 83 ust. 1) i — przy negatywnej — 6 mies. do ponownej oceny ([U] art. 81 ust. 9).
+export const terminyPoZapoznaniu = (potwierdzenie, wynik = 'negatywna') => ({ zapoznanie: potwierdzenie, sprzeciw_do: dodajDni(potwierdzenie, 7),
+  ponowna_ocena_po: wynik === 'negatywna' ? ponownaOcenaPo(potwierdzenie) : null });
 // T12: sprzeciw ([U] art. 83)
 export function terminySprzeciwu(zapoznanie, wniesiony, doreczenieDecyzji) {
   return { sprzeciw_do: dodajDni(zapoznanie, 7), rozpatrzenie_do: wniesiony ? dodajDni(wniesiony, 14) : null,

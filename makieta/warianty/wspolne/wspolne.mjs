@@ -1,5 +1,5 @@
 // Wspólne dla 3 wariantów makiety: udawane dane (docs/pm/03a-warianty.md), reguły (zasady.mjs), drobne elementy UI.
-import { OBOWIAZKOWE, SKALA, KRYTERIA, wynikOceny } from './zasady.mjs';
+import { OBOWIAZKOWE, SKALA, KRYTERIA, wynikOceny, terminyPoZapoznaniu, dodajDni } from './zasady.mjs';
 export { OBOWIAZKOWE, SKALA, KRYTERIA, wynikOceny };
 
 export const DZIS = '2026-11-18';
@@ -13,28 +13,35 @@ const ob = (lista, wart) => Object.fromEntries(lista.map((k, i) => [k, wart ? wa
 export const osoby = [
   { id: 'wisniewski', imie: 'Piotr', nazwisko: 'Wiśniewski', stanowisko: 'Specjalista', arkusz: 'C', dodatkowe: [],
     oceny: ob(C, [5, 1, 7, 7, 5]), teraz: 5, zrobione: ['2024-12-05', '2024-12-05', '2026-11-06', '2026-11-12', null],
-    termin: '2026-11-19', czynnosc: 'rozmowa wstępna i koniec terminu na sprzeciw', zrodlo: '7 dni od negatywnej oceny (§ 7 pkt 2 rozp.; art. 83 ust. 1 ustawy)',
-    sytuacja: 'negatywna ocena sporządzona i przekazana 12.11.2026', poprzednia: { data: '2024-11-12', opis: 'na poziomie oczekiwań (5,00)' } },
+    termin: '2026-11-19', czynnosc: 'rozmowa wstępna po negatywnej ocenie', zrodlo: '7 dni od negatywnej oceny (§ 7 pkt 2 rozp.); sprzeciw — 7 dni od dnia, w którym pracownik potwierdzi zapoznanie (art. 83 ust. 1 ustawy)',
+    sytuacja: 'negatywna ocena sporządzona i przekazana 12.11.2026', zatrudnienie: '2018-09-03', poprzednia: { data: '2024-11-12', opis: 'na poziomie oczekiwań (5,00)' } },
   { id: 'lis', imie: 'Katarzyna', nazwisko: 'Lis', stanowisko: 'Specjalista', arkusz: 'C', dodatkowe: [],
-    oceny: ob(C), teraz: 3, zrobione: ['2026-11-10', '2026-11-10', null, null, null],
+    oceny: ob(C), teraz: 2, zrobione: ['2026-11-10', null, null, null, null], zatrudnienie: '2019-03-01',
     termin: '2026-12-02', czynnosc: 'ocena poza cyklem (zmiana stanowiska)', zrodlo: 'do 30 dni po zmianie stanowiska 02.11.2026 (art. 81 ust. 6 ustawy; § 9 ust. 2 rozp.)',
     sytuacja: 'zmiana stanowiska 02.11.2026, poprzednia ocena 15.03.2026 (> 6 mies.)', poprzednia: { data: '2026-03-15', opis: 'na poziomie oczekiwań' } },
   { id: 'nowak', imie: 'Ewa', nazwisko: 'Nowak', stanowisko: 'Starszy specjalista', arkusz: 'C', dodatkowe: [],
-    oceny: ob(C), teraz: 1, zrobione: [null, null, null, null, null],
+    oceny: ob(C), teraz: 1, zrobione: [null, null, null, null, null], zatrudnienie: '2026-11-03', terminZZatrudnienia: 30,
     termin: '2026-12-03', czynnosc: 'rozmowa wstępna', zrodlo: '30 dni od zatrudnienia na czas nieokreślony 03.11.2026 (§ 7 pkt 1 rozp.)',
     sytuacja: 'zatrudniona na czas nieokreślony 03.11.2026', poprzednia: null },
   { id: 'bielecki', imie: 'Jan', nazwisko: 'Bielecki', stanowisko: 'Kierownik wydziału', arkusz: 'B', dodatkowe: ['myślenie analityczne', 'negocjowanie'],
-    oceny: ob([...B, 'myślenie analityczne', 'negocjowanie'], [7, 7, 7, 7, 7, 7, 5]), teraz: 3, zrobione: ['2024-12-20', '2024-12-20', null, null, null],
+    oceny: ob([...B, 'myślenie analityczne', 'negocjowanie'], [7, 7, 7, 7, 7, 7, 5]), teraz: 3, zrobione: ['2024-12-20', '2024-12-20', null, null, null], zatrudnienie: '2015-05-15',
     termin: '2026-12-10', czynnosc: 'ocena okresowa (rozmowa oceniająca zaplanowana)', zrodlo: '24 mies. od poprzedniej oceny 10.12.2024 (art. 81 ust. 4 ustawy)',
     sytuacja: 'arkusz w toku', poprzednia: { data: '2024-12-10', opis: 'powyżej oczekiwań (6,71)' } },
   { id: 'kowalska', imie: 'Anna', nazwisko: 'Kowalska', stanowisko: 'Starszy specjalista ds. zamówień publicznych', arkusz: 'C', dodatkowe: ['orientacja na klienta/interesanta'],
-    oceny: ob([...C, 'orientacja na klienta/interesanta'], [5, 5, 7, 5, 5, 5]), teraz: 3, zrobione: ['2025-02-10', '2025-02-10', null, null, null],
+    oceny: ob([...C, 'orientacja na klienta/interesanta'], [5, 5, 7, 5, 5, 5]), teraz: 2, zrobione: ['2025-02-10', null, null, null, null], zatrudnienie: '2017-02-01',
     termin: '2027-01-20', czynnosc: 'rozmowa oceniająca', zrodlo: '24 mies. od poprzedniej oceny 20.01.2025 (art. 81 ust. 4 ustawy)',
     sytuacja: 'kryteria ustalone', poprzednia: { data: '2025-01-20', opis: 'na poziomie oczekiwań (5,57)' } },
   { id: 'mazur', imie: 'Tomasz', nazwisko: 'Mazur', stanowisko: 'Inspektor', arkusz: 'C', dodatkowe: ['myślenie analityczne'], // średnia 6,0 = 5,7,5,7,5 + 7
-    oceny: ob([...C, 'myślenie analityczne'], [5, 7, 5, 7, 5, 7]), teraz: 0, zrobione: ['2024-11-12', '2024-11-12', '2026-10-30', '2026-11-05', '2026-11-05'],
-    termin: '2028-11-05', czynnosc: 'następna ocena okresowa', zrodlo: '24 mies. od oceny 05.11.2026', sytuacja: 'ocena pozytywna, sprzeciwu nie wniesiono', poprzednia: { data: '2026-11-05', opis: 'na poziomie oczekiwań (6,0)' } },
+    oceny: ob([...C, 'myślenie analityczne'], [5, 7, 5, 7, 5, 7]), teraz: 0, zrobione: ['2024-11-12', '2024-11-12', '2026-10-30', '2026-11-05', '2026-11-05'], zatrudnienie: '2022-06-02',
+    termin: '2028-11-05', czynnosc: 'następna ocena okresowa', zrodlo: '24 mies. od oceny 05.11.2026', sytuacja: 'ocena pozytywna, sprzeciwu nie wniesiono', poprzednia: { data: '2026-11-05', opis: 'na poziomie oczekiwań (6,00)' } },
 ];
+
+// Data zatrudnienia na czas nieokreślony (spec §3, T17): „popraw” przelicza termin, który z niej wynika (Nowak: rozmowa wstępna w 30 dni, § 7 pkt 1 rozp.).
+export const ZATR = Object.fromEntries(osoby.map((o) => [o.id, o.zatrudnienie]));
+export const isoZ = (t) => { const m = /^(\d{1,2})\.(\d{1,2})\.(\d{4})$/.exec(String(t).trim()); return m ? `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}` : null; };
+export function ustawZatrudnienie(o, isoData) { o.zatrudnienie = isoData; if (o.terminZZatrudnienia) o.termin = dodajDni(isoData, o.terminZZatrudnienia); }
+export const kartaZatrudnienia = (o, edycja = true) => { const k = `${o.id}:zatrudnienie`;
+  return `<div class="blok" id="zatr"><span class="male">Zatrudnienie od:</span> <strong>${esc(fmt(o.zatrudnienie))}</strong>${znaczek(k, fmt(ZATR[o.id]))}${edycja ? '<button class="link" data-popraw="zatrudnienie">popraw</button>' : ''}</div>`; };
 
 export const OPISY = { // skrót opisów zachowań z zał. 1 do rozp. (parafraza do makiety)
   'komunikacja': 'jasno przekazuje informacje, słucha, dostosowuje język do odbiorcy',
@@ -66,12 +73,13 @@ export const AI = {
     wisniewski: "Ocena negatywna wynika z oceny „znacznie poniżej oczekiwań” w kryterium rzetelność (§ 11 rozporządzenia). W okresie ocenianym w trzech sprawach pisma wymagały poprawek formalnych przed wysyłką, mimo omówienia problemu na rozmowie bieżącej. Pozostałe kryteria — na poziomie oczekiwań lub powyżej; mocną stroną jest współpraca w zespole.",
   },
   iprz: {
-    wisniewski: ["Kontrola jakości dokumentów — szkolenie 1 dzień, do 31.03.2027", "Lista kontrolna pisma przed wysyłką + przegląd z przełożonym co 2 tygodnie przez 3 mies.", "Mentoring: starszy specjalista z zespołu"],
-    bielecki: ["Przywództwo dla kierowników zespołów — szkolenie, 2027", "Negocjacje z wykonawcami — warsztat"],
-    kowalska: ["Nowelizacja Prawa zamówień publicznych — szkolenie 2 dni", "Udział w komisji przetargowej jako przewodnicząca (rozwój: podejmowanie decyzji)"],
-    lis: ["Wdrożenie na nowym stanowisku: plan 3 mies. z przełożonym", "KPA w praktyce — terminy i odpowiedzi"],
+    // wnioski do IPRZ (część II arkusza) — tekst ze spec §3; Lis, Nowak, Kowalska: brak (ostrzeżenie, T16)
+    wisniewski: 'Szkolenie z rzetelności i kontroli jakości dokumentów (forma: kurs, do 31.03.2027)',
+    mazur: 'Warsztat z analizy danych, mentoring u starszego inspektora (do 30.06.2027)',
+    bielecki: 'Szkolenie z negocjacji (do 28.02.2027)',
   },
 };
+for (const o of osoby) { o.iprz = AI.iprz[o.id] || ''; o.uzasadnienie = AI.uzasadnienie[o.id] || ''; } // treść startowa = podpowiedź AI; przełożony ją zmienia i zatwierdza
 export const znakAI = "<span class=\"ai\" title=\"Tekst przygotowany wcześniej przez AI; możesz go zmienić\">podpowiedź AI</span>";
 export const fmt = (iso) => iso ? iso.split('-').reverse().join('.') : '—';
 export const dniDo = (iso) => Math.round((new Date(iso + 'T00:00:00Z') - new Date(DZIS + 'T00:00:00Z')) / 864e5);
@@ -120,10 +128,11 @@ export function przelacznikRoli(el, rola, osobaId, naZmiane) {
 
 // ---- Arkusz (wspólny dla wariantów): oceny 1/3/5/7/9, średnia i poziom na żywo, reguła „jedna 1”, „popraw” (P11)
 const ORYG = Object.fromEntries(osoby.map((o) => [o.id, { ...o.oceny }]));
-export function kartaTerminu(o) {
+export const zmienioneOceny = (o) => kryteria(o).filter((k) => ORYG[o.id][k] != null && ORYG[o.id][k] !== o.oceny[k]);
+export function kartaTerminu(o, edycja = true) {
   const k = `${o.id}:termin`; const t = pokaz(k, fmt(o.termin)); const dni = dniDo(o.termin);
   return `<div><div class="male">${esc(o.czynnosc)}</div><div class="termin ${kolor(o)}">do ${esc(t)}${o.teraz ? ` — ${dni} ${dni === 1 ? 'dzień' : 'dni'}` : ''}${znaczek(k, fmt(o.termin))}
-    <button class="link" data-popraw="termin">popraw</button></div><div class="male">Z czego wynika: ${esc(o.zrodlo)}</div></div>`;
+    ${edycja ? '<button class="link" data-popraw="termin">popraw</button>' : ''}</div><div class="male">Z czego wynika: ${esc(o.zrodlo)}</div></div>`;
 }
 export const poprzedniaHTML = (o) => `<div class="info" style="margin:.4rem 0"><strong>Poprzednia ocena:</strong> ${o.poprzednia ? `${fmt(o.poprzednia.data)}, ${esc(o.poprzednia.opis)}` : "brak (pierwsza ocena)"}</div>`;
 export function arkusz(o, { edycja = true, poprzednia = true, wszystkiePopraw = false } = {}) {
@@ -141,11 +150,24 @@ export function arkusz(o, { edycja = true, poprzednia = true, wszystkiePopraw = 
     <div><div class="male">Poziom</div><strong>${esc(pokaz(kp, w ? w.poziom : '—'))}</strong>${znaczek(kp, w?.poziom)}${edycja && w ? '<button class="link" data-popraw="poziom">popraw</button>' : ''}</div>
     <div><div class="male">Wynik</div>${w ? `<span class="${esc(pokaz(`${o.id}:wynik`, w.wynik))}">${esc(pokaz(`${o.id}:wynik`, w.wynik))}</span>${znaczek(`${o.id}:wynik`, w.wynik)}${edycja && wszystkiePopraw ? '<button class="link" data-popraw="wynik">popraw</button>' : ''}` : '<span class="male">uzupełnij wszystkie oceny</span>'}</div></div>
     ${w && w.wynik === 'negatywna' && w.srednia > 4 ? '<div class="ostrz"><strong>Jedna ocena „1” = ocena negatywna</strong>, mimo średniej na poziomie oczekiwań (§ 11 rozporządzenia). Uzasadnienie jest obowiązkowe.</div>' : ''}
-    ${w && w.wynik === 'negatywna' ? `<label class="blok"><strong>Uzasadnienie</strong> (obowiązkowe) ${AI.uzasadnienie[o.id] ? znakAI : ''}<textarea rows="4" ${edycja ? '' : 'readonly'}>${esc(AI.uzasadnienie[o.id] || '')}</textarea></label>` : ''}
-    ${AI.iprz[o.id] ? `<div class="blok"><strong>Wnioski do IPRZ — propozycje form rozwoju</strong> ${znakAI}<ul>${AI.iprz[o.id].map((x) => `<li${edycja ? ' contenteditable' : ''}>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+    ${w && w.wynik === 'negatywna' ? (edycja
+      ? `<label class="blok" id="uzas"><strong>Uzasadnienie</strong> (obowiązkowe) ${AI.uzasadnienie[o.id] && o.uzasadnienie === AI.uzasadnienie[o.id] ? znakAI : ''}<textarea rows="7" data-uzas>${esc(o.uzasadnienie)}</textarea></label>`
+      : (o.zrobione[3] && o.uzasadnienie ? `<div class="blok" id="uzas"><strong>Uzasadnienie</strong><p class="tresc">${esc(o.uzasadnienie)}</p></div>` : '')) : ''}
+    ${iprzHTML(o, edycja)}
     ${w && w.wynik === 'negatywna' && w.srednia <= 4 ? '<div class="ostrz">Średnia poniżej oczekiwań — ocena negatywna. Uzasadnienie jest obowiązkowe.</div>' : ''}`;
 }
+// Wnioski do IPRZ (część II arkusza, § 11 ust. 1 pkt 5 rozp.; spec T16): pole tekstowe; puste → ostrzeżenie, bez blokady.
+const OSTRZ_IPRZ = 'brak wniosków do IPRZ — to element oceny (§ 11 ust. 1 pkt 5 rozporządzenia)';
+export function iprzHTML(o, edycja) {
+  if (!edycja && !o.zrobione[3]) return ''; // pracownik widzi je dopiero po ocenie na piśmie (④)
+  if (!edycja) return o.iprz.trim() ? `<div class="blok" id="iprz"><strong>Wnioski do IPRZ</strong><p class="tresc">${esc(o.iprz)}</p></div>` : '';
+  return `<label class="blok" id="iprz"><strong>Wnioski do IPRZ</strong> ${AI.iprz[o.id] && o.iprz === AI.iprz[o.id] ? znakAI : ''} <span class="male">kierunki rozwoju, obszary wiedzy i umiejętności do doskonalenia, formy i metody realizacji</span>
+    <textarea rows="3" data-iprz>${esc(o.iprz)}</textarea></label><div class="ostrz" id="iprz-ostrz"${o.iprz.trim() ? ' hidden' : ''}>${OSTRZ_IPRZ}</div>`;
+}
+const dopasuj = (x) => { x.style.height = 'auto'; x.style.height = `${x.scrollHeight + 2}px`; }; // pole rośnie z tekstem (R1: uzasadnienie czytelne)
 export function podepnij(root, o, odswiez) {
+  root.querySelectorAll('textarea').forEach(dopasuj);
+  root.oninput = (e) => { if (e.target.matches('textarea')) dopasuj(e.target); if (e.target.matches('[data-uzas]')) o.uzasadnienie = e.target.value; if (e.target.matches('[data-iprz]')) { o.iprz = e.target.value; const w = root.querySelector('#iprz-ostrz'); if (w) w.hidden = !!o.iprz.trim(); } };
   root.onclick = (e) => {
     const b = e.target.closest('button'); if (!b) return;
     if (b.dataset.ocena) { o.oceny[b.dataset.kryt] = Number(b.dataset.ocena); odswiez(); }
@@ -154,6 +176,7 @@ export function podepnij(root, o, odswiez) {
     if (p === 'srednia') popraw(`${o.id}:srednia`, 'średnia', wynik(o).srednia.toFixed(2).replace('.', ','), odswiez, true);
     if (p === 'poziom') popraw(`${o.id}:poziom`, 'poziom', wynik(o).poziom, odswiez, true);
     if (p === 'wynik') popraw(`${o.id}:wynik`, 'wynik', wynik(o).wynik, odswiez, true);
+    if (p === 'zatrudnienie') popraw(`${o.id}:zatrudnienie`, 'zatrudnienie od (DD.MM.RRRR)', fmt(ZATR[o.id]), () => { const d = isoZ(reczne[`${o.id}:zatrudnienie`].wartosc); if (d) ustawZatrudnienie(o, d); else delete reczne[`${o.id}:zatrudnienie`]; odswiez(); }, true);
     if (p === 'nastepna' && o.nastepna) popraw(`${o.id}:nastepna`, 'data następnej oceny', fmt(o.nastepna().data), odswiez, true);
   };
 }
@@ -162,4 +185,9 @@ export function potwierdzenie(o, naKlik) {
   if (potwierdzenia[o.id]) return `<div class="potw">✔ Potwierdzono zapoznanie z oceną: ${potwierdzenia[o.id]}</div>`;
   return `<button class="glowny" data-potwierdz="${o.id}">Potwierdzam zapoznanie z oceną</button>`;
 }
-export function potwierdz(id) { potwierdzenia[id] = `${fmt(DZIS)}, ${new Date().toTimeString().slice(0, 5)}`; }
+// Zapoznanie z oceną = dzień potwierdzenia przez pracownika (Szef, decyzje 18:58): od niego 7 dni na sprzeciw i 6 mies. do ponownej oceny.
+export function potwierdz(id) { potwierdzenia[id] = `${fmt(DZIS)}, ${new Date().toTimeString().slice(0, 5)}`; const o = osoby.find((x) => x.id === id); if (o) o.zrobione[4] = DZIS; }
+export function sprzeciwHTML(o) {
+  if (!potwierdzenia[o.id]) return ''; // komunikat dopiero po kliknięciu „Potwierdzam zapoznanie” (R1, Szef 19:01)
+  return `<p class="info" style="margin-top:.6rem">Masz 7 dni na sprzeciw do dyrektora generalnego — do <strong>${fmt(terminyPoZapoznaniu(o.zrobione[4]).sprzeciw_do)}</strong> (art. 83 ust. 1 ustawy).</p>`;
+}
