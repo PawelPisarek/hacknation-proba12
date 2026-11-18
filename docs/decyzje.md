@@ -94,3 +94,4 @@ P21 18:58 Artur: Po czym poznamy w pokazie, że produkt działa dobrze — czy p
 19:01 Szef: krok 2 R2 — 2 nowe braki → Projektant. Rozstrzygnięcia: (1) IPRZ ma podpowiedź AI z góry (P13: formy rozwoju), z oznaczeniem, do edycji; spec §8, PRD pkt 7 i T14 obejmują IPRZ; podpowiedź AI widzi tylko przełożony, pracownik widzi treść zatwierdzoną; (2) data następnej oceny jest „wstępna” do sporządzenia oceny na piśmie (④), także przy pozytywnej.
 P22 19:02 Artur: Na telefonie termin i data następnej oceny są dziś pod arkuszem, poza pierwszym ekranem — czy przenieść je tuż pod pasek etapów, nad arkusz? (https://pawelpisarek.github.io/hacknation-proba12/makieta/) Polecam: tak — czeka
 19:02 Projektant: krok 2 R2 poprawiony: IPRZ z podpowiedzią AI (widzi tylko przełożony), T14/T16/§8/PRD; data następnej oceny wstępna do ④ także przy pozytywnej; P22 (układ telefonu) zadane Arturowi
+P21 19:02 odpowiedź: tak, wszystkie trzy miary zgodnie z rekomendacją (Artur w pokoju)
