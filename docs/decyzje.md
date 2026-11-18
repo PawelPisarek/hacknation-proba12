@@ -54,3 +54,4 @@ P13 18:20 Paweł: Programista nie ma GPU w klasie „testy” na OMENie, a dłu�
 P12 18:20 Artur: Czy historia poprzednich ocen ma wejść choć w części (data i poziom poprzedniej oceny w arkuszu i w „Mojej ocenie”)? Polecam: tak, w tej części — czeka
 18:21 Szef: zdublowany numer P12 — pytanie do Pawła (GPU na OMENie) przenumerowane na P13; P12 zostaje dla pytania Artura o historię.
 18:21 Analityk: krok 1b recenzja R2 (02-discover.md): brak braków zmieniających zakres lub kryteria; P12 (historia ocen) odnotowana w pliku jako czekająca.
+18:22 Szef: krok 1b zamknięty po 2 rundach recenzji przejścia; start kroku 2 — szkice 3 wariantów (Projektant) → makiety wariantów (Programista) → wybór Artura → /write-prd.
