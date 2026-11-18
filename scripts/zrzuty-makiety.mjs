@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { readFile, mkdir } from 'node:fs/promises';
 import { join, extname } from 'node:path';
 const { chromium } = await import(process.env.PLAYWRIGHT_CORE || 'playwright-core');
-const wyj = process.argv[2] || 'docs/zrzuty/R3';
+const wyj = process.argv[2] || 'docs/zrzuty/R3b';
 await mkdir(wyj, { recursive: true });
 const typy = { '.html': 'text/html', '.mjs': 'text/javascript', '.css': 'text/css' };
 const srv = createServer(async (q, r) => {
@@ -20,7 +20,7 @@ for (const [urz, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon',
   await start(); await zrzut('01-lista-osob');                                              // P16
   await s.click('.dzwonek'); await s.locator('.lista-przyp').waitFor(); await s.screenshot({ path: `${wyj}/${urz}-02-dzwonek-terminy.png` }); n++; await s.click('.dzwonek'); // P17: lista terminów widoczna
   await s.click('button[data-osoba="wisniewski"]'); await zrzut('03-ocena-wisniewski');       // P18, P19, uzasadnienie, IPRZ (T16)
-  await s.click('button[data-popraw="termin"]'); await s.fill('dialog input[name=w]', '20.11.2026'); await zrzut('04-popraw-termin', 'dialog'); await s.click('dialog button[value=anuluj]');
+  await s.click('button[data-popraw="termin"]'); await s.fill('dialog input[name=w]', '20.11.2026'); await s.fill('dialog input[name=p]', 'uzgodnione z kadrami'); await zrzut('04-popraw-termin', 'dialog'); await s.click('dialog button[value=anuluj]');
   await s.click('button[data-idz="podsumowanie"]'); await s.locator('#podsumowanie').waitFor(); await zrzut('06-ostatni-krok-podsumowanie-wisniewski'); // P20, 5,00
   await s.click('button[data-idz="ocena"]'); await s.click('button[data-kryt="komunikacja"][data-ocena="9"]'); await s.locator('.reczne.zmiana').first().waitFor();
   await zrzut('05-ocena-9-ze-znaczkiem', '#ark');
@@ -28,10 +28,14 @@ for (const [urz, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon',
   await start(); await s.click('button[data-osoba="bielecki"]'); await s.click('button[data-idz="podsumowanie"]'); await zrzut('08-ostatni-krok-podsumowanie-bielecki'); // 6,71, data wstępna
   await s.click('button[data-idz="ocena"]'); await s.click('button[data-kryt="negocjowanie"][data-ocena="9"]'); await s.locator('.reczne.zmiana').first().waitFor(); await zrzut('07-bielecki-ocena-9-ze-znaczkiem', '#ark');
   await s.click('button[data-idz="lista"]'); await s.click('button[data-osoba="lis"]'); await zrzut('12-lis-iprz-ostrzezenie', '#ark');
-  await s.click('button[data-idz="lista"]'); await s.click('button[data-osoba="nowak"]'); await s.click('button[data-popraw="zatrudnienie"]'); await s.fill('dialog input[name=w]', '10.11.2026'); await s.fill('dialog input[name=p]', 'data z umowy'); await s.click('dialog button[value=ok]'); await zrzut('13-nowak-popraw-zatrudnienie'); // T17
+  await s.click('button[data-idz="lista"]'); await s.click('button[data-osoba="nowak"]'); await s.click('button[data-popraw="zatrudnienie"]'); await s.fill('dialog input[name=w]', '10.11.2026'); await s.fill('dialog input[name=p]', 'data z umowy'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' }); await zrzut('13-nowak-popraw-zatrudnienie'); // T17
   await s.click('.dzwonek'); await s.locator('.lista-przyp').waitFor(); await s.screenshot({ path: `${wyj}/${urz}-14-dzwonek-po-poprawie-nowak.png` }); n++; await s.click('.dzwonek'); // R3: dzwonek 10.12.2026
   await start(); await s.selectOption('#rola select', 'wisniewski'); await zrzut('09-pracownik-moja-ocena');
   await s.click('[data-potwierdz]'); await zrzut('10-pracownik-potwierdzono');
+  await s.selectOption('#rola select', 'przelozony'); await s.click('button[data-osoba="wisniewski"]'); await zrzut('15-przelozony-po-potwierdzeniu'); // R3b: 18.05.2027 bez „wstępna”
+  await s.click('button[data-idz="podsumowanie"]'); await zrzut('16-podsumowanie-po-potwierdzeniu');
+  await start(); await s.click('button[data-osoba="wisniewski"]'); await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'pozytywna'); await s.fill('dialog input[name=p]', 'błąd w ocenie rzetelności'); await zrzut('17-popraw-wynik-okno', 'dialog'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' });
+  await zrzut('18-wynik-recznie-pozytywna'); await s.click('button[data-idz="podsumowanie"]'); await zrzut('19-podsumowanie-wynik-reczny');
   await s.close();
 }
 await przegl.close(); srv.close();

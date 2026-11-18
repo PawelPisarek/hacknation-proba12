@@ -52,7 +52,8 @@ function podsumowanie(o) {
         <div><dt>Wynik</dt><dd class="${W.esc(wyn)}">${P('wynik', w.wynik)}</dd></div>
         <div><dt>Data następnej oceny</dt><dd>${P('nastepna', W.fmt(n.data))}${n.wstepna && !W.reczne[`${o.id}:nastepna`] ? WST(n) : ''}<div class="male">${W.esc(n.skad)}</div></dd></div>
       </dl>
-      ${w.wynik === 'negatywna' && w.srednia > 4 ? '<p class="ostrz">Wynik negatywny przez ocenę „1” (§ 11 rozporządzenia), mimo średniej na poziomie oczekiwań.</p>' : ''}
+      ${W.wynikOs(o).reczny ? `<p class="${wyn === 'negatywna' ? 'ostrz' : 'info'}">Wynik ustawiony ręcznie: ${W.esc(wyn)} (z systemu: ${W.esc(w.wynik)}; powód: ${W.esc(W.wynikOs(o).powod)}).</p>` : ''}
+      ${!W.wynikOs(o).reczny && w.wynik === 'negatywna' && w.srednia > 4 ? '<p class="ostrz">Wynik negatywny przez ocenę „1” (§ 11 rozporządzenia), mimo średniej na poziomie oczekiwań.</p>' : ''}
     </div></main>`;
 }
 function rysuj() {

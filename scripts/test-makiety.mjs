@@ -31,9 +31,9 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
       t(`${nazwa} M Wiśniewski: poprzednia ocena 12.11.2024, 5,00`, await widac('text=Poprzednia ocena: 12.11.2024, na poziomie oczekiwań (5,00)'));
       const pop = await s.$$eval('[data-popraw]', (l) => l.map((b) => b.dataset.popraw).sort().join(','));
       t(`${nazwa} M P19 „popraw” przy każdej wartości (${pop})`, pop === 'nastepna,poziom,srednia,termin,wynik,zatrudnienie');
-      await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'pozytywna'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]');
+      await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'pozytywna'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' });
       t(`${nazwa} M P19 poprawiony wynik ma znaczek`, await widac('.wynik .reczne'));
-      await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'negatywna'); await s.click('dialog button[value=ok]');
+      await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'negatywna'); await s.fill('dialog input[name=p]', 'powrót'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' });
     }
     const wiersz = () => s.locator(`tr:has(button[data-kryt="${kr}"])`);
     await wiersz().first().waitFor({ timeout: 3000 });
@@ -42,7 +42,8 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     const po = await wiersz().evaluate((tr) => { const z = tr.querySelector('.reczne'); const b = [...tr.querySelectorAll('.skala button')].map((x) => x.getBoundingClientRect().top);
       return { h: tr.getBoundingClientRect().height, znak: !!z && z.getClientRects().length === 1 && z.getBoundingClientRect().height < 24, przyciski: Math.max(...b) - Math.min(...b) < 2, szer: tr.getBoundingClientRect().right <= document.documentElement.clientWidth }; });
     t(`${nazwa} M ${kr}=9: znaczek w jednej linii`, po.znak); t(`${nazwa} M ${kr}=9: przyciski w jednym rzędzie`, po.przyciski && po.szer);
-    t(`${nazwa} M ${kr}=9: wiersz nie urósł (${przed}→${po.h})`, po.h <= przed + 1);
+    if (nazwa === 'komputer') t(`${nazwa} M ${kr}=9: wiersz nie urósł (${przed}→${po.h})`, po.h <= przed + 1);
+    else t(`telefon M ${kr}=9 (R3b): napis „ustawione ręcznie” pod nazwą — wiersz urósł najwyżej o linię znaczka (${Math.round(przed)}→${Math.round(po.h)})`, po.h <= przed + 15);
     if (nazwa === 'komputer') { const luka = await s.evaluate(() => Math.min(...[...document.querySelectorAll('.tab-ark tbody tr')].map((tr) => { const r = document.createRange(); r.selectNodeContents(tr.cells[0]); return tr.querySelector('.skala').getBoundingClientRect().left - Math.max(...[...r.getClientRects()].map((x) => x.right)); })));
       t(`komputer M ${kto} odstęp tekst→przyciski ${Math.round(luka)}px ≤ 120`, luka <= 120); }
     // P20: ostatni krok — podsumowanie tylko do odczytu
@@ -79,7 +80,7 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     const zr = async () => (await s2.textContent('.termin + .male')) || ''; const dz = async () => { await s2.click('.dzwonek'); const x = await s2.$$eval('.przyp', (l) => l.map((y) => y.textContent).join('|')); await s2.click('.dzwonek'); return x; };
     t(`${nazwa} M spec T17: Nowak zatrudnienie 03.11.2026, termin 03.12.2026 (= dane/)`, (await s2.textContent('#zatr')).includes('03.11.2026') && (await s2.textContent('.termin')).includes('03.12.2026'));
     t(`${nazwa} M R3: przed poprawą jedna data — „Z czego wynika” 03.11.2026, dzwonek 03.12.2026`, (await zr()).includes('03.11.2026') && (await dz()).includes('Ewa Nowak: rozmowa wstępna do 03.12.2026'));
-    await s2.click('button[data-popraw="zatrudnienie"]'); await s2.fill('dialog input[name=w]', '10.11.2026'); await s2.click('dialog button[value=ok]');
+    await s2.click('button[data-popraw="zatrudnienie"]'); await s2.fill('dialog input[name=w]', '10.11.2026'); await s2.fill('dialog input[name=p]', 'data z umowy'); await s2.click('dialog button[value=ok]'); await s2.waitForSelector('dialog', { state: 'detached' });
     t(`${nazwa} M spec T17: po poprawie termin 10.12.2026 i znaczek`, (await s2.textContent('.termin')).includes('10.12.2026') && (await s2.textContent('#zatr')).includes('10.11.2026') && (await s2.$$('#zatr .reczne')).length === 1);
     const d17 = await dz(); t(`${nazwa} M spec T17: dzwonek Nowak 10.12.2026, bez 03.12.2026`, d17.includes('Ewa Nowak: rozmowa wstępna do 10.12.2026') && !d17.includes('03.12.2026'));
     t(`${nazwa} M R3: po poprawie „Z czego wynika” 10.11.2026, bez 03.11.2026`, (await zr()).includes('10.11.2026') && !(await zr()).includes('03.11.2026'));
@@ -94,6 +95,8 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     t(`${nazwa} M P24: po potwierdzeniu bez terminu przełożonego (19.11.2026, „— 1 dzień”)`, !m10.includes('19.11.2026') && !m10.includes('— 1 dzień') && (await s2.$$('main .termin')).length === 0 && (await s2.$$('.dzwonek')).length === 0);
     t(`${nazwa} M spec T10: sprzeciw do 25.11.2026, przycisk znika`, m10.includes('Masz 7 dni na sprzeciw') && m10.includes('do 25.11.2026') && m10.includes('Potwierdzono zapoznanie z oceną: 18.11.2026') && (await s2.$$('[data-potwierdz]')).length === 0);
     await s2.selectOption('#rola select', 'przelozony'); await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="wisniewski"]'); await s2.click('button[data-idz="podsumowanie"]'); const p10 = await s2.textContent('#podsumowanie');
+    await s2.click('button[data-idz="ocena"]'); const o10 = await s2.textContent('#terminy');
+    t(`${nazwa} M R3b: przełożony po potwierdzeniu — ekran oceny: następna 18.05.2027 bez „wstępna”`, o10.includes('18.05.2027') && (await s2.$$('#terminy .wstepna')).length === 0); await s2.click('button[data-idz="podsumowanie"]');
     t(`${nazwa} M spec T10: następna ostateczna 18.05.2027`, p10.includes('18.05.2027') && !p10.includes('wstępna') && p10.includes('potwierdzenia przez pracownika'));
     for (const [kto, txt] of [['bielecki', '10.12.2024, powyżej oczekiwań (6,71)'], ['kowalska', '20.01.2025, na poziomie oczekiwań (5,57)']]) {
       await s2.click('button[data-idz="lista"]'); await s2.click(`button[data-osoba="${kto}"]`); t(`${nazwa} M spec T12: ${kto} poprzednia ${txt}`, (await s2.textContent('main')).includes(txt)); }
@@ -102,12 +105,39 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
   t(`${nazwa} M pracownik: moja ocena + poprzednia`, (await s.textContent('h2')).includes('Moja ocena') && await widac('text=Poprzednia ocena:'));
   await s.click('[data-potwierdz]'); t(`${nazwa} M pracownik potwierdził`, await widac('.potw'));
   if (nazwa === 'telefon') { await s.goto(u); const sz = await s.evaluate(() => document.documentElement.scrollWidth); t(`telefon M szerokość ${sz}px ≤ 400`, sz <= 400); }
+  // R3b (Szef 19:17): „popraw” wyniku przelicza ocenę, komunikat i datę następnej; powód obowiązkowy; IPRZ kto ma podpowiedź
+  { const s3 = await przegl.newPage({ viewport: vp }); await s3.goto(u); const otwarte = async () => (await s3.$$('dialog[open]')).length === 1;
+    await s3.click('button[data-osoba="wisniewski"]');
+    await s3.click('button[data-popraw="termin"]'); const dt = await s3.textContent('dialog');
+    t(`${nazwa} M R3b: okno „Popraw: termin” — „Powód zmiany (wymagane)”, pole required`, dt.includes('Popraw: termin') && dt.includes('Powód zmiany (wymagane)') && await s3.getAttribute('dialog input[name=p]', 'required') !== null);
+    await s3.fill('dialog input[name=w]', '20.11.2026'); await s3.click('dialog button.glowny');
+    t(`${nazwa} M R3b: termin bez powodu — nie zapisuje`, await otwarte() && (await s3.$$('.termin .reczne')).length === 0); await s3.click('dialog button[value=anuluj]');
+    await s3.click('button[data-popraw="wynik"]'); await s3.fill('dialog input[name=w]', 'pozytywna'); await s3.click('dialog button.glowny');
+    t(`${nazwa} M T19/T7: wynik bez powodu — zapis zablokowany`, await otwarte()); await s3.fill('dialog input[name=w]', 'dobra'); await s3.fill('dialog input[name=p]', 'test'); await s3.click('dialog button.glowny');
+    t(`${nazwa} M R3b: wynik spoza „pozytywna/negatywna” — nie zapisuje`, await otwarte()); await s3.click('dialog button[value=anuluj]');
+    t(`${nazwa} M R3b: po anulowaniu wynik bez zmian`, (await s3.$$('.wynik .reczne')).length === 0 && (await s3.textContent('#ark')).includes('Jedna ocena „1”'));
+    await s3.click('button[data-popraw="wynik"]'); await s3.fill('dialog input[name=w]', 'pozytywna'); await s3.fill('dialog input[name=p]', 'błąd w ocenie rzetelności'); await s3.click('dialog button[value=ok]'); await s3.waitForSelector('dialog', { state: 'detached' });
+    const a1 = await s3.textContent('main');
+    t(`${nazwa} M R3b: T19 ręcznie pozytywna — znaczek, komunikat z powodem, bez „Jedna ocena „1””, bez uzasadnienia`, (await s3.$$('.wynik .reczne')).length === 1 && (await s3.textContent('#wynik-reczny')).includes('błąd w ocenie rzetelności') && !a1.includes('Jedna ocena „1”') && (await s3.$$('#uzas')).length === 0);
+    t(`${nazwa} M R3b: ręcznie pozytywna — T19 data następnej 12.11.2028 (24 mies. od sporządzenia), ostateczna`, (await s3.textContent('#terminy')).includes('12.11.2028') && (await s3.$$('#terminy .wstepna')).length === 0);
+    await s3.click('button[data-idz="podsumowanie"]'); const a2 = await s3.textContent('#podsumowanie');
+    t(`${nazwa} M R3b: T19 podsumowanie — pozytywna, 12.11.2028, „ustawiony ręcznie”, bez komunikatu o negatywnej`, a2.includes('pozytywna') && a2.includes('12.11.2028') && (await s3.$$('#podsumowanie .wstepna')).length === 0 && a2.includes('Wynik ustawiony ręcznie') && !a2.includes('Wynik negatywny przez'));
+    await s3.click('button[data-idz="lista"]'); await s3.click('button[data-osoba="bielecki"]');
+    await s3.click('button[data-popraw="wynik"]'); await s3.fill('dialog input[name=w]', 'negatywna'); await s3.fill('dialog input[name=p]', 'niezrealizowany cel'); await s3.click('dialog button[value=ok]'); await s3.waitForSelector('dialog', { state: 'detached' });
+    t(`${nazwa} M R3b: Bielecki ręcznie negatywna — ostrzeżenie, uzasadnienie, następna 18.05.2027`, (await s3.getAttribute('#wynik-reczny', 'class')) === 'ostrz' && await s3.isVisible('#uzas') && (await s3.textContent('#terminy')).includes('18.05.2027'));
+    for (const [id, ma] of [['wisniewski', 1], ['bielecki', 1], ['mazur', 1], ['lis', 0], ['nowak', 0], ['kowalska', 0]]) {
+      await s3.click('button[data-idz="lista"]'); await s3.click(`button[data-osoba="${id}"]`); const v = await s3.inputValue('[data-iprz]'); const zn = (await s3.textContent('#iprz')).includes('podpowiedź AI');
+      t(`${nazwa} M R3b (1): IPRZ ${id} — ${ma ? 'podpowiedź AI' : 'puste + ostrzeżenie'}`, ma ? v.startsWith('Kierunek rozwoju:') && zn && await s3.isHidden('#iprz-ostrz') : v === '' && !zn && await s3.isVisible('#iprz-ostrz'));
+    }
+    if (nazwa === 'telefon') { await s3.click('button[data-idz="lista"]'); await s3.click('button[data-osoba="wisniewski"]'); await s3.click('button[data-kryt="komunikacja"][data-ocena="9"]');
+      const z = await s3.locator('.tab-ark .reczne.zmiana').first(); t('telefon M R3b (2): przy zmianie ręcznej napis „ustawione ręcznie”, nie sama ✎', (await z.innerText()).includes('ustawione ręcznie') && await z.locator('.tx').isVisible()); }
+    await s3.close(); }
   // W1: Wiśniewski → 1 na 3 → popraw termin → wybór → pracownik → potwierdzenie → dzwonek
   await s.goto(u + 'warianty/1/'); t(`${nazwa} W1 start Wiśniewski`, (await s.textContent('h2')).includes('Wiśniewski'));
   t(`${nazwa} W1 reguła 1`, await widac('text=Jedna ocena „1” = ocena negatywna'));
   t(`${nazwa} W1 podpowiedź AI (uzasadnienie)`, (await s.$$('.ai')).length >= 2);
   await s.click('button[data-kryt="rzetelność"][data-ocena="3"]'); t(`${nazwa} W1 po zmianie pozytywna`, await widac('.wynik .pozytywna'));
-  await s.click('button[data-popraw="termin"]'); await s.fill('dialog input[name=w]', '20.11.2026'); await s.click('dialog button[value=ok]');
+  await s.click('button[data-popraw="termin"]'); await s.fill('dialog input[name=w]', '20.11.2026'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' });
   t(`${nazwa} W1 ustawione ręcznie`, await widac('.reczne'));
   await s.click('#wybierz'); await s.click('dialog button[data-id="bielecki"]'); t(`${nazwa} W1 wybór`, (await s.textContent('h2')).includes('Bielecki'));
   await s.selectOption('#rola select', 'wisniewski'); t(`${nazwa} W1 moja ocena`, (await s.textContent('h2')).includes('Moja ocena'));
@@ -129,12 +159,12 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
   await s.goto(u + 'warianty/3/'); t(`${nazwa} W3 dwie kolumny`, (await s.textContent('main')).includes('Pracownik — Moja ocena (Anna Kowalska)'));
   await s.click('button[data-kryt="komunikacja"][data-ocena="9"]');
   t(`${nazwa} W3 zmiana po prawej`, (await s.textContent('.dwie > .karta:nth-child(2)')).includes('znacznie powyżej oczekiwań'));
-  await s.click('[data-sporzadz]'); await s.click('[data-potwierdz]'); await s.click('dialog button[value=ok]');
+  await s.click('[data-sporzadz]'); await s.click('[data-potwierdz]'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' });
   t(`${nazwa} W3 sprzeciw 7 dni`, await widac('text=7 dni na sprzeciw: do 25.11.2026'));
   await s.click('nav button[data-ekran="osCzasu"]'); t(`${nazwa} W3 oś czasu`, (await s.$$('.osczasu .zn')).length === 5);
   await s.click('.osczasu .zn[data-osoba="bielecki"]'); t(`${nazwa} W3 powrót z osi`, (await s.textContent('main')).includes('Moja ocena (Jan Bielecki)'));
   await s.click('nav button[data-ekran="porownanie"]'); t(`${nazwa} W3 porównanie`, await widac('th:has-text("Różnica")'));
-  await s.click('nav button[data-ekran="obok"]'); await s.click('button[data-popraw="srednia"]'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]');
+  await s.click('nav button[data-ekran="obok"]'); await s.click('button[data-popraw="srednia"]'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]'); await s.waitForSelector('dialog', { state: 'detached' });
   t(`${nazwa} W3 poprawka`, await widac('.reczne'));
   if (nazwa === 'telefon') {
     for (const n of [1, 2, 3]) { await s.goto(u + 'warianty/' + n + '/'); const sz = await s.evaluate(() => document.documentElement.scrollWidth); t(`telefon W${n} szerokość ${sz}px ≤ 400`, sz <= 400); await s.screenshot({ path: `/tmp/w${n}-telefon.png`, fullPage: true }); }
