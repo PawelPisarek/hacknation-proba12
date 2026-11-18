@@ -14,9 +14,9 @@ Ocena okresowa jest ustawowa, kryteria i skala są dane z góry (`docs/materialy
 
 ## 4. Objective
 **Cel:** przełożony przechodzi ocenę zgodnie z przepisami, a pracownik wie, na jakim jest etapie.
-**Mierniki — ZAŁOŻENIE do odpowiedzi Artura na P21** (pytanie zadane 18:59; bez odpowiedzi po 10 min przyjmujemy rekomendację). Nie mamy danych z rzeczywistości, więc to mierniki pokazu na danych sztucznych:
-1. Przełożony znajduje najpilniejszą ocenę i otwiera arkusz w mniej niż 20 s (założenie, P21).
-2. Po zmianie jednej oceny widzi nowy wynik od razu i rozumie, czemu jest negatywny (reguła „1”; założenie B z P11; P21).
+**Mierniki — przyjęte (P21, 19:02, Artur: tak, wszystkie trzy)**. Nie mamy danych z rzeczywistości, więc to mierniki pokazu na danych sztucznych:
+1. Przełożony znajduje najpilniejszą ocenę i otwiera arkusz w mniej niż 20 s (P21).
+2. Po zmianie jednej oceny widzi nowy wynik od razu i rozumie, czemu jest negatywny (reguła „1”; założenie B z P11; P21, przyjęte).
 3. Pokaz główny ścieżki mieści się w 2 min (ustalenie Szefa, `docs/decyzje.md`, f38d0b9).
 Dodatkowo kontrola zgodności (nie miernik użytkownika): terminy w makiecie zgodne z przepisami w 6 z 6 sztucznych przypadków (założenie A, P11).
 

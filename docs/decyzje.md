@@ -101,3 +101,4 @@ P22 19:03 odpowiedź: nie — termin i data następnej oceny zostają na telefon
 19:05 Projektant: P22 — Artur napisał wprost „[p22] nie musisz nie trzeba”; wpis 19:03 „nie” jest zgodny; „wszysko za rekomendacja” dotyczyło P21 (tak, trzy miary). Spec §8 poprawiony: układ telefonu bez zmian
 19:05 Szef: krok 2 po R3 — 2 braki redakcyjne (P21 w PRD §4 wciąż jako założenie; T18 bez wpisu w §7) → Projektant poprawia; pytanie do Artura P23. Zamknięcie kroku po odpowiedzi.
 P23 19:05 Artur: Opis produktu po 3 rundach sprawdzania ma tylko dwie nieaktualne wzmianki (miary sukcesu opisane jako założenie, choć je przyjąłeś; brak numeru testu przy układzie telefonu) — nic nie zmienia zakresu. Czy puszczamy dalej, a poprawki dopisujemy w trakcie? Polecam: tak, puszczamy dalej, braki zapisane jako ryzyka w opisie — czeka
+19:06 Projektant: krok 2 po R3 — PRD §4 mierniki przyjęte (P21), spec §7 dopisany T18

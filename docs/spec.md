@@ -72,6 +72,7 @@ Atrapy: przyciski poza opisanymi nic nie zapisują.
 
 | T16 | Ekran oceny Wiśniewskiego | pole „Wnioski do IPRZ” z podpowiedzią AI (3 formy rozwoju, plakietka); po edycji tekst zostaje; w „Moja ocena” (pracownik) tylko treść zatwierdzona, bez plakietki; u Lis puste → ostrzeżenie, ale „Dalej: podsumowanie” działa; wpisany tekst zostaje po zmianie ekranu |
 | T17 | Nowak: „popraw” przy „Zatrudnienie od”: 03.11.2026 → 10.11.2026 | termin rozmowy wstępnej 10.12.2026, znaczek „✎ ustawione ręcznie” |
+| T18 | Telefon: otwarta ocena (np. Nowak) | termin i data następnej oceny są pod arkuszem (nie pod paskiem etapów); układ bez zmian wg P22 |
 
 ## 8. Ryzyka i eksperymenty (z `/discover`)
 - **A (terminy wiarygodne):** kryterium sukcesu: T2–T5, T12 zgodne z przepisami; przy każdym terminie widać źródło i „popraw”.
