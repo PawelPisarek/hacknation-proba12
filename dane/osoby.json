@@ -1,0 +1,179 @@
+[
+  {
+    "id": "o1",
+    "imie": "Halina",
+    "nazwisko": "Grabowska",
+    "stanowisko": "s2",
+    "przelozony": "dg",
+    "korpus": "urzędnik służby cywilnej",
+    "mianowanie": {
+      "rok": 2015,
+      "stopien": "radca",
+      "stopien_od": "2019-05-01"
+    },
+    "czas_nieokreslony_od": "2012-03-01",
+    "poprzednia_ocena": "2024-09-16",
+    "terminy": {
+      "rozmowa_wstepna_do": "2024-10-16",
+      "zrodlo": "T5, T6, T6a, T8",
+      "bazowy": "2026-09-16",
+      "przedluzenie_dni": 0,
+      "termin": "2026-09-16"
+    }
+  },
+  {
+    "id": "o2",
+    "imie": "Robert",
+    "nazwisko": "Mazur",
+    "stanowisko": "s3",
+    "przelozony": "dg",
+    "korpus": "pracownik służby cywilnej",
+    "czas_nieokreslony_od": "2016-07-01",
+    "poprzednia_ocena": "2024-10-01",
+    "terminy": {
+      "rozmowa_wstepna_do": "2024-10-31",
+      "zrodlo": "T5, T6, T6a, T8",
+      "bazowy": "2026-10-01",
+      "przedluzenie_dni": 0,
+      "termin": "2026-10-01"
+    }
+  },
+  {
+    "id": "o3",
+    "imie": "Katarzyna",
+    "nazwisko": "Wiśniewska",
+    "stanowisko": "s4",
+    "przelozony": "o1",
+    "korpus": "urzędnik służby cywilnej",
+    "mianowanie": {
+      "rok": 2020,
+      "stopien": "starszy specjalista",
+      "stopien_od": "2020-11-01"
+    },
+    "czas_nieokreslony_od": "2018-04-01",
+    "poprzednia_ocena": "2025-03-15",
+    "nieobecnosci": [
+      [
+        "2025-09-01",
+        "2025-12-31",
+        "urlop rodzicielski"
+      ]
+    ],
+    "zmiana_oceniajacego": {
+      "data": "2026-10-10",
+      "nowy": "o1",
+      "poprzedni": "Jan Pietrzak (odszedł z urzędu)"
+    },
+    "terminy": {
+      "rozmowa_wstepna_do": "2025-04-14",
+      "zrodlo": "T5, T6, T6a, T8",
+      "bazowy": "2027-03-15",
+      "przedluzenie_dni": 122,
+      "termin": "2027-07-15",
+      "uwaga_T10": "ocena wg kryteriów wybranych wcześniej (§ 9 ust. 3 [R])"
+    }
+  },
+  {
+    "id": "o4",
+    "imie": "Tomasz",
+    "nazwisko": "Wójcik",
+    "stanowisko": "s5",
+    "przelozony": "o2",
+    "korpus": "urzędnik służby cywilnej",
+    "mianowanie": {
+      "rok": 2021,
+      "stopien": "specjalista",
+      "stopien_od": "2021-06-01"
+    },
+    "czas_nieokreslony_od": "2019-02-01",
+    "poprzednia_ocena": "2026-06-10",
+    "terminy": {
+      "rozmowa_wstepna_do": "2026-06-17",
+      "zrodlo": "T5 (7 dni po negatywnej), T11",
+      "bazowy": "2028-06-10",
+      "przedluzenie_dni": 0,
+      "termin": "2028-06-10",
+      "ponowna_ocena_nie_wczesniej_niz": "2026-12-10"
+    }
+  },
+  {
+    "id": "o5",
+    "imie": "Magdalena",
+    "nazwisko": "Kamińska",
+    "stanowisko": "s6",
+    "przelozony": "o2",
+    "korpus": "pracownik służby cywilnej",
+    "pierwsze_zatrudnienie": "2026-02-02",
+    "terminy": {
+      "umowa_do": "2027-02-01",
+      "sluzba_przygotowawcza_najpozniej": "2026-10-02",
+      "pierwsza_ocena_po": "2026-10-02",
+      "pierwsza_ocena_najpozniej": "2027-01-01",
+      "czas_nieokreslony_od": "2027-02-02",
+      "zrodlo": "T1–T4",
+      "rozmowa_wstepna_do": "2027-03-04",
+      "pierwsza_ocena_okresowa": "2029-02-02"
+    }
+  },
+  {
+    "id": "o6",
+    "imie": "Marcin",
+    "nazwisko": "Lewandowski",
+    "stanowisko": "s4",
+    "przelozony": "o1",
+    "korpus": "pracownik służby cywilnej",
+    "czas_nieokreslony_od": "2017-09-01",
+    "poprzednia_ocena": "2026-03-20",
+    "terminy": {
+      "rozmowa_wstepna_do": "2026-04-19",
+      "zrodlo": "T5, T6, T6a, T8",
+      "bazowy": "2028-03-20",
+      "przedluzenie_dni": 0,
+      "termin": "2028-03-20"
+    }
+  },
+  {
+    "id": "o7",
+    "imie": "Agnieszka",
+    "nazwisko": "Zielińska",
+    "stanowisko": "s5",
+    "przelozony": "o2",
+    "korpus": "pracownik służby cywilnej",
+    "czas_nieokreslony_od": "2014-01-02",
+    "poprzednia_ocena": "2025-01-20",
+    "zmiana_stanowiska": {
+      "data": "2026-05-04",
+      "z": "s6",
+      "na": "s5",
+      "istotna": true
+    },
+    "terminy": {
+      "rozmowa_wstepna_do": "2025-02-19",
+      "zrodlo": "T5, T6, T6a, T8, T7",
+      "bazowy": "2027-01-20",
+      "przedluzenie_dni": 0,
+      "termin": "2027-01-20",
+      "ocena_przy_zmianie_stanowiska": {
+        "od": "2026-04-27",
+        "do": "2026-06-03"
+      }
+    }
+  },
+  {
+    "id": "o8",
+    "imie": "Paweł",
+    "nazwisko": "Szymański",
+    "stanowisko": "s6",
+    "przelozony": "o2",
+    "korpus": "pracownik służby cywilnej",
+    "czas_nieokreslony_od": "2020-10-01",
+    "poprzednia_ocena": "2025-11-28",
+    "terminy": {
+      "rozmowa_wstepna_do": "2025-12-28",
+      "zrodlo": "T5, T6, T6a, T8",
+      "bazowy": "2027-11-28",
+      "przedluzenie_dni": 0,
+      "termin": "2027-11-28"
+    }
+  }
+]

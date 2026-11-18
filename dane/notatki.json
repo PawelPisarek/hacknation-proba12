@@ -1,490 +1,146 @@
 [
   {
-    "id": "n31",
-    "pracownik": "pr7",
-    "autor": "p1",
-    "data": "2025-01-01",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z KPA."
-  },
-  {
-    "id": "n54",
-    "pracownik": "pr13",
-    "autor": "p1",
-    "data": "2025-01-02",
-    "typ": "plus",
-    "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: planowanie szkoleń."
-  },
-  {
-    "id": "n47",
-    "pracownik": "pr11",
-    "autor": "p1",
-    "data": "2025-01-03",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z KPA."
-  },
-  {
-    "id": "n60",
-    "pracownik": "pr15",
-    "autor": "p1",
-    "data": "2025-01-04",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: udzielanie informacji."
-  },
-  {
-    "id": "n40",
-    "pracownik": "pr9",
-    "autor": "p1",
-    "data": "2025-01-09",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 5 dni przy: kontrole na miejscu."
-  },
-  {
-    "id": "n14",
-    "pracownik": "pr4",
-    "autor": "p2",
-    "data": "2025-01-13",
-    "typ": "minus",
-    "tresc": "Błędy formalne wymagające poprawek w: sporządzanie informacji pokontrolnych."
-  },
-  {
-    "id": "n9",
-    "pracownik": "pr3",
-    "autor": "p1",
-    "data": "2025-01-16",
-    "typ": "neutral",
-    "tresc": "Zastępstwo za nieobecną osobę (10 dni)."
-  },
-  {
-    "id": "n51",
-    "pracownik": "pr13",
-    "autor": "p1",
-    "data": "2025-02-15",
-    "typ": "neutral",
-    "tresc": "Zastępstwo za nieobecną osobę (8 dni)."
-  },
-  {
-    "id": "n11",
-    "pracownik": "pr3",
-    "autor": "p1",
-    "data": "2025-02-16",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: planowanie szkoleń — do omówienia."
-  },
-  {
-    "id": "n32",
-    "pracownik": "pr8",
-    "autor": "p2",
-    "data": "2025-02-27",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z Prawa zamówień publicznych."
-  },
-  {
-    "id": "n56",
-    "pracownik": "pr14",
-    "autor": "p2",
-    "data": "2025-03-10",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 6 dni przy: kontrole na miejscu."
-  },
-  {
-    "id": "n61",
-    "pracownik": "pr15",
-    "autor": "p1",
-    "data": "2025-03-18",
-    "typ": "minus",
-    "tresc": "Błędy formalne wymagające poprawek w: wydawanie dokumentów."
-  },
-  {
-    "id": "n12",
-    "pracownik": "pr3",
-    "autor": "p1",
-    "data": "2025-03-25",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) planowanie szkoleń mimo zwiększonej liczby spraw."
-  },
-  {
-    "id": "n3",
-    "pracownik": "pr1",
-    "autor": "p1",
-    "data": "2025-03-28",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: udział w pracach komisji przetargowych — do omówienia."
-  },
-  {
-    "id": "n22",
-    "pracownik": "pr6",
-    "autor": "p2",
-    "data": "2025-04-12",
-    "typ": "neutral",
-    "tresc": "Zastępstwo za nieobecną osobę (4 dni)."
-  },
-  {
-    "id": "n30",
-    "pracownik": "pr7",
-    "autor": "p1",
-    "data": "2025-04-13",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: monitorowanie terminów — do omówienia."
+    "id": "n1",
+    "osoba": "o3",
+    "autor": "o1",
+    "data": "2025-05-06",
+    "kryterium": "myślenie analityczne",
+    "tresc": "Analiza ofert w przetargu na sprzęt IT — wykryła zaniżoną cenę, uniknięto unieważnienia."
   },
   {
     "id": "n2",
-    "pracownik": "pr1",
-    "autor": "p1",
-    "data": "2025-04-24",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) prowadzenie rejestru zamówień mimo zwiększonej liczby spraw."
-  },
-  {
-    "id": "n10",
-    "pracownik": "pr3",
-    "autor": "p1",
-    "data": "2025-05-07",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: organizacja naborów — do omówienia."
-  },
-  {
-    "id": "n41",
-    "pracownik": "pr10",
-    "autor": "p2",
-    "data": "2025-05-12",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 9 dni przy: udzielanie informacji."
-  },
-  {
-    "id": "n6",
-    "pracownik": "pr2",
-    "autor": "p2",
-    "data": "2025-05-13",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: rejestracja i analiza skarg."
-  },
-  {
-    "id": "n19",
-    "pracownik": "pr5",
-    "autor": "p1",
-    "data": "2025-05-21",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z Excela."
-  },
-  {
-    "id": "n21",
-    "pracownik": "pr6",
-    "autor": "p2",
-    "data": "2025-05-23",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) udział w pracach komisji przetargowych mimo zwiększonej liczby spraw."
-  },
-  {
-    "id": "n33",
-    "pracownik": "pr8",
-    "autor": "p2",
-    "data": "2025-06-03",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z komunikacji z klientem."
-  },
-  {
-    "id": "n20",
-    "pracownik": "pr6",
-    "autor": "p2",
-    "data": "2025-06-10",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) udział w pracach komisji przetargowych mimo zwiększonej liczby spraw."
-  },
-  {
-    "id": "n37",
-    "pracownik": "pr8",
-    "autor": "p2",
-    "data": "2025-06-12",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: organizacja naborów."
-  },
-  {
-    "id": "n5",
-    "pracownik": "pr2",
-    "autor": "p2",
-    "data": "2025-06-13",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) rejestracja i analiza skarg mimo zwiększonej liczby spraw."
-  },
-  {
-    "id": "n1",
-    "pracownik": "pr1",
-    "autor": "p1",
-    "data": "2025-06-27",
-    "typ": "neutral",
-    "tresc": "Rozmowa bieżąca: plan na kolejny kwartał, prowadzenie rejestru zamówień."
-  },
-  {
-    "id": "n15",
-    "pracownik": "pr4",
-    "autor": "p2",
-    "data": "2025-06-28",
-    "typ": "plus",
-    "tresc": "Przeszkolił(a) nową osobę w zakresie: sporządzanie informacji pokontrolnych."
-  },
-  {
-    "id": "n16",
-    "pracownik": "pr5",
-    "autor": "p1",
-    "data": "2025-06-28",
-    "typ": "plus",
-    "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: udzielanie informacji."
-  },
-  {
-    "id": "n24",
-    "pracownik": "pr6",
-    "autor": "p2",
-    "data": "2025-07-16",
-    "typ": "neutral",
-    "tresc": "Rozmowa bieżąca: plan na kolejny kwartał, prowadzenie rejestru zamówień."
-  },
-  {
-    "id": "n29",
-    "pracownik": "pr7",
-    "autor": "p1",
+    "osoba": "o3",
+    "autor": "o1",
     "data": "2025-07-22",
-    "typ": "neutral",
-    "tresc": "Zastępstwo za nieobecną osobę (4 dni)."
+    "kryterium": "współpraca",
+    "tresc": "Pomogła Wydziałowi Finansów przy planie zamówień na 2026."
   },
   {
-    "id": "n48",
-    "pracownik": "pr12",
-    "autor": "p2",
-    "data": "2025-07-28",
-    "typ": "minus",
-    "tresc": "Błędy formalne wymagające poprawek w: przygotowanie projektów odpowiedzi."
-  },
-  {
-    "id": "n8",
-    "pracownik": "pr3",
-    "autor": "p1",
-    "data": "2025-08-01",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: organizacja naborów — do omówienia."
-  },
-  {
-    "id": "n27",
-    "pracownik": "pr7",
-    "autor": "p1",
-    "data": "2025-08-03",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 5 dni przy: przygotowanie projektów odpowiedzi."
-  },
-  {
-    "id": "n57",
-    "pracownik": "pr14",
-    "autor": "p2",
-    "data": "2025-08-07",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 8 dni przy: kontrole na miejscu."
-  },
-  {
-    "id": "n55",
-    "pracownik": "pr14",
-    "autor": "p2",
-    "data": "2025-08-12",
-    "typ": "plus",
-    "tresc": "Przeszkolił(a) nową osobę w zakresie: weryfikacja wniosków o płatność."
-  },
-  {
-    "id": "n44",
-    "pracownik": "pr10",
-    "autor": "p2",
-    "data": "2025-08-17",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: udzielanie informacji — do omówienia."
-  },
-  {
-    "id": "n42",
-    "pracownik": "pr10",
-    "autor": "p2",
-    "data": "2025-08-18",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: udzielanie informacji."
-  },
-  {
-    "id": "n35",
-    "pracownik": "pr8",
-    "autor": "p2",
-    "data": "2025-08-22",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z Prawa zamówień publicznych."
-  },
-  {
-    "id": "n46",
-    "pracownik": "pr11",
-    "autor": "p1",
-    "data": "2025-08-22",
-    "typ": "plus",
-    "tresc": "Przeszkolił(a) nową osobę w zakresie: udział w pracach komisji przetargowych."
-  },
-  {
-    "id": "n43",
-    "pracownik": "pr10",
-    "autor": "p2",
-    "data": "2025-08-23",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: udzielanie informacji."
-  },
-  {
-    "id": "n13",
-    "pracownik": "pr4",
-    "autor": "p2",
+    "id": "n3",
+    "osoba": "o3",
+    "autor": "o1",
     "data": "2025-09-01",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 2 dni przy: sporządzanie informacji pokontrolnych."
-  },
-  {
-    "id": "n52",
-    "pracownik": "pr13",
-    "autor": "p1",
-    "data": "2025-09-05",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z Prawa zamówień publicznych."
-  },
-  {
-    "id": "n58",
-    "pracownik": "pr15",
-    "autor": "p1",
-    "data": "2025-09-08",
-    "typ": "plus",
-    "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: przyjmowanie wniosków."
-  },
-  {
-    "id": "n50",
-    "pracownik": "pr12",
-    "autor": "p2",
-    "data": "2025-09-11",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: monitorowanie terminów."
-  },
-  {
-    "id": "n23",
-    "pracownik": "pr6",
-    "autor": "p2",
-    "data": "2025-09-15",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: udział w pracach komisji przetargowych — do omówienia."
-  },
-  {
-    "id": "n45",
-    "pracownik": "pr11",
-    "autor": "p1",
-    "data": "2025-10-01",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: sporządzanie sprawozdań do uzp — do omówienia."
-  },
-  {
-    "id": "n36",
-    "pracownik": "pr8",
-    "autor": "p2",
-    "data": "2025-10-04",
-    "typ": "plus",
-    "tresc": "Przeszkolił(a) nową osobę w zakresie: prowadzenie akt osobowych."
-  },
-  {
-    "id": "n53",
-    "pracownik": "pr13",
-    "autor": "p1",
-    "data": "2025-10-13",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) prowadzenie akt osobowych mimo zwiększonej liczby spraw."
-  },
-  {
-    "id": "n34",
-    "pracownik": "pr8",
-    "autor": "p2",
-    "data": "2025-10-14",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: organizacja naborów."
-  },
-  {
-    "id": "n49",
-    "pracownik": "pr12",
-    "autor": "p2",
-    "data": "2025-10-24",
-    "typ": "plus",
-    "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: raporty kwartalne."
+    "kryterium": null,
+    "tresc": "Początek urlopu rodzicielskiego (do 31.12.2025)."
   },
   {
     "id": "n4",
-    "pracownik": "pr1",
-    "autor": "p1",
-    "data": "2025-10-27",
-    "typ": "plus",
-    "tresc": "Przeszkolił(a) nową osobę w zakresie: prowadzenie rejestru zamówień."
+    "osoba": "o3",
+    "autor": "o1",
+    "data": "2026-02-10",
+    "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+    "tresc": "Ukończyła szkolenie z nowelizacji Pzp; przygotowała notatkę dla zespołu."
   },
   {
-    "id": "n17",
-    "pracownik": "pr5",
-    "autor": "p1",
-    "data": "2025-11-10",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z komunikacji z klientem."
+    "id": "n5",
+    "osoba": "o6",
+    "autor": "o1",
+    "data": "2025-05-12",
+    "kryterium": "rzetelność",
+    "tresc": "Błąd w ogłoszeniu o zamówieniu — konieczne sprostowanie."
   },
   {
-    "id": "n28",
-    "pracownik": "pr7",
-    "autor": "p1",
-    "data": "2025-11-13",
-    "typ": "minus",
-    "tresc": "Potrzebne wsparcie przy: raporty kwartalne — do omówienia."
+    "id": "n6",
+    "osoba": "o6",
+    "autor": "o1",
+    "data": "2025-09-03",
+    "kryterium": "rzetelność",
+    "tresc": "Ponowny błąd w terminie składania ofert; omówione na rozmowie bieżącej."
   },
   {
     "id": "n7",
-    "pracownik": "pr2",
-    "autor": "p2",
-    "data": "2025-11-15",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: raporty kwartalne."
+    "osoba": "o6",
+    "autor": "o1",
+    "data": "2025-10-14",
+    "kryterium": "orientacja na klienta/interesanta",
+    "tresc": "Wykonawca pochwalił szybkie odpowiedzi na pytania do SWZ."
   },
   {
-    "id": "n39",
-    "pracownik": "pr9",
-    "autor": "p1",
-    "data": "2025-11-27",
-    "typ": "neutral",
-    "tresc": "Rozmowa bieżąca: plan na kolejny kwartał, weryfikacja wniosków o płatność."
+    "id": "n8",
+    "osoba": "o6",
+    "autor": "o1",
+    "data": "2025-11-18",
+    "kryterium": "rzetelność",
+    "tresc": "Trzeci błąd formalny (brak załącznika w SWZ)."
   },
   {
-    "id": "n25",
-    "pracownik": "pr6",
-    "autor": "p2",
-    "data": "2025-12-02",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) prowadzenie rejestru zamówień mimo zwiększonej liczby spraw."
+    "id": "n9",
+    "osoba": "o4",
+    "autor": "o2",
+    "data": "2025-03-04",
+    "kryterium": "komunikacja",
+    "tresc": "Odpowiedź na skargę po terminie KPA (5 dni)."
   },
   {
-    "id": "n38",
-    "pracownik": "pr9",
-    "autor": "p1",
-    "data": "2025-12-20",
-    "typ": "plus",
-    "tresc": "Terminowo zakończył(a) sporządzanie informacji pokontrolnych mimo zwiększonej liczby spraw."
+    "id": "n10",
+    "osoba": "o4",
+    "autor": "o2",
+    "data": "2025-06-30",
+    "kryterium": null,
+    "tresc": "Skarga obywatela na niegrzeczną obsługę telefoniczną — wyjaśniono, nie potwierdziła się."
+  },
+  {
+    "id": "n11",
+    "osoba": "o4",
+    "autor": "o2",
+    "data": "2025-10-08",
+    "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe",
+    "tresc": "Nie stawił się na zaplanowanym szkoleniu z KPA."
+  },
+  {
+    "id": "n12",
+    "osoba": "o4",
+    "autor": "o2",
+    "data": "2026-02-17",
+    "kryterium": "organizacja pracy i orientacja na osiąganie celów",
+    "tresc": "Wprowadził rejestr terminów w arkuszu — poprawa w lutym."
+  },
+  {
+    "id": "n13",
+    "osoba": "o8",
+    "autor": "o2",
+    "data": "2024-06-11",
+    "kryterium": "orientacja na klienta/interesanta",
+    "tresc": "Obsłużył 40 interesantów w dniu awarii systemu — bez skarg."
+  },
+  {
+    "id": "n14",
+    "osoba": "o8",
+    "autor": "o2",
+    "data": "2025-03-03",
+    "kryterium": null,
+    "tresc": "Zastępstwo na stanowisku informacji (5 dni)."
+  },
+  {
+    "id": "n15",
+    "osoba": "o7",
+    "autor": "o2",
+    "data": "2026-05-04",
+    "kryterium": null,
+    "tresc": "Przejście na stanowisko ds. skarg i wniosków — istotna zmiana obowiązków."
+  },
+  {
+    "id": "n16",
+    "osoba": "o7",
+    "autor": "o2",
+    "data": "2026-07-15",
+    "kryterium": "komunikacja",
+    "tresc": "Przygotowała wzory odpowiedzi na typowe skargi, przyjęte przez zespół."
+  },
+  {
+    "id": "n17",
+    "osoba": "o1",
+    "autor": "dg",
+    "data": "2023-11-20",
+    "kryterium": "zarządzanie ludźmi",
+    "tresc": "Wdrożyła 2 nowe osoby; obie zdały egzamin po służbie przygotowawczej."
   },
   {
     "id": "n18",
-    "pracownik": "pr5",
-    "autor": "p1",
-    "data": "2025-12-24",
-    "typ": "neutral",
-    "tresc": "Udział w szkoleniu z Excela."
-  },
-  {
-    "id": "n26",
-    "pracownik": "pr7",
-    "autor": "p1",
-    "data": "2025-12-27",
-    "typ": "minus",
-    "tresc": "Opóźnienie ok. 10 dni przy: raporty kwartalne."
-  },
-  {
-    "id": "n59",
-    "pracownik": "pr15",
-    "autor": "p1",
-    "data": "2025-12-27",
-    "typ": "plus",
-    "tresc": "Samodzielnie zaproponował(a) usprawnienie: przyjmowanie wniosków."
+    "osoba": "o2",
+    "autor": "dg",
+    "data": "2024-04-02",
+    "kryterium": "radzenie sobie w sytuacjach kryzysowych",
+    "tresc": "Kolejki przy wydawaniu paszportów przed wakacjami — zorganizowała dodatkowe okienka."
   }
 ]

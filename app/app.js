@@ -1,4 +1,4 @@
 const D = window.DANE || {};
-const etykiety = { stanowiska: 'opisy stanowisk', pracownicy: 'pracownicy', notatki: 'notatki przełożonych', arkusze: 'arkusze ocen' };
+const etykiety = { stanowiska: 'opisy stanowisk', osoby: 'osoby', notatki: 'notatki przełożonych', arkusze: 'arkusze ocen', sprzeciwy: 'sprzeciwy', szkolenia: 'szkolenia w katalogu' };
 document.getElementById('liczby').innerHTML = Object.entries(etykiety)
   .map(([k, n]) => `<li>${n}: <strong>${(D[k] || []).length}</strong></li>`).join('');

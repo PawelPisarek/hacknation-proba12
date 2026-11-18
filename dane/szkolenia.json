@@ -1,0 +1,52 @@
+[
+  {
+    "id": "sz1",
+    "nazwa": "KPA w praktyce — terminy i odpowiedzi",
+    "kryterium": "komunikacja"
+  },
+  {
+    "id": "sz2",
+    "nazwa": "Prosty język w pismach urzędowych",
+    "kryterium": "komunikacja"
+  },
+  {
+    "id": "sz3",
+    "nazwa": "Nowelizacja Prawa zamówień publicznych",
+    "kryterium": "wykorzystywanie wiedzy i doskonalenie zawodowe"
+  },
+  {
+    "id": "sz4",
+    "nazwa": "Kontrola jakości dokumentów",
+    "kryterium": "rzetelność"
+  },
+  {
+    "id": "sz5",
+    "nazwa": "Trudny klient — obsługa i deeskalacja",
+    "kryterium": "orientacja na klienta/interesanta"
+  },
+  {
+    "id": "sz6",
+    "nazwa": "Planowanie pracy i priorytety",
+    "kryterium": "organizacja pracy i orientacja na osiąganie celów"
+  },
+  {
+    "id": "sz7",
+    "nazwa": "Przywództwo dla kierowników zespołów",
+    "kryterium": "zarządzanie ludźmi"
+  },
+  {
+    "id": "sz8",
+    "nazwa": "Excel w analizie danych",
+    "kryterium": "myślenie analityczne"
+  },
+  {
+    "id": "sz9",
+    "nazwa": "Negocjacje z wykonawcami",
+    "kryterium": "negocjowanie"
+  },
+  {
+    "id": "sz10",
+    "nazwa": "Wystąpienia publiczne dla urzędników",
+    "kryterium": "wystąpienia publiczne"
+  }
+]

@@ -1,60 +1,102 @@
 [
   {
-    "id": "st1",
+    "id": "s1",
+    "nazwa": "Kierownik urzędu (tło)",
+    "komorka": null,
+    "arkusz": "A",
+    "obowiazki": [
+      "Kierowanie urzędem",
+      "Planowanie strategiczne",
+      "Nadzór nad budżetem"
+    ],
+    "wymagania": [
+      "wykształcenie wyższe",
+      "6 lat stażu, w tym 3 na stanowisku kierowniczym"
+    ],
+    "klienci": "administracja rządowa, samorządy"
+  },
+  {
+    "id": "s2",
+    "nazwa": "Naczelnik Wydziału Administracji i Zamówień",
+    "komorka": "k1",
+    "arkusz": "B",
+    "obowiazki": [
+      "Kierowanie zespołem 6 osób",
+      "Zatwierdzanie dokumentacji zamówień",
+      "Planowanie zamówień rocznych",
+      "Współpraca z komórką finansową"
+    ],
+    "wymagania": [
+      "wykształcenie wyższe",
+      "4 lata stażu",
+      "znajomość Pzp"
+    ],
+    "klienci": "komórki urzędu, wykonawcy"
+  },
+  {
+    "id": "s3",
+    "nazwa": "Naczelnik Wydziału Spraw Obywatelskich",
+    "komorka": "k2",
+    "arkusz": "B",
+    "obowiazki": [
+      "Kierowanie zespołem obsługi klienta",
+      "Nadzór nad wydawaniem paszportów",
+      "Rozpatrywanie skarg na obsługę"
+    ],
+    "wymagania": [
+      "wykształcenie wyższe",
+      "4 lata stażu"
+    ],
+    "klienci": "obywatele"
+  },
+  {
+    "id": "s4",
     "nazwa": "Starszy specjalista ds. zamówień publicznych",
-    "komorka": "Wydział Administracji",
-    "cele": "Przygotowanie i prowadzenie postępowań o udzielenie zamówienia publicznego.",
-    "zadania": [
+    "komorka": "k1",
+    "arkusz": "C",
+    "obowiazki": [
       "Przygotowanie dokumentacji postępowań",
       "Prowadzenie rejestru zamówień",
-      "Udział w pracach komisji przetargowych",
-      "Sporządzanie sprawozdań do UZP"
-    ]
+      "Udział w komisjach przetargowych",
+      "Sprawozdania do UZP"
+    ],
+    "wymagania": [
+      "wykształcenie wyższe",
+      "3 lata stażu",
+      "znajomość Pzp i KPA"
+    ],
+    "klienci": "wykonawcy, komórki urzędu"
   },
   {
-    "id": "st2",
-    "nazwa": "Inspektor wojewódzki ds. skarg i wniosków",
-    "komorka": "Biuro Wojewody",
-    "cele": "Rozpatrywanie skarg i wniosków obywateli w terminach KPA.",
-    "zadania": [
+    "id": "s5",
+    "nazwa": "Specjalista ds. skarg i wniosków",
+    "komorka": "k2",
+    "arkusz": "C",
+    "obowiazki": [
       "Rejestracja i analiza skarg",
-      "Przygotowanie projektów odpowiedzi",
-      "Monitorowanie terminów",
+      "Projekty odpowiedzi",
+      "Pilnowanie terminów KPA",
       "Raporty kwartalne"
-    ]
+    ],
+    "wymagania": [
+      "wykształcenie wyższe",
+      "1 rok stażu"
+    ],
+    "klienci": "obywatele"
   },
   {
-    "id": "st3",
-    "nazwa": "Specjalista ds. kadr",
-    "komorka": "Biuro Kadr",
-    "cele": "Obsługa kadrowa członków korpusu służby cywilnej.",
-    "zadania": [
-      "Prowadzenie akt osobowych",
-      "Organizacja naborów",
-      "Koordynacja ocen okresowych",
-      "Planowanie szkoleń"
-    ]
-  },
-  {
-    "id": "st4",
-    "nazwa": "Główny specjalista ds. funduszy UE",
-    "komorka": "Wydział Finansów",
-    "cele": "Kontrola wydatkowania środków unijnych przez beneficjentów.",
-    "zadania": [
-      "Kontrole na miejscu",
-      "Weryfikacja wniosków o płatność",
-      "Sporządzanie informacji pokontrolnych"
-    ]
-  },
-  {
-    "id": "st5",
-    "nazwa": "Referent ds. obsługi klienta",
-    "komorka": "Wydział Spraw Obywatelskich",
-    "cele": "Obsługa interesantów w sprawach paszportowych.",
-    "zadania": [
-      "Przyjmowanie wniosków",
+    "id": "s6",
+    "nazwa": "Referent ds. obsługi klienta (paszporty)",
+    "komorka": "k2",
+    "arkusz": "C",
+    "obowiazki": [
+      "Przyjmowanie wniosków paszportowych",
       "Wydawanie dokumentów",
       "Udzielanie informacji"
-    ]
+    ],
+    "wymagania": [
+      "wykształcenie średnie"
+    ],
+    "klienci": "obywatele"
   }
 ]
