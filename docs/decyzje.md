@@ -67,3 +67,9 @@ P16 18:39 Artur: Po wejściu przełożony ma od razu widzieć najpilniejszą oce
 P17 18:39 Artur: Gdzie przełożony ma widzieć terminy pozostałych 5 osób (https://pawelpisarek.github.io/hacknation-proba12/warianty/1/)? Polecam: w dzwonku z przypomnieniami, bez osobnego ekranu. — czeka
 P18 18:39 Artur: Poprzednia ocena (data i poziom): pokazać pod paskiem etapów czy obok arkusza (https://pawelpisarek.github.io/hacknation-proba12/warianty/1/)? Polecam: pod paskiem etapów. — czeka
 P19 18:39 Artur: Poprawianie wartości przez człowieka: przycisk „popraw” przy każdej wartości czy jeden tryb „edytuj całość” (https://pawelpisarek.github.io/hacknation-proba12/warianty/1/)? Polecam: przycisk przy każdej wartości. — czeka
+P15 18:43 odpowiedź: nie podoba się odstęp od przycisku; po wybraniu oceny 9 dodaje się plakietka i nie mieści się w jednej linii; pyta, co ma być na ostatnim kroku (podsumowanie?) (Artur w pokoju)
+P16 18:43 odpowiedź: woli listę (wybór osoby z listy zamiast lądowania na najpilniejszej) (Artur w pokoju)
+P17 18:43 odpowiedź: w dzwonku z przypomnieniami, bez osobnego ekranu (Artur w pokoju)
+P18 18:43 odpowiedź: jak jest teraz, jest dobrze — pod paskiem etapów (Artur w pokoju)
+P19 18:43 odpowiedź: przycisk przy każdej wartości (Artur w pokoju)
+P20 18:43 Artur: Ostatni krok oceny (po wpisaniu wszystkich ocen) — pokazać podsumowanie: średnia, poziom, wynik pozytywny/negatywny, data następnej oceny i przycisk „Przekaż pracownikowi do zapoznania” (https://pawelpisarek.github.io/hacknation-proba12/warianty/1/)? Polecam: tak, takie podsumowanie. — czeka
