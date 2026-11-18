@@ -26,11 +26,11 @@ export const osoby = [
   { id: 'bielecki', imie: 'Jan', nazwisko: 'Bielecki', stanowisko: 'Kierownik wydziału', arkusz: 'B', dodatkowe: ['myślenie analityczne', 'negocjowanie'],
     oceny: ob([...B, 'myślenie analityczne', 'negocjowanie'], [7, 7, 7, 7, 7, 7, 5]), teraz: 3, zrobione: ['2024-12-20', '2024-12-20', null, null, null],
     termin: '2026-12-10', czynnosc: 'ocena okresowa (rozmowa oceniająca zaplanowana)', zrodlo: '24 mies. od poprzedniej oceny 10.12.2024 (art. 81 ust. 4 ustawy)',
-    sytuacja: 'arkusz w toku', poprzednia: { data: '2024-12-10', opis: 'powyżej oczekiwań (6,8)' } },
+    sytuacja: 'arkusz w toku', poprzednia: { data: '2024-12-10', opis: 'powyżej oczekiwań (6,71)' } },
   { id: 'kowalska', imie: 'Anna', nazwisko: 'Kowalska', stanowisko: 'Starszy specjalista ds. zamówień publicznych', arkusz: 'C', dodatkowe: ['orientacja na klienta/interesanta'],
     oceny: ob([...C, 'orientacja na klienta/interesanta'], [5, 5, 7, 5, 5, 5]), teraz: 3, zrobione: ['2025-02-10', '2025-02-10', null, null, null],
     termin: '2027-01-20', czynnosc: 'rozmowa oceniająca', zrodlo: '24 mies. od poprzedniej oceny 20.01.2025 (art. 81 ust. 4 ustawy)',
-    sytuacja: 'kryteria ustalone', poprzednia: { data: '2025-01-20', opis: 'na poziomie oczekiwań (5,6)' } },
+    sytuacja: 'kryteria ustalone', poprzednia: { data: '2025-01-20', opis: 'na poziomie oczekiwań (5,57)' } },
   { id: 'mazur', imie: 'Tomasz', nazwisko: 'Mazur', stanowisko: 'Inspektor', arkusz: 'C', dodatkowe: ['myślenie analityczne'], // średnia 6,0 = 5,7,5,7,5 + 7
     oceny: ob([...C, 'myślenie analityczne'], [5, 7, 5, 7, 5, 7]), teraz: 0, zrobione: ['2024-11-12', '2024-11-12', '2026-10-30', '2026-11-05', '2026-11-05'],
     termin: '2028-11-05', czynnosc: 'następna ocena okresowa', zrodlo: '24 mies. od oceny 05.11.2026', sytuacja: 'ocena pozytywna, sprzeciwu nie wniesiono', poprzednia: { data: '2026-11-05', opis: 'na poziomie oczekiwań (6,0)' } },

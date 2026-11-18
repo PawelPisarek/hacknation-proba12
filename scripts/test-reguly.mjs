@@ -1,6 +1,6 @@
 // Test reguł § 11 [R] i terminów (przykłady dat z docs/materialy.md pkt 11) oraz spójności danych.
 import { readFileSync } from 'node:fs';
-import { OBOWIAZKOWE, SKALA, MAX_DODATKOWYCH, wynikOceny, terminOceny, terminRozmowyWstepnej, terminyPierwszegoZatrudnienia, terminySprzeciwu, ponownaOcenaPo } from '../app/zasady.mjs';
+import { OBOWIAZKOWE, SKALA, MAX_DODATKOWYCH, wynikOceny, terminOceny, terminRozmowyWstepnej, terminyPierwszegoZatrudnienia, terminySprzeciwu, ponownaOcenaPo, dodajMiesiace } from '../app/zasady.mjs';
 let ok = 0, zle = 0;
 const t = (nazwa, war) => { if (war) ok++; else { zle++; console.error('BŁĄD:', nazwa); } };
 
@@ -35,4 +35,9 @@ for (const a of d.arkusze) {
 t('dane: jest „1” przy średniej > 4', d.arkusze.some((a) => a.czesc_II.wynik === 'negatywna' && a.czesc_II.srednia > 4));
 t('dane: jest sprzeciw', d.sprzeciwy.length >= 1);
 t('dane: brak znaczników DO POPRAWY', !readFileSync('dane/wszystko.json', 'utf8').includes('DO POPRAWY'));
+// docs/spec.md T4/T5: Wiśniewski (C), ocena na piśmie 12.11.2026, dziś 18.11.2026, zapoznanie jeszcze nie nastąpiło
+const nast = (w) => (w.wynik === 'pozytywna' ? dodajMiesiace('2026-11-12', 24) : ponownaOcenaPo('2026-11-18'));
+const T4 = wynikOceny([5, 3, 7, 7, 5]), T5 = wynikOceny([5, 1, 7, 7, 5]);
+t('spec T4: rzetelność 1→3 → 5,40, poziom bez zmiany, pozytywna, następna 12.11.2028', T4.srednia === 5.4 && T4.poziom === SKALA[5] && T4.wynik === 'pozytywna' && nast(T4) === '2028-11-12');
+t('spec T5: z powrotem 1 → negatywna, następna 18.05.2027', T5.wynik === 'negatywna' && T5.srednia === 5 && nast(T5) === '2027-05-18');
 console.log(`testy reguł: ${ok} ok, ${zle} błędów`); process.exit(zle ? 1 : 0);

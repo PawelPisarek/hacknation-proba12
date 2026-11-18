@@ -53,6 +53,15 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     t(`${nazwa} M P20 ${kto} znaczek przy wartości poprawionej`, kto === 'bielecki' || (await s.$$('#podsumowanie .reczne')).length >= 1);
     await s.click('button[data-idz="ocena"]');
   }
+  // spec T4/T5 w UI (świeża strona) i T12 poprzednie oceny Bielecki/Kowalska
+  { const s2 = await przegl.newPage({ viewport: vp }); await s2.goto(u); await s2.click('button[data-osoba="wisniewski"]');
+    await s2.click('button[data-kryt="rzetelność"][data-ocena="3"]'); await s2.click('button[data-idz="podsumowanie"]'); const p4 = await s2.textContent('#podsumowanie');
+    t(`${nazwa} M spec T4: 5,40, pozytywna, 12.11.2028`, p4.includes('5,40') && p4.includes('na poziomie oczekiwań') && p4.includes('pozytywna') && p4.includes('12.11.2028'));
+    await s2.click('button[data-idz="ocena"]'); await s2.click('button[data-kryt="rzetelność"][data-ocena="1"]'); await s2.click('button[data-idz="podsumowanie"]'); const p5 = await s2.textContent('#podsumowanie');
+    t(`${nazwa} M spec T5: negatywna, 18.05.2027`, p5.includes('negatywna') && p5.includes('18.05.2027'));
+    for (const [kto, txt] of [['bielecki', '10.12.2024, powyżej oczekiwań (6,71)'], ['kowalska', '20.01.2025, na poziomie oczekiwań (5,57)']]) {
+      await s2.click('button[data-idz="lista"]'); await s2.click(`button[data-osoba="${kto}"]`); t(`${nazwa} M spec T12: ${kto} poprzednia ${txt}`, (await s2.textContent('main')).includes(txt)); }
+    await s2.close(); }
   await s.click('button[data-idz="lista"]'); await s.selectOption('#rola select', 'wisniewski');
   t(`${nazwa} M pracownik: moja ocena + poprzednia`, (await s.textContent('h2')).includes('Moja ocena') && await widac('text=Poprzednia ocena:'));
   await s.click('[data-potwierdz]'); t(`${nazwa} M pracownik potwierdził`, await widac('.potw'));
