@@ -1,4 +1,4 @@
-# Stan — 18:43
+# Stan — 18:44
 
 Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); docs/hacktribe.md.
 
@@ -12,5 +12,5 @@ Kamień: makieta wybranego wariantu pod gh-pages + krytyk (≥ 9 albo 3 rundy); 
 | przesłuchanie Artura (pokój Produkt) | Projektant | P1–P11 odpowiedziane |
 | hacktribe.md | Prezenter | dopasowany do P5–P8 (f9d1b2d); dopasuje po specu |
 
-Otwarte pytania: P15–P17, P20 (Artur, pytania (c) do W1) — czekają. P18, P19 odpowiedziane 18:43. Usterka Artura 18:43 (ocena 9 + znaczek nie w jednej linii, odstęp od przycisku, ostatni krok) → Programista.
+Otwarte pytania: P20 (Artur, podsumowanie ostatniego kroku) — czeka od 18:43. P15–P19 odpowiedziane 18:43 (lista osób, terminy w dzwonku, poprzednia ocena pod paskiem, „popraw” przy wartości). Usterka z P15 → Programista.
 Faza 2: docs/zadania/01-kryterium-innowacyjnosc.md
