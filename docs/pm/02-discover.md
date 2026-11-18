@@ -1,6 +1,6 @@
 # Odkrywanie: asystent ocen okresowych (krok 1b, /discover)
 
-Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: **czeka na wybór Artura (P8) i odpowiedzi P5–P7** — dalsza część pliku (założenia, eksperymenty, plan) powstanie po wyborze.
+Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: wybór Artura zrobiony (P5–P11), plik kompletny.
 
 ## Kontekst (Krok 1)
 - **Co badamy:** jak pomóc przełożonemu i pracownikowi przejść ustawową ocenę okresową dobrze, w urzędach służby cywilnej (`docs/zadanie.md`).
@@ -19,7 +19,31 @@ Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: **czeka n
 9. **Wnioski do planu rozwoju** — szkic z kryteriów ocenionych nisko.
 10. **Historia ocen w jednym miejscu** — poprzednie oceny, daty, poziomy, kto oceniał (odpowiedź na P2).
 
-## Wybór Artura
-Czeka (P8).
+## Wybór Artura (P5–P11)
+- **Bierzemy: 2, 3, 4, 5, 6** (P8) — kalendarz terminów, kolejka przełożonego, „Moja ocena”, arkusz krok po kroku, kryteria dodatkowe.
+- **Zmiany (P9, P10):** do kolejki dochodzi widok etapów jednej oceny; etapy z pomysłu 1 wchodzą jako pasek postępu w „Mojej ocenie”. Pozostałe odrzucone (1 poza paskiem, 7–10) odpadają.
+- **Pracownik** widzi status i potwierdza zapoznanie z oceną (P5). **Produkt sam przypomina** o terminach (P6). **Kadry** bez własnego widoku w pierwszej wersji (P7).
+- **Zasada ogólna (P11):** człowiek może zmienić wszystko, jeśli system się pomyli (data, termin, średnia, poziom).
+
+## Najryzykowniejsze założenia (potwierdzone, P11)
+- **A.** Przełożony uzna terminy policzone z daty zatrudnienia za wiarygodne i ważniejsze od papieru.
+- **B.** Przełożony wpisze oceny w arkusz i zaufa automatycznej średniej i poziomowi.
+
+## Eksperymenty
+| Założenie | Eksperyment | Sukces | Gdzie w demo / makiecie |
+|---|---|---|---|
+| A | Makieta z 6 sztucznymi pracownikami o różnych datach zatrudnienia; przełożony sprawdza ręcznie 1–2 terminy i porównuje | terminy zgodne z rozporządzeniem (`docs/materialy.md`) w każdym przypadku | kolejka + kalendarz; przy terminie widać, z czego wynika, i można go poprawić |
+| B | Przełożony wypełnia arkusz jednego pracownika w makiecie, sprawdza średnią i poziom, potem zmienia jedną ocenę | średnia i poziom zmieniają się od razu, ostrzeżenie „jedna 1” widoczne, każdą wartość da się poprawić | arkusz krok po kroku |
+
+## Plan: kolejność funkcji
+1. Kolejka przełożonego + widok etapów jednej oceny (3).
+2. Kalendarz terminów z przypomnieniami (2).
+3. Arkusz krok po kroku z kryteriami dodatkowymi (5, 6).
+4. „Moja ocena” z paskiem etapów i potwierdzeniem zapoznania (4).
+
+Główna ścieżka demo (≤ 2 min): kolejka → wybór pracownika → arkusz (średnia, poziom) → termin i przypomnienie → „Moja ocena” pracownika, potwierdzenie.
 
 <!-- skill: przeplywy-pm -->
+<!-- skill: brainstorm-ideas-new -->
+<!-- skill: identify-assumptions-new -->
+<!-- skill: brainstorm-experiments-new -->
