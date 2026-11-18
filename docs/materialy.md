@@ -78,7 +78,7 @@ Ogólny poziom = **średnia arytmetyczna** ocen cząstkowych:
 - Rozpatrzenie w **14 dni** od wniesienia (ust. 3).
 - Uwzględnienie → ocena zmieniona albo sporządzona po raz drugi; od drugiej znów sprzeciw (ust. 4).
 - Nieuwzględnienie lub brak rozpatrzenia w terminie → odwołanie do **sądu pracy** w **14 dni** od doręczenia decyzji / upływu terminu (ust. 5).
-- Poza przepisami (do weryfikacji przed użyciem w produkcie, nie cytować jako przepis): uchwała SN III PZP 10/15 — sąd pracy bada rzetelność faktów, nie zastępuje oceniającego (omówienie: https://www.sn.pl/pl/aktualnosci/komunikaty-o-sprawach/zakres-kontroli-ocen-okresowych-pracownikow-sluzby-cywilnej-przez-sady-pracy — treść nie sprawdzona w całości).
+- Orzecznictwo (nie przepis): uchwała SN z 27.01.2016, III PZP 10/15 — ocena okresowa podlega kontroli sądu pracy w ograniczonym zakresie; przy negatywnej sąd bada rzetelność okoliczności faktycznych, nie podwyższa oceny ani nie zmienia negatywnej na pozytywną. **Zweryfikowane częściowo:** wg komunikatu SN https://www.sn.pl/pl/aktualnosci/komunikaty-o-sprawach/zakres-kontroli-ocen-okresowych-pracownikow-sluzby-cywilnej-przez-sady-pracy i omówień (m.in. Biuletyn SN 1/2016, https://www.sn.pl/orzecznictwo/Biuletyn_IPUSiSP_WWW/Biuletyn%201.16.pdf); pełnego tekstu uchwały ani dokładnego brzmienia trzech tez nie czytałem — w produkcie nie cytować tez dosłownie.
 
 ## 7. Skutki oceny
 
@@ -91,7 +91,7 @@ Ogólny poziom = **średnia arytmetyczna** ocen cząstkowych:
 | Wynagrodzenia | dodatek służby cywilnej wynika ze stopnia służbowego (mnożniki kwoty bazowej) — pośrednio z oceny | [U] art. 87 ust. 1 |
 | Nagrody | za szczególne osiągnięcia ze specjalnego funduszu (3% planowanych wynagrodzeń osobowych) — ustawa **nie wiąże** ich wprost z oceną okresową | [U] art. 93 |
 
-Nie znaleziono w [U] art. 81–83, 89, 93, 108 „obniżek” wynagrodzenia z tytułu oceny; nie zakładać ich w produkcie. Ewentualne skutki w razie negatywnych ocen (rozwiązanie stosunku pracy) — nie przeanalizowane, do sprawdzenia w [U] art. 8 i nast. i Kodeksie pracy, jeśli produkt ma o nich mówić.
+Nie znaleziono w [U] art. 81–83, 89, 93, 108 „obniżek” wynagrodzenia z tytułu oceny; nie zakładać ich w produkcie. **Skutek negatywnej oceny dla stosunku pracy — sprawdzone w [U]:** (a) **dwukrotna, następująca po sobie negatywna ocena okresowa urzędnika służby cywilnej** = rozwiązanie stosunku pracy z 3-miesięcznym okresem wypowiedzenia ([U] art. 71 ust. 1 pkt 1); (b) pierwsza ocena w służbie cywilnej (nie okresowa) negatywna → wniosek o niezawieranie umowy na czas nieokreślony albo o rozwiązanie umowy na czas określony ([U] art. 38 ust. 3 pkt 2); (c) pracownika na czas nieokreślony (nie-urzędnika) — tryb rozwiązania umowy po negatywnej ocenie okresowej nie sprawdzony (Kodeks pracy / [U]); nie zakładać w produkcie.
 
 ## 8. Bolączki znane z publicznych źródeł
 
@@ -127,5 +127,56 @@ Zasada: wszystko fikcyjne, zgodne ze strukturą arkusza z pkt 5 (żadnych prawdz
 7. **Wnioski do IPRZ**: przykłady dobre (konkretny obszar + forma + termin) i słabe (puste/ogólne — tak jak w [NIK]).
 8. **Scenariusz sprzeciwu**: jedna ocena negatywna z 7-dniowym sprzeciwem i treścią uzasadnienia/zarzutu (do testu ścieżki art. 83).
 9. **Katalog szkoleń** (fikcyjny): 8–10 pozycji powiązanych z kryteriami (do propozycji w IPRZ).
+
+## 11. Reguły liczenia terminów (dla kalkulatora/ścieżki w produkcie)
+
+Oznaczenia: **[P]** = wprost z przepisu; **[I]** = interpretacja naszego zespołu tam, gdzie przepis milczy (do potwierdzenia, nie podawać jako przepis).
+
+| # | Etap / zdarzenie | Reguła | Źródło |
+|---|---|---|---|
+| T1 | Pierwsze zatrudnienie w służbie cywilnej | umowa na czas określony **12 mies.**; przedłużenie o czas usprawiedliwionej nieobecności >3 mies. na wniosek pracownika (decyzja dyrektora generalnego) | [P] [U] art. 35 ust. 3–5 |
+| T2 | Służba przygotowawcza | ≤ 4 mies., koniec nie później niż 8 mies. od podjęcia pracy; kończy się egzaminem; zwolnienia (KSAP, wyższe stanowiska, wniosek kierownika) | [P] [U] art. 36 ust. 1–8 |
+| T3 | **Pierwsza ocena w służbie cywilnej** (art. 37–38, nie ocena okresowa) | nie wcześniej niż po upływie **8 mies.** od nawiązania stosunku pracy i nie później niż **miesiąc przed końcem** umowy na czas określony; podstawa: postawa/postępy, wynik egzaminu, sprawozdanie pracownika; kierujący komórką wnioskuje o umowę na czas nieokreślony (pozytywna) albo o niezawieranie/rozwiązanie (negatywna); dyrektor generalny decyduje | [P] [U] art. 37–38, art. 35 ust. 6; tryb: rozporządzenie wykonawcze z art. 38 ust. 4 (nie czytane) |
+| T4 | Zatrudnienie na czas nieokreślony → start cyklu ocen okresowych | osoba zatrudniona na czas nieokreślony podlega ocenie okresowej | [P] [U] art. 81 ust. 1 |
+| T5 | **Rozmowa wstępna + zapoznanie z kryteriami** | w ciągu **30 dni** od zatrudnienia na czas nieokreślony albo od sporządzenia na piśmie poprzedniej oceny; po ocenie negatywnej — w **7 dni** od jej sporządzenia | [P] [R] § 7 |
+| T6 | **Ocena okresowa — częstotliwość** | co **24 mies.**; konkretny termin wpisuje oceniający do części I arkusza po rozmowie wstępnej | [P] [U] art. 81 ust. 4; [R] § 5 ust. 3 |
+| T6a | Początek biegu 24 mies. | ustawa nie mówi wprost, od czego liczyć; **przyjmujemy:** od dnia sporządzenia na piśmie poprzedniej oceny, a dla pierwszej oceny okresowej — od zatrudnienia na czas nieokreślony (spójne z § 7 pkt 1 [R]) | [I] |
+| T7 | **Ocena dodatkowa (zmiana stanowiska)** | gdy zmiana stanowiska z istotną zmianą zakresu obowiązków i od ostatniej oceny >6 mies. (osoba oceniana po raz pierwszy: okres oceniany >6 mies.): ocena **nie wcześniej niż 7 dni przed** zmianą i **nie później niż 30 dni po** zmianie; w arkuszu „do” = ostatni dzień pracy na stanowisku, jeśli oceny nie zrobiono przed zmianą | [P] [U] art. 81 ust. 6; [R] § 9 ust. 2, zał. przypis 6 |
+| T7a | Zmiana stanowiska w ciągu 6 mies. od ustalenia kryteriów / ostatniej oceny | powtórzyć rozmowę wstępną i zapoznanie w **30 dni** od zmiany; termin oceny bez zmiany | [P] [R] § 9 ust. 1 |
+| T8 | **Zawieszenie biegu (nieobecność)** | usprawiedliwiona nieobecność ocenianego **>1 mies.** → termin z T6 **przedłuża się o czas tej nieobecności** (cały czas, nie tylko ponad miesiąc — brzmienie: „o czas tej nieobecności”) | [P] [U] art. 81 ust. 7 |
+| T9 | Przesunięcie terminu przez oceniającego | zmiana oceniającego w okresie; przewidywana długa usprawiedliwiona nieobecność oceniającego lub ocenianego; wniosek ocenianego — pod warunkiem, że od ostatniej oceny >6 mies. (osoby oceniane pierwszy raz: okres >6 mies.); pisemne zawiadomienie o nowym terminie, kopia do arkusza | [P] [U] art. 81 ust. 8; [R] § 8 |
+| T10 | Zmiana oceniającego w okresie | ocena na podstawie wcześniej wybranych kryteriów | [P] [R] § 9 ust. 3 |
+| T11 | Ocena negatywna → ponowna | po upływie **6 mies.** od dnia zapoznania z oceną | [P] [U] art. 81 ust. 9 |
+| T12 | Sprzeciw / rozpatrzenie / sąd | 7 dni od zapoznania; 14 dni na rozpatrzenie; 14 dni na odwołanie do sądu pracy | [P] [U] art. 83 ust. 1, 3, 5 |
+| T13 | Stopień służbowy z automatu | dwie kolejne pozytywne oceny na jednym z dwóch najwyższych poziomów → stopień w 30 dni od zapoznania z oceną | [P] [U] art. 89 ust. 2 |
+
+Uwagi do liczenia (nasze założenia, [I]): „30 dni”, „7 dni”, „14 dni” liczymy kalendarzowo od dnia następnego (zasada ogólna prawa pracy — nie sprawdzono w tych przepisach); „8 mies.” i „miesiąc przed końcem” — dzień w dzień (2.02 + 8 mies. = 2.10).
+
+### Trzy przykładowe przypadki dat (do danych sztucznych; wszystkie daty fikcyjne, obliczone poleceniem `date`)
+
+**Przypadek 1 — pierwsze zatrudnienie → umowa na czas nieokreślony → pierwsza ocena okresowa** (wszystko [P], poza początkiem 24 mies. [I])
+- Zatrudnienie na czas określony 12 mies.: **02.02.2026** → umowa do 01.02.2027 (T1).
+- Służba przygotowawcza: najpóźniej do **02.10.2026** (8 mies. od podjęcia pracy), trwa ≤ 4 mies. (T2).
+- Pierwsza ocena (art. 38): okno od **po 02.10.2026** do **01.01.2027** (miesiąc przed końcem umowy) (T3).
+- Pozytywna → umowa na czas nieokreślony od **02.02.2027** (T4).
+- Rozmowa wstępna + zapoznanie z kryteriami: do **04.03.2027** (30 dni, T5).
+- Pierwsza ocena okresowa: termin najpóźniej **02.02.2029** (24 mies., T6/T6a [I]).
+
+**Przypadek 2 — kolejna ocena okresowa z zawieszeniem biegu przez nieobecność** (T5, T6, T8)
+- Poprzednia ocena na piśmie: **15.03.2025**; rozmowa wstępna do **14.04.2025** (30 dni).
+- Termin bazowy kolejnej oceny: **15.03.2027** (24 mies., T6a [I]).
+- Usprawiedliwiona nieobecność (np. urlop rodzicielski/długie zwolnienie): 01.09.2025–31.12.2025 = 122 dni (>1 mies.) → termin przesunięty o 122 dni do **15.07.2027** (T8).
+- Zmiana oceniającego w trakcie okresu (np. 10.10.2026): ocena wg wcześniej wybranych kryteriów (T10).
+
+**Przypadek 3 — ocena negatywna, sprzeciw, sąd, ponowna ocena** (wszystko [P])
+- Negatywna ocena na piśmie i zapoznanie: **10.06.2026**.
+- Rozmowa wstępna przed ponowną oceną (negatywna): do **17.06.2026** (7 dni, T5).
+- Sprzeciw do dyrektora generalnego: do **17.06.2026** (7 dni od zapoznania). Przykład: wniesiony **15.06.2026**.
+- Rozpatrzenie sprzeciwu: do **29.06.2026** (14 dni od wniesienia).
+- Decyzja nieuwzględniająca doręczona **30.06.2026** → odwołanie do sądu pracy do **14.07.2026** (14 dni).
+- Ponowna ocena: nie wcześniej niż po **10.12.2026** (6 mies. od zapoznania, T11).
+- Dla urzędnika: druga negatywna z rzędu → rozwiązanie stosunku pracy z 3-mies. wypowiedzeniem ([U] art. 71 ust. 1 pkt 1).
+
+Weryfikacja źródeł dla pkt 11: odczytane z tekstu [U] (art. 35–38, 71, 81, 83, 89) i [R] (§ 7–9); tryb pierwszej oceny (rozporządzenie z art. 38 ust. 4) i sposób liczenia dni — nie czytane.
 
 <!-- Dokument źródłowy: przepisy [U], [R] i [NIK] czytane 18.11.2026; brak skilla (zadanie: materiały) -->
