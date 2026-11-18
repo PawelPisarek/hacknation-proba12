@@ -86,7 +86,12 @@ for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon
     await s2.selectOption('#rola select', 'wisniewski'); const m9 = await s2.textContent('main');
     t(`${nazwa} M spec T9: przed potwierdzeniem bez komunikatu i daty sprzeciwu, bez „popraw” i ocen`, !m9.includes('Masz 7 dni') && !m9.includes('25.11.2026') && (await s2.$$('[data-popraw], button[data-ocena], textarea')).length === 0);
     t(`${nazwa} M R1: pracownik bez „podpowiedź AI”, widzi zatwierdzone uzasadnienie i IPRZ`, !m9.includes('podpowiedź AI') && (await s2.textContent('#uzas')).includes('rzetelność') && (await s2.textContent('#iprz')).includes('Kontrola jakości dokumentów'));
+    t(`${nazwa} M P24: przed potwierdzeniem pracownik widzi termin przełożonego`, m9.includes('19.11.2026'));
+    if (nazwa === 'telefon') { await s2.evaluate(() => window.scrollTo(0, 600)); const g = await s2.evaluate(() => ({ p: getComputedStyle(document.querySelector('.gora')).position, d: document.querySelector('.gora').getBoundingClientRect().bottom }));
+      t(`telefon M P25: górny pasek nieprzyklejony, przewija się z treścią (${g.p}, dół ${Math.round(g.d)}px)`, g.p !== 'sticky' && g.p !== 'fixed' && g.d <= 0); await s2.evaluate(() => window.scrollTo(0, 0)); }
+    else t('komputer M P25: na komputerze pasek bez zmian (sticky)', await s2.evaluate(() => getComputedStyle(document.querySelector('.gora')).position) === 'sticky');
     await s2.click('[data-potwierdz]'); const m10 = await s2.textContent('main');
+    t(`${nazwa} M P24: po potwierdzeniu bez terminu przełożonego (19.11.2026, „— 1 dzień”)`, !m10.includes('19.11.2026') && !m10.includes('— 1 dzień') && (await s2.$$('main .termin')).length === 0 && (await s2.$$('.dzwonek')).length === 0);
     t(`${nazwa} M spec T10: sprzeciw do 25.11.2026, przycisk znika`, m10.includes('Masz 7 dni na sprzeciw') && m10.includes('do 25.11.2026') && m10.includes('Potwierdzono zapoznanie z oceną: 18.11.2026') && (await s2.$$('[data-potwierdz]')).length === 0);
     await s2.selectOption('#rola select', 'przelozony'); await s2.click('button[data-idz="lista"]'); await s2.click('button[data-osoba="wisniewski"]'); await s2.click('button[data-idz="podsumowanie"]'); const p10 = await s2.textContent('#podsumowanie');
     t(`${nazwa} M spec T10: następna ostateczna 18.05.2027`, p10.includes('18.05.2027') && !p10.includes('wstępna') && p10.includes('potwierdzenia przez pracownika'));

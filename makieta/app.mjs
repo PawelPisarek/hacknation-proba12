@@ -27,7 +27,8 @@ function lista() {
 }
 function ocena(o) {
   const pr = st.rola === 'przelozony'; const w = W.wynik(o);
-  const terminy = `<div id="terminy">${W.kartaTerminu(o, pr)}${pr ? kartaNastepnej(o) : ''}</div>`; // P22 (Artur 19:03): na telefonie zostaje pod arkuszem
+  const poPotw = !pr && W.potwierdzenia[o.id]; // P24 (Artur 19:11): po potwierdzeniu pracownik widzi tylko swój termin na sprzeciw
+  const terminy = poPotw ? '' : `<div id="terminy">${W.kartaTerminu(o, pr)}${pr ? kartaNastepnej(o) : ''}</div>`; // P22 (Artur 19:03): na telefonie zostaje pod arkuszem
   return `<main><nav class="okruchy">${pr ? '<button class="link" data-idz="lista">← Lista osób</button>' : ''}</nav>
     <div class="karta"><h2>${pr ? 'Ocena' : 'Moja ocena'}: ${W.esc(W.nazwa(o))} <span class="male">· ${W.esc(o.stanowisko)}, arkusz ${o.arkusz}</span></h2>
       ${W.pasekEtapow(o)}${W.poprzedniaHTML(o)}</div>
@@ -58,7 +59,7 @@ function rysuj() {
   const o = W.osoby.find((x) => x.id === st.osoba);
   const ekran = st.rola !== 'przelozony' ? ocena(o) : st.ekran === 'lista' || !o ? lista() : st.ekran === 'podsumowanie' && W.wynik(o) ? podsumowanie(o) : ocena(o);
   app.innerHTML = W.naglowek(document.body.dataset.tytul || 'Asystent ocen okresowych — makieta') + ekran;
-  W.dzwonek(document.getElementById('dzw'), (id) => { st.osoba = id; st.ekran = 'ocena'; rysuj(); });
+  if (st.rola === 'przelozony') W.dzwonek(document.getElementById('dzw'), (id) => { st.osoba = id; st.ekran = 'ocena'; rysuj(); }); // P24: dzwonek z terminami przełożonego tylko u przełożonego
   W.przelacznikRoli(document.getElementById('rola'), st.rola, st.osoba, (v) => { if (v === 'przelozony') { st.rola = v; } else { st.rola = 'pracownik'; st.osoba = v; } rysuj(); });
   const m = app.querySelector('main');
   if (o && st.rola === 'przelozony' && st.ekran === 'ocena') W.podepnij(m, o, rysuj);
