@@ -47,3 +47,4 @@ P11 18:18 odpowiedź: założenia A i B potwierdzone jako najryzykowniejsze; dod
 18:18 Prezenter: hacktribe.md uwzględnia odpowiedzi na pytania 5–8 (status i potwierdzenie zapoznania, przypomnienia produktu, brak widoku kadr w v1, zakres: pomysły 2–6).
 18:18 Szef: 1b /discover — recenzja przejścia runda 1 zlecona Analitykowi.
 18:19 Analityk: krok 1b recenzja R1 (02-discover.md): 4 braki — brak pytania/pominięcia „co już wiemy” i „jaką decyzję ustawia”; „do 2 min” bez źródła; ból P2 (historia) bez pokrycia w wybranych 2–6; „dogonić IPRZ” z 01 odpadło bez adnotacji → poprawka Projektanta.
+18:20 Programista: sonda OMEN (klasa testy): 4 rdzenie, 7 GB RAM, GPU niewidoczne w zadaniu (nvidia-smi: brak urządzeń), brak torch/ollama/modeli w ~/.cache, internet jest (HF 200). Instalacja llama-cpp przerwana przez Slurm (CANCELLED ~1 min). Czasu odpowiedzi modelu brak — do ustalenia z Pawłem: klasa z GPU albo model przez API.
