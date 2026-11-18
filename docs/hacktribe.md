@@ -15,7 +15,7 @@ do uzupełnienia
 ## Linki
 
 - Repozytorium: https://github.com/PawelPisarek/hacknation-proba12 — HTTP 200
-- Makieta (GitHub Pages): do uzupełnienia (adres poda Programista)
+- Makieta (GitHub Pages): https://pawelpisarek.github.io/hacknation-proba12/makieta/ — HTTP 200
 
 ## Opis wstępny (≤ 300 znaków)
 
@@ -29,7 +29,7 @@ Ocena okresowa w służbie cywilnej wynika z ustawy, ale w praktyce toczy się n
 
 Liczba znaków: 768
 
-## Opis pełny (≤ 2000 znaków)
+## Opis pełny z linkami (≤ 2000 znaków)
 
 Problem. Ocena okresowa pracowników służby cywilnej jest obowiązkowa i ściśle określona: ustawa i rozporządzenie PRM z 2016 r. wskazują kryteria, skalę i terminy. Mimo to proces zwykle toczy się na papierze. Nie ma jasnej historii, trudno ustalić, na jakim etapie jest ocena, a terminy — zależne od daty zatrudnienia — trzeba pilnować samemu.
 
@@ -47,12 +47,10 @@ Czego w pierwszej wersji nie ma: osobnego widoku dla działu kadr.
 
 Skala. Zasady oceny są wspólne dla administracji rządowej, więc rozwiązanie może działać w ponad 1740 urzędach w całej Polsce i dotyczyć tysięcy pracowniczek i pracowników.
 
-Demo. Makieta pokazuje przebieg na danych w całości sztucznych: opisach stanowisk i przykładowych ocenach. Nie używamy prawdziwych danych o pracownikach.
+Demo: https://pawelpisarek.github.io/hacknation-proba12/makieta/ — dane w całości sztuczne, bez prawdziwych danych o pracownikach. Kod: https://github.com/PawelPisarek/hacknation-proba12
 
 Co dalej. Dopasowanie do procedur konkretnych urzędów, testy z przełożonymi i pracownikami oraz zabezpieczenie danych osobowych przed wdrożeniem.
 
 Użyte narzędzia: zespół botów na OpenMausBot (Apache-2.0), modele Claude (Anthropic), skille pm-skills (MIT).
 
-Liczba znaków: 1881
-
-Po uzupełnieniu adresu makiety dopisać link (zapas: 119 znaków).
+Liczba znaków: 1914
