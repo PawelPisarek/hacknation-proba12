@@ -14,14 +14,14 @@ Etapy (z `docs/materialy.md`, sekcja 4): ① rozmowa wstępna ② zapoznanie z k
 
 | Pracownik | Stanowisko, arkusz | Sytuacja (dziś 18.11.2026) | Etap | Najbliższy termin | Poprzednia ocena (P12: tak) |
 |---|---|---|---|---|---|
-| Piotr Wiśniewski | Specjalista, C | negatywna ocena sporządzona i przekazana 12.11.2026 | ⑤ (sprzeciw) i nowa rozmowa wstępna | **19.11.2026** — 7 dni na rozmowę wstępną i na sprzeciw (jutro) | 12.11.2026, poniżej oczekiwań (jedna ocena „1”) |
+| Piotr Wiśniewski | Specjalista, C | negatywna ocena sporządzona i przekazana 12.11.2026 | ⑤ (sprzeciw) i nowa rozmowa wstępna | **19.11.2026** — 7 dni na rozmowę wstępną i na sprzeciw (jutro) | 12.11.2026, średnia 5,00 = na poziomie oczekiwań, wynik negatywny przez ocenę „1” (§ 11) |
 | Katarzyna Lis | Specjalista, C | zmiana stanowiska 02.11.2026, poprzednia ocena 15.03.2026 (>6 mies.) → ocena poza cyklem | ② kryteria ustalone | **02.12.2026** (do 30 dni po zmianie) — 14 dni | 15.03.2026, na poziomie oczekiwań |
 | Ewa Nowak | Starszy specjalista, C | zatrudniona na czas nieokreślony 03.11.2026 | ① czeka na rozmowę wstępną | **03.12.2026** (30 dni) — 15 dni | brak (pierwsza ocena) |
-| Jan Bielecki | Kierownik wydziału, B | poprzednia ocena 10.12.2024 → ocena co 24 mies. | ③ rozmowa oceniająca zaplanowana, arkusz w toku | **10.12.2026** — 22 dni | 10.12.2024, powyżej oczekiwań (6,8) |
-| Anna Kowalska | Starszy specjalista ds. zamówień publicznych, C | poprzednia ocena 20.01.2025 | ② kryteria ustalone | **20.01.2027** — 63 dni | 20.01.2025, na poziomie oczekiwań (5,6) |
+| Jan Bielecki | Kierownik wydziału, B | poprzednia ocena 10.12.2024 → ocena co 24 mies. | ③ rozmowa oceniająca zaplanowana, arkusz w toku | **10.12.2026** — 22 dni | 10.12.2024, powyżej oczekiwań (6,71) |
+| Anna Kowalska | Starszy specjalista ds. zamówień publicznych, C | poprzednia ocena 20.01.2025 | ② kryteria ustalone | **20.01.2027** — 63 dni | 20.01.2025, na poziomie oczekiwań (5,57) |
 | Tomasz Mazur | Inspektor, C | ocena pozytywna 05.11.2026, zapoznany 05.11, sprzeciw nie wniesiony | zamknięta | następna 05.11.2028 | 05.11.2026, na poziomie oczekiwań (6,0) |
 
-Ocena „Piotr Wiśniewski”: ocena cząstkowa: wykorzystywanie wiedzy 5, rzetelność **1**, organizacja pracy 7, współpraca 7, komunikacja 5 → średnia 5,0 = „na poziomie oczekiwań”, **ale wynik negatywny, bo jest ocena „1”** (reguła do pokazania). Ocena „Jan Bielecki” w toku: zarządzanie ludźmi 7, podejmowanie decyzji 7, organizacja 7, współpraca 7, komunikacja 7, dodatkowe: myślenie analityczne 7, negocjowanie 5 → średnia 6,7 = „powyżej oczekiwań”, pozytywna.
+Ocena „Piotr Wiśniewski”: ocena cząstkowa: wykorzystywanie wiedzy 5, rzetelność **1**, organizacja pracy 7, współpraca 7, komunikacja 5 → średnia 5,00 = „na poziomie oczekiwań”, **ale wynik negatywny, bo jest ocena „1”** (reguła do pokazania). Ocena „Jan Bielecki” w toku: zarządzanie ludźmi 7, podejmowanie decyzji 7, organizacja 7, współpraca 7, komunikacja 7, dodatkowe: myślenie analityczne 7, negocjowanie 5 → średnia 6,7 = „powyżej oczekiwań”, pozytywna.
 
 ---
 
@@ -29,7 +29,7 @@ Ocena „Piotr Wiśniewski”: ocena cząstkowa: wykorzystywanie wiedzy 5, rzete
 **Szkic w 3 linijkach.** Układ: jeden duży ekran jednej oceny — u góry pasek etapów ①–⑤, pod nim po lewej arkusz (kryteria, oceny, średnia, poziom), po prawej „co dalej” i termin. Główna ścieżka: przełożony od razu ląduje na najpilniejszej ocenie (Wiśniewski), wpisuje/poprawia oceny, widzi średnią i poziom, przechodzi do następnego etapu. Co widać pierwsze: pasek etapów z zaznaczonym bieżącym i termin „do 19.11.2026 — 1 dzień”.
 
 Ekrany:
-1. **Ocena (przełożony)** — pasek etapów, karta terminu (z czego wynika), arkusz: 5 kryteriów obowiązkowych arkusza C + dodatkowe, oceny 1/3/5/7/9 do kliknięcia, średnia i poziom na żywo, ostrzeżenie „jedna ocena 1 = ocena negatywna”, przyciski „popraw” przy terminie, średniej i poziomie. Dane: Wiśniewski (średnia 5,0, negatywna).
+1. **Ocena (przełożony)** — pasek etapów, karta terminu (z czego wynika), arkusz: 5 kryteriów obowiązkowych arkusza C + dodatkowe, oceny 1/3/5/7/9 do kliknięcia, średnia i poziom na żywo, ostrzeżenie „jedna ocena 1 = ocena negatywna”, przyciski „popraw” przy terminie, średniej i poziomie. Dane: Wiśniewski (średnia 5,00, negatywna).
 2. **Wybór pracownika** — małe okno z listą 6 osób i etapem przy każdej; po wyborze wraca ekran 1.
 3. **Moja ocena (pracownik)** — ten sam ekran w trybie odczytu: pasek etapów, kryteria, termin, przycisk „Potwierdzam zapoznanie z oceną” (data i godzina po kliknięciu), informacja „7 dni na sprzeciw do 19.11.2026”. Dane: Wiśniewski jako pracownik.
 4. **Przypomnienia** — rozwijana lista z dzwonka: pięć przypomnień z terminami wg tabeli.
@@ -47,7 +47,7 @@ Ekrany:
 4. **Moja ocena (pracownik)** — pasek postępu etapów (P10), kryteria obowiązkowe i dodatkowe, termin, potwierdzenie zapoznania. Dane: Kowalska.
 5. **Przypomnienia / kalendarz** — lista terminów wszystkich osób wg dat (kalendarz terminów, pomysł 2). *(P12: tak)* w kolejce kolumna „poprzednia ocena” (data, poziom).
 
-Demo (≤ 2 min): kolejka → Wiśniewski → oś etapów → arkusz (średnia 5,0, negatywna przez „1”) → przełącznik na pracownika → potwierdzenie.
+Demo (≤ 2 min): kolejka → Wiśniewski → oś etapów → arkusz (średnia 5,00, negatywna przez „1”) → przełącznik na pracownika → potwierdzenie.
 
 ## Wariant 3 — „Obok siebie” (przełożony i pracownik jednocześnie)
 **Szkic w 3 linijkach.** Układ: dwie kolumny — lewa „Przełożony”, prawa „Pracownik” — pokazują tę samą ocenę, a zmiana po lewej od razu widoczna po prawej. Główna ścieżka: wybór pracownika → po lewej przełożony wpisuje oceny, po prawej pracownik widzi etap i termin → przełożony przechodzi do kolejnego etapu, pracownik potwierdza. Co widać pierwsze: dwie kolumny z tym samym paskiem etapów i tym samym terminem.
