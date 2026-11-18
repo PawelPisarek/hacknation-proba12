@@ -5,3 +5,4 @@
 18:04 Szef: dane sztuczne (opisy stanowisk, przykładowe oceny, notatki przełożonego); ciężkie liczenie na OMENie.
 18:04 Szef: Paweł odpowiada jako on i jako Artur (pokój Produkt).
 18:05 Prezenter: docs/hacktribe.md jako DRAFT; nazwa „Asystent Ocen Okresowych” (z tytułu zadania); zespół i makieta do uzupełnienia.
+18:06 Szef: Paweł potwierdził — mówi za siebie i za Artura (Paweł 18:05).
