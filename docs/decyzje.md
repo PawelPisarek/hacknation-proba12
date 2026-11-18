@@ -73,3 +73,4 @@ P17 18:43 odpowiedź: w dzwonku z przypomnieniami, bez osobnego ekranu (Artur w 
 P18 18:43 odpowiedź: jak jest teraz, jest dobrze — pod paskiem etapów (Artur w pokoju)
 P19 18:43 odpowiedź: przycisk przy każdej wartości (Artur w pokoju)
 P20 18:43 Artur: Ostatni krok oceny (po wpisaniu wszystkich ocen) — pokazać podsumowanie: średnia, poziom, wynik pozytywny/negatywny, data następnej oceny i przycisk „Przekaż pracownikowi do zapoznania” (https://pawelpisarek.github.io/hacknation-proba12/warianty/1/)? Polecam: tak, takie podsumowanie. — czeka
+P20 18:46 odpowiedź: tak — ostatni krok to podsumowanie (średnia, poziom, wynik, data następnej oceny), bez klikalnych przycisków; w makiecie przyciski są tylko atrapą (Artur w pokoju)
