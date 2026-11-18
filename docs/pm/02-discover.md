@@ -28,7 +28,7 @@ Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: wybór Ar
 - **Zasada ogólna (P11):** człowiek może zmienić wszystko, jeśli system się pomyli (data, termin, średnia, poziom).
 
 ## Pokrycie bólu P2 (brak historii, papier) i IPRZ
-- **P2 — brak jasnej historii, wszystko na papierze:** pokrywają częściowo 3 (kolejka z widokiem etapów jednej oceny), 4 („Moja ocena” z paskiem etapów i statusem) i 5 (arkusz zapisany w produkcie zamiast na papierze). Historia poprzednich ocen (pomysł 10) nie weszła do wyboru — pytanie **P12** do Artura, czy wchodzi choć w części (czeka; rekomendacja: tak, jako pole „poprzednia ocena: data i poziom” w arkuszu i w „Mojej ocenie”, zgodnie z polem arkusza w `docs/materialy.md`).
+- **P2 — brak jasnej historii, wszystko na papierze:** pokrywają częściowo 3 (kolejka z widokiem etapów jednej oceny), 4 („Moja ocena” z paskiem etapów i statusem) i 5 (arkusz zapisany w produkcie zamiast na papierze). Historia poprzednich ocen (pomysł 10) nie weszła do wyboru — **P12 (Artur): wchodzi w części** (tak, jako pole „poprzednia ocena: data i poziom” w arkuszu i w „Mojej ocenie”, zgodnie z polem arkusza w `docs/materialy.md`).
 - **IPRZ** (wnioski do planu rozwoju, `docs/pm/01-competitive-analysis.md` „Dogonić”): pomysł 9 odpadł osobno, ale pomysł 5 (arkusz krok po kroku) obejmuje część z IPRZ jako obowiązkowe pole arkusza (`docs/materialy.md`, część II arkusza); szkic wniosków z AI nie wchodzi.
 
 ## Najryzykowniejsze założenia (potwierdzone, P11)

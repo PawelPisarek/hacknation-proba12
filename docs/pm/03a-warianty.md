@@ -12,7 +12,7 @@ Podstawa: `docs/pm/02-discover.md` (pomysły 2–6, oś etapów jednej oceny w k
 ### Sztuczne dane (6 osób, wszystkie warianty)
 Etapy (z `docs/materialy.md`, sekcja 4): ① rozmowa wstępna ② zapoznanie z kryteriami (podpis) ③ rozmowa oceniająca ④ ocena na piśmie ⑤ zapoznanie z oceną (+7 dni na sprzeciw).
 
-| Pracownik | Stanowisko, arkusz | Sytuacja (dziś 18.11.2026) | Etap | Najbliższy termin | Poprzednia ocena (warunkowo, P12) |
+| Pracownik | Stanowisko, arkusz | Sytuacja (dziś 18.11.2026) | Etap | Najbliższy termin | Poprzednia ocena (P12: tak) |
 |---|---|---|---|---|---|
 | Piotr Wiśniewski | Specjalista, C | negatywna ocena sporządzona i przekazana 12.11.2026 | ⑤ (sprzeciw) i nowa rozmowa wstępna | **19.11.2026** — 7 dni na rozmowę wstępną i na sprzeciw (jutro) | 12.11.2026, poniżej oczekiwań (jedna ocena „1”) |
 | Katarzyna Lis | Specjalista, C | zmiana stanowiska 02.11.2026, poprzednia ocena 15.03.2026 (>6 mies.) → ocena poza cyklem | ② kryteria ustalone | **02.12.2026** (do 30 dni po zmianie) — 14 dni | 15.03.2026, na poziomie oczekiwań |
@@ -33,7 +33,7 @@ Ekrany:
 2. **Wybór pracownika** — małe okno z listą 6 osób i etapem przy każdej; po wyborze wraca ekran 1.
 3. **Moja ocena (pracownik)** — ten sam ekran w trybie odczytu: pasek etapów, kryteria, termin, przycisk „Potwierdzam zapoznanie z oceną” (data i godzina po kliknięciu), informacja „7 dni na sprzeciw do 19.11.2026”. Dane: Wiśniewski jako pracownik.
 4. **Przypomnienia** — rozwijana lista z dzwonka: pięć przypomnień z terminami wg tabeli.
-5. *(warunkowo, P12)* panel „Poprzednia ocena: 12.11.2026, poniżej oczekiwań” pod paskiem etapów.
+5. *(P12: tak)* panel „Poprzednia ocena: 12.11.2026, poniżej oczekiwań” pod paskiem etapów.
 
 Demo (≤ 2 min): ekran 1 Wiśniewski → zmiana jednej oceny z 1 na 3 (poziom i wynik zmieniają się) → „popraw” termin → przełącznik na pracownika → ekran 3 → potwierdzenie.
 
@@ -45,7 +45,7 @@ Ekrany:
 2. **Etapy jednej oceny** (P9) — pionowa oś ①–⑤: co zrobione (data), co teraz, co dalej, termin każdego kroku i z czego wynika (np. „30 dni od zatrudnienia na czas nieokreślony”); przy każdym „popraw”.
 3. **Arkusz krok po kroku** — kryteria obowiązkowe (wg arkusza), wybór **do 3** kryteriów dodatkowych z opisem zachowań (pomysł 6), oceny, średnia, poziom, ostrzeżenie o „1”. Dane: Bielecki (6,7, powyżej oczekiwań).
 4. **Moja ocena (pracownik)** — pasek postępu etapów (P10), kryteria obowiązkowe i dodatkowe, termin, potwierdzenie zapoznania. Dane: Kowalska.
-5. **Przypomnienia / kalendarz** — lista terminów wszystkich osób wg dat (kalendarz terminów, pomysł 2). *(warunkowo, P12)* w kolejce kolumna „poprzednia ocena” (data, poziom).
+5. **Przypomnienia / kalendarz** — lista terminów wszystkich osób wg dat (kalendarz terminów, pomysł 2). *(P12: tak)* w kolejce kolumna „poprzednia ocena” (data, poziom).
 
 Demo (≤ 2 min): kolejka → Wiśniewski → oś etapów → arkusz (średnia 5,0, negatywna przez „1”) → przełącznik na pracownika → potwierdzenie.
 
@@ -55,7 +55,7 @@ Demo (≤ 2 min): kolejka → Wiśniewski → oś etapów → arkusz (średnia 5
 Ekrany:
 1. **Obok siebie** — lewa kolumna: kolejka (6 osób, etap, termin) i arkusz wybranej osoby; prawa: „Moja ocena” tej osoby (pasek etapów, kryteria, termin, przycisk potwierdzenia). Nagłówek „co widzi druga strona”. Dane: Kowalska ↔ Marek Zieliński.
 2. **Terminy na osi czasu** — wszyscy z kolejki na jednej osi (listopad 2026 – styczeń 2027): znaczniki terminów, kropka „dziś 18.11.2026”; kliknięcie wraca do ekranu 1. Przypomnienia jako czerwone znaczniki.
-3. **Arkusz z poprzednią oceną** *(warunkowo, P12)* — dwie kolumny: poprzednia ocena (12.11.2026 / 10.12.2024 itd.) i obecna, z różnicą przy każdym kryterium; bez P12 ekran pokazuje tylko obecną.
+3. **Arkusz z poprzednią oceną** *(P12: tak)* — dwie kolumny: poprzednia ocena (12.11.2026 / 10.12.2024 itd.) i obecna, z różnicą przy każdym kryterium; bez P12 ekran pokazuje tylko obecną.
 4. **Potwierdzenie zapoznania** — okno po stronie pracownika: „Potwierdzam zapoznanie z oceną”, data; po stronie przełożonego zmienia się etap na ⑤ i startuje odliczanie 7 dni na sprzeciw.
 5. **Poprawka** — okno „Popraw wartość” (P11): nowa wartość, powód (jedno zdanie), znaczek „ustawione ręcznie”.
 
@@ -71,6 +71,6 @@ Demo (≤ 2 min): ekran 1 Kowalska → przełożony zmienia ocenę, średnia i p
 | Ryzyko | brak przeglądu wszystkich osób | więcej ekranów | gęsty ekran, mniej czytelny na telefonie |
 | Pokrywa pomysły | 4, 5, 6 (+2 w karcie terminu) | 2, 3, 4, 5, 6 | 2, 3, 4, 5 |
 
-Odpowiedź P12 (gdy przyjdzie): wejdzie do wszystkich trzech wariantów jako oznaczone pole; do tego czasu jest warunkowa.
+Odpowiedź P12 (Artur: tak, w części): data i poziom poprzedniej oceny wchodzą do wszystkich trzech wariantów jako zwykłe pole, nie warunkowe.
 
 <!-- skill: przeplywy-pm -->
