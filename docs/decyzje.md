@@ -18,3 +18,4 @@ P4 18:05 Artur: Czy produkt zbiera notatki przez cały rok, czy zaczyna dopiero 
 18:07 Programista: dane sztuczne z `node scripts/generuj-dane.mjs` (deterministyczne, ziarno 12) → `dane/*.json` + `app/dane.js`. Pola arkusza (kryteria, skala 1–5, ocena końcowa) = założenie ogólne, DO POPRAWY wg `docs/materialy.md`.
 18:08 Szef: krok 0 materialy.md przyjęty (c519969; rozporządzenie PRM 4.04.2016, Dz.U. 2016 poz. 470; arkusze A/B/C, skala 1/3/5/7/9, co 24 mies.).
 18:08 Szef: krok 1a recenzja R1 (Analityk): 5 braków → poprawka Projektanta.
+18:09 Projektant: korekta wpisu 18:05 (perspektywa i cel analizy) — z zadania: pomóc przełożonemu i pracownikowi przejść ustawową ocenę (docs/zadanie.md); „pod ocenę jurorów” usunięte. Poprawka R1 pliku 01: podstawa prawna 2016/470, założenia w kolumnie „Nasz produkt”, polskie alternatywy i źródła lub „do weryfikacji”.
