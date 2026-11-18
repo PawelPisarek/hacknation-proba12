@@ -90,6 +90,7 @@ export const dniDo = (iso) => Math.round((new Date(iso + 'T00:00:00Z') - new Dat
 export const kolor = (o) => o.teraz === 0 ? 'szary' : dniDo(o.termin) <= 7 ? 'czerwony' : dniDo(o.termin) <= 30 ? 'zolty' : 'szary';
 export const kryteria = (o) => [...OBOWIAZKOWE[o.arkusz], ...o.dodatkowe];
 export const wynik = (o) => { const w = kryteria(o).map((k) => o.oceny[k]); return w.some((x) => x == null) ? null : wynikOceny(w); };
+export const wynikOs = (o) => { const w = wynik(o); const r = w && reczne[`${o.id}:wynik`]; return r ? { ...w, wynik: r.wartosc, reczny: true, wynikSys: w.wynik, powod: r.powod } : w; };
 export const nazwa = (o) => `${o.imie} ${o.nazwisko}`;
 export const kolejka = () => [...osoby].sort((a, b) => (a.teraz === 0) - (b.teraz === 0) || a.termin.localeCompare(b.termin));
 export const ileDni = (n) => `${n} ${n === 1 ? 'dzień' : 'dni'}`;
@@ -101,13 +102,13 @@ export const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '
 export const reczne = {};
 export const znaczek = (klucz, oryginal) => reczne[klucz] ? `<span class="reczne" title="Z systemu: ${esc(oryginal)}${reczne[klucz].powod ? ' · powód: ' + esc(reczne[klucz].powod) : ''}">ustawione ręcznie</span>` : '';
 export const pokaz = (klucz, wartosc) => reczne[klucz]?.wartosc ?? wartosc;
-export function popraw(klucz, etykieta, oryginal, poZmianie, zPowodem = false) {
+export function popraw(klucz, etykieta, oryginal, poZmianie, zPowodem = false, wzor = '') {
   const d = document.createElement('dialog'); d.className = 'okno';
-  d.innerHTML = `<form method="dialog"><h3>Popraw: ${esc(etykieta)}</h3><label>Nowa wartość<input name="w" value="${esc(pokaz(klucz, oryginal))}" required></label>
-    ${zPowodem ? '<label>Powód (jedno zdanie)<input name="p"></label>' : ''}<p class="male">Z systemu: ${esc(oryginal)}</p>
+  d.innerHTML = `<form method="dialog"><h3>Popraw: ${esc(etykieta)}</h3><label>Nowa wartość<input name="w" value="${esc(pokaz(klucz, oryginal))}" required${wzor ? ` pattern="${wzor}"` : ''}></label>
+    ${zPowodem ? '<label>Powód zmiany <span class="wym">(wymagane)</span><input name="p" required aria-required="true" placeholder="np. data z umowy"></label>' : ''}<p class="male">Z systemu: ${esc(oryginal)}</p>
     <div class="przyciski"><button value="anuluj" formnovalidate>Anuluj</button><button value="ok" class="glowny">Zapisz</button></div></form>`;
   document.body.append(d); d.showModal();
-  d.addEventListener('close', () => { if (d.returnValue === 'ok') { const f = new FormData(d.querySelector('form')); reczne[klucz] = { wartosc: f.get('w'), oryginal, powod: f.get('p') || '' }; poZmianie(); } d.remove(); });
+  d.addEventListener('close', () => { if (d.returnValue === 'ok') { const f = new FormData(d.querySelector('form')); if (zPowodem && !String(f.get('p') || '').trim()) { d.remove(); return; } reczne[klucz] = { wartosc: f.get('w'), oryginal, powod: f.get('p') || '' }; poZmianie(); } d.remove(); });
 }
 
 export function pasekEtapow(o, maly = false) {
@@ -140,7 +141,7 @@ export function kartaTerminu(o, edycja = true) {
 }
 export const poprzedniaHTML = (o) => `<div class="info" style="margin:.4rem 0"><strong>Poprzednia ocena:</strong> ${o.poprzednia ? `${fmt(o.poprzednia.data)}, ${esc(o.poprzednia.opis)}` : "brak (pierwsza ocena)"}</div>`;
 export function arkusz(o, { edycja = true, poprzednia = true, wszystkiePopraw = false } = {}) {
-  const w = wynik(o); const ks = kryteria(o);
+  const w = wynik(o); const we = wynikOs(o); const ks = kryteria(o);
   const wiersze = ks.map((k, i) => {
     const v = o.oceny[k]; const zm = ORYG[o.id][k] !== v && ORYG[o.id][k] != null;
     return `<tr><td>${esc(k)}${i >= OBOWIAZKOWE[o.arkusz].length ? ' <span class="male">(dodatkowe)</span>' : ''}${zm ? `<span class="reczne zmiana" title="Ustawione ręcznie — z systemu: ${ORYG[o.id][k]}">✎<span class="tx"> ustawione ręcznie</span></span>` : ''}</td>
@@ -153,12 +154,13 @@ export function arkusz(o, { edycja = true, poprzednia = true, wszystkiePopraw = 
     <div class="wynik"><div><div class="male">Średnia</div><span class="duzy">${esc(pokaz(ks2, sr))}</span>${znaczek(ks2, sr)}${edycja && w ? '<button class="link" data-popraw="srednia">popraw</button>' : ''}</div>
     <div><div class="male">Poziom</div><strong>${esc(pokaz(kp, w ? w.poziom : '—'))}</strong>${znaczek(kp, w?.poziom)}${edycja && w ? '<button class="link" data-popraw="poziom">popraw</button>' : ''}</div>
     <div><div class="male">Wynik</div>${w ? `<span class="${esc(pokaz(`${o.id}:wynik`, w.wynik))}">${esc(pokaz(`${o.id}:wynik`, w.wynik))}</span>${znaczek(`${o.id}:wynik`, w.wynik)}${edycja && wszystkiePopraw ? '<button class="link" data-popraw="wynik">popraw</button>' : ''}` : '<span class="male">uzupełnij wszystkie oceny</span>'}</div></div>
-    ${w && w.wynik === 'negatywna' && w.srednia > 4 ? '<div class="ostrz"><strong>Jedna ocena „1” = ocena negatywna</strong>, mimo średniej na poziomie oczekiwań (§ 11 rozporządzenia). Uzasadnienie jest obowiązkowe.</div>' : ''}
-    ${w && w.wynik === 'negatywna' ? (edycja
+    ${we?.reczny ? `<div class="${we.wynik === 'negatywna' ? 'ostrz' : 'info'}" id="wynik-reczny"><strong>Wynik ustawiony ręcznie: ${esc(we.wynik)}</strong> (z systemu: ${esc(we.wynikSys)}; powód: ${esc(we.powod)}).${we.wynik === 'negatywna' ? ' Ocena negatywna — uzasadnienie jest obowiązkowe.' : ''}</div>` : ''}
+    ${we && !we.reczny && we.wynik === 'negatywna' && w.srednia > 4 ? '<div class="ostrz"><strong>Jedna ocena „1” = ocena negatywna</strong>, mimo średniej na poziomie oczekiwań (§ 11 rozporządzenia). Uzasadnienie jest obowiązkowe.</div>' : ''}
+    ${we && we.wynik === 'negatywna' ? (edycja
       ? `<label class="blok" id="uzas"><strong>Uzasadnienie</strong> (obowiązkowe) ${AI.uzasadnienie[o.id] && o.uzasadnienie === AI.uzasadnienie[o.id] ? znakAI : ''}<textarea rows="7" data-uzas>${esc(o.uzasadnienie)}</textarea></label>`
       : (o.zrobione[3] && o.uzasadnienie ? `<div class="blok" id="uzas"><strong>Uzasadnienie</strong><p class="tresc">${esc(o.uzasadnienie)}</p></div>` : '')) : ''}
     ${iprzHTML(o, edycja)}
-    ${w && w.wynik === 'negatywna' && w.srednia <= 4 ? '<div class="ostrz">Średnia poniżej oczekiwań — ocena negatywna. Uzasadnienie jest obowiązkowe.</div>' : ''}`;
+    ${we && !we.reczny && we.wynik === 'negatywna' && w.srednia <= 4 ? '<div class="ostrz">Średnia poniżej oczekiwań — ocena negatywna. Uzasadnienie jest obowiązkowe.</div>' : ''}`;
 }
 // Wnioski do IPRZ (część II arkusza, § 11 ust. 1 pkt 5 rozp.; spec T16): pole tekstowe; puste → ostrzeżenie, bez blokady.
 const OSTRZ_IPRZ = 'brak wniosków do IPRZ — to element oceny (§ 11 ust. 1 pkt 5 rozporządzenia)';
@@ -179,7 +181,7 @@ export function podepnij(root, o, odswiez) {
     if (p === 'termin') popraw(`${o.id}:termin`, 'termin', fmt(o.termin), odswiez, true);
     if (p === 'srednia') popraw(`${o.id}:srednia`, 'średnia', wynik(o).srednia.toFixed(2).replace('.', ','), odswiez, true);
     if (p === 'poziom') popraw(`${o.id}:poziom`, 'poziom', wynik(o).poziom, odswiez, true);
-    if (p === 'wynik') popraw(`${o.id}:wynik`, 'wynik', wynik(o).wynik, odswiez, true);
+    if (p === 'wynik') popraw(`${o.id}:wynik`, 'wynik (pozytywna albo negatywna)', wynik(o).wynik, odswiez, true, 'pozytywna|negatywna');
     if (p === 'zatrudnienie') popraw(`${o.id}:zatrudnienie`, 'zatrudnienie od (DD.MM.RRRR)', fmt(ZATR[o.id]), () => { const d = isoZ(reczne[`${o.id}:zatrudnienie`].wartosc); if (d) ustawZatrudnienie(o, d); else delete reczne[`${o.id}:zatrudnienie`]; odswiez(); }, true);
     if (p === 'nastepna' && o.nastepna) popraw(`${o.id}:nastepna`, 'data następnej oceny', fmt(o.nastepna().data), odswiez, true);
   };
