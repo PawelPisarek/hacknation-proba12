@@ -1,6 +1,6 @@
 # Zgłoszenie HackTribe — DRAFT (tekst roboczy)
 
-Zadanie: HackNation 2026 „Cyfrowy asystent ocen okresowych”. Pola formularza jeszcze nieznane. Teksty zgodne z ustaleniami Artura (docs/decyzje.md, odpowiedzi P1–P8).
+Zadanie: HackNation 2026 „Cyfrowy asystent ocen okresowych”. Pola formularza jeszcze nieznane. Teksty zgodne z `docs/spec.md` (wariant 1) i odpowiedziami Artura P1–P20 (`docs/decyzje.md`).
 
 ## Nazwa projektu (`product-name`, limit ≤ 50)
 
@@ -19,38 +19,32 @@ do uzupełnienia
 
 ## Opis wstępny (≤ 300 znaków)
 
-Asystent ustawowej oceny okresowej w urzędzie: liczy terminy od daty zatrudnienia i sam przypomina o nich, prowadzi przełożonego przez arkusz oceny, a pracownikowi pokazuje status oceny i pozwala potwierdzić zapoznanie. Zamiast papieru.
+Asystent ustawowej oceny okresowej w urzędzie: przełożony wybiera osobę z listy i na jednym ekranie widzi etapy, terminy i poprzednią ocenę oraz liczy średnią i wynik; pracownik widzi swoją ocenę i potwierdza zapoznanie.
 
-Liczba znaków: 240
+Liczba znaków: 230
 
 ## Opis średni (≤ 1000 znaków)
 
-Ocena okresowa w służbie cywilnej wynika z ustawy, ale w praktyce toczy się na papierze: brakuje jasnej historii, a przełożony i pracownik sami pilnują etapów i terminów. Cyfrowy asystent ocen okresowych nie zastępuje ustawowej oceny — pomaga ją przejść. Przełożony (główny użytkownik) dostaje kalendarz terminów liczonych od daty zatrudnienia, kolejkę „kogo i kiedy ocenić” z przypomnieniami oraz arkusz krok po kroku: oceny cząstkowe 1/3/5/7/9, automatyczną średnią i poziom oceny, wybór kryteriów dodatkowych. Pracownik (drugi użytkownik) w „Mojej ocenie” widzi etap, kryteria i terminy oraz potwierdza zapoznanie z oceną. Pierwsza wersja nie ma osobnego widoku dla kadr. Dla ponad 1740 urzędów; makieta na danych sztucznych.
+Ocena okresowa w służbie cywilnej wynika z ustawy, ale toczy się na papierze: brakuje jasnej historii, a przełożony i pracownik sami pilnują etapów i terminów. Asystent nie zastępuje oceny — pomaga ją przejść. Przełożony (główny użytkownik) wybiera osobę z listy i na jednym ekranie widzi pasek pięciu etapów, poprzednią ocenę, terminy wyliczone z przepisów oraz arkusz: wpisuje oceny 1/3/5/7/9, a system liczy średnią, poziom i wynik. Przy każdej liczonej wartości jest „popraw” — ostatnie słowo należy do człowieka. Terminy wszystkich osób są w dzwonku z przypomnieniami. Pracownik w „Mojej ocenie” widzi etap, kryteria i termin oraz potwierdza zapoznanie z oceną. Dane w makiecie są sztuczne.
 
-Liczba znaków: 768
+Liczba znaków: 741
 
 ## Opis pełny z linkami (≤ 2000 znaków)
 
-Problem. Ocena okresowa pracowników służby cywilnej jest obowiązkowa i ściśle określona: ustawa i rozporządzenie PRM z 2016 r. wskazują kryteria, skalę i terminy. Mimo to proces zwykle toczy się na papierze. Nie ma jasnej historii, trudno ustalić, na jakim etapie jest ocena, a terminy — zależne od daty zatrudnienia — trzeba pilnować samemu.
+Problem. Ocena okresowa w służbie cywilnej jest obowiązkowa i ściśle określona ustawą oraz rozporządzeniem PRM z 2016 r., ale proces toczy się na papierze. Brakuje jasnej historii, trudno ustalić etap oceny, a terminy zależne od daty zatrudnienia trzeba pilnować samemu.
 
-Rozwiązanie. Cyfrowy asystent ocen okresowych wspiera ustawową ocenę zamiast ją zastępować. Nie wymyślamy własnych kryteriów — korzystamy z obowiązujących.
+Rozwiązanie. Asystent wspiera ustawową ocenę zamiast ją zastępować; nie wymyślamy własnych kryteriów.
 
-Dla przełożonego (główny użytkownik):
-- kalendarz terminów liczony od daty zatrudnienia i poprzedniej oceny, z własnymi przypomnieniami produktu;
-- kolejka: kogo i kiedy ocenić, co zostało do zrobienia, pilne sprawy na górze;
-- arkusz oceny krok po kroku: oceny cząstkowe w skali 1/3/5/7/9, automatyczna średnia i poziom oceny, ostrzeżenie, że jedna ocena „1” oznacza ocenę negatywną;
-- wybór kryteriów dodatkowych (maksymalnie trzech) z opisami zachowań z rozporządzenia.
+Przełożony (użytkownik główny) zaczyna od listy osób z etapem każdej oceny. Terminy wszystkich osób są w dzwonku z przypomnieniami. Po wybraniu osoby widzi na jednym ekranie: pasek pięciu etapów, poprzednią ocenę (data i poziom), arkusz, kartę terminu i datę następnej oceny. W arkuszu wpisuje oceny 1/3/5/7/9 do kryteriów z przepisów (plus do trzech dodatkowych) i od razu widzi średnią, poziom oraz wynik; system ostrzega, że jedna ocena „1” oznacza ocenę negatywną. Przy każdej liczonej wartości jest „popraw” — człowiek ma ostatnie słowo, a zmiana jest oznaczona. Na końcu: podsumowanie ze średnią, poziomem, wynikiem i datą następnej oceny.
 
-Dla pracownika (drugi użytkownik): widok „Moja ocena” — etap, kryteria, terminy i to, co wydarzy się dalej. Pracownik potwierdza w produkcie zapoznanie z oceną.
+Pracownik (drugi użytkownik) w „Mojej ocenie” widzi etap, poprzednią ocenę, kryteria i termin. Po ocenie na piśmie potwierdza zapoznanie i widzi 7 dni na sprzeciw.
 
-Czego w pierwszej wersji nie ma: osobnego widoku dla działu kadr.
+Kadry w pierwszej wersji nie mają osobnego widoku. Przypomnienia działają w aplikacji.
 
-Skala. Zasady oceny są wspólne dla administracji rządowej, więc rozwiązanie może działać w ponad 1740 urzędach w całej Polsce i dotyczyć tysięcy pracowniczek i pracowników.
+Skala. Zasady są wspólne dla administracji rządowej, więc rozwiązanie może działać w ponad 1740 urzędach.
 
-Demo: https://pawelpisarek.github.io/hacknation-proba12/makieta/ — dane w całości sztuczne, bez prawdziwych danych o pracownikach. Kod: https://github.com/PawelPisarek/hacknation-proba12
-
-Co dalej. Dopasowanie do procedur konkretnych urzędów, testy z przełożonymi i pracownikami oraz zabezpieczenie danych osobowych przed wdrożeniem.
+Demo: https://pawelpisarek.github.io/hacknation-proba12/makieta/ — fikcyjny urząd i sztuczne dane; podpowiedzi AI są zapisane z góry i oznaczone. Kod: https://github.com/PawelPisarek/hacknation-proba12
 
 Użyte narzędzia: zespół botów na OpenMausBot (Apache-2.0), modele Claude (Anthropic), skille pm-skills (MIT).
 
-Liczba znaków: 1914
+Liczba znaków: 1787
