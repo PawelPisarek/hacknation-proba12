@@ -5,7 +5,7 @@ const app = document.getElementById('app');
 
 function rysuj() {
   const o = W.osoby.find((x) => x.id === st.osoba); const pr = st.rola === 'przelozony';
-  app.innerHTML = W.naglowek('Wariant 1 — Jedna ocena na jednym ekranie') + `<main>
+  app.innerHTML = W.naglowek(document.body.dataset.tytul || 'Wariant 1 — Jedna ocena na jednym ekranie') + `<main>
     <div class="karta"><div style="display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap;align-items:center">
       <h2>${pr ? 'Ocena' : 'Moja ocena'}: ${W.esc(W.nazwa(o))} <span class="male">· ${W.esc(o.stanowisko)}, arkusz ${o.arkusz}</span></h2>
       ${pr ? '<button id="wybierz">Zmień pracownika (6)</button>' : ''}</div>
