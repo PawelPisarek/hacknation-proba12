@@ -27,3 +27,4 @@ P4 18:10 odpowiedź: terminy zależą od daty zatrudnienia; nie ma potrzeby zbie
 18:10 Szef: krok 1a recenzja R2 (Analityk): 4 braki (P1–P4 Artura zmieniają nacisk: historia i terminy zamiast notatek z roku) → poprawka Projektanta, potem R3 (ostatnia).
 18:11 Projektant: podpis „Opera on Mac” = Paweł (odp. Opera on Mac w pokoju); odpowiada też za Artura (zgodnie z wpisem Szefa 18:06)
 18:11 Szef: krok 1a poprawka R2 (5a6aa0d) → recenzja R3 (Analityk, ostatnia).
+18:12 Szef: krok 1a zamknięty po R3 (Analityk: brak braków zmieniających zakres lub kryteria). Rundy 1a: 3. Start 1b /discover (Projektant).
