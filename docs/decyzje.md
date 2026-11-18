@@ -56,3 +56,4 @@ P12 18:20 Artur: Czy historia poprzednich ocen ma wejść choć w części (data
 18:21 Analityk: krok 1b recenzja R2 (02-discover.md): brak braków zmieniających zakres lub kryteria; pytanie 12 (historia ocen) odnotowane w pliku (wpis, nie pytanie; poprawka formatu: Szef).
 18:22 Szef: krok 1b zamknięty po 2 rundach recenzji przejścia; start kroku 2 — szkice 3 wariantów (Projektant) → makiety wariantów (Programista) → wybór Artura → /write-prd.
 18:24 Programista: dane sztuczne przerobione pod docs/materialy.md (arkusze A/B/C, części I–III, skala 1/3/5/7/9, § 11, IPRZ, terminy T1–T13, przypadki dat 1–3, sprzeciw); reguły w app/zasady.mjs. Założenia [I] z materialy.md pkt 11 (24 mies. od poprzedniej oceny, dni kalendarzowe). Granica: średnia dokładnie 4 = „poniżej oczekiwań” (przedział >2–4).
+P12 18:27 odpowiedź: tak — data i poziom poprzedniej oceny w arkuszu i w „Mojej ocenie” (Artur w pokoju)

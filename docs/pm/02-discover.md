@@ -24,6 +24,7 @@ Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: wybór Ar
 - **Bierzemy: 2, 3, 4, 5, 6** (P8) — kalendarz terminów, kolejka przełożonego, „Moja ocena”, arkusz krok po kroku, kryteria dodatkowe.
 - **Zmiany (P9, P10):** do kolejki dochodzi widok etapów jednej oceny; etapy z pomysłu 1 wchodzą jako pasek postępu w „Mojej ocenie”. Pozostałe odrzucone (1 poza paskiem, 7–10) odpadają.
 - **Pracownik** widzi status i potwierdza zapoznanie z oceną (P5). **Produkt sam przypomina** o terminach (P6). **Kadry** bez własnego widoku w pierwszej wersji (P7).
+- **Historia (P12):** wchodzi w części — data i poziom poprzedniej oceny w arkuszu i w „Mojej ocenie” (pełna historia, pomysł 10, odpada).
 - **Zasada ogólna (P11):** człowiek może zmienić wszystko, jeśli system się pomyli (data, termin, średnia, poziom).
 
 ## Pokrycie bólu P2 (brak historii, papier) i IPRZ
