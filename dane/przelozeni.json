@@ -1,0 +1,14 @@
+[
+  {
+    "id": "p1",
+    "imie": "Halina",
+    "nazwisko": "Grabowska",
+    "funkcja": "Dyrektor Wydziału Administracji"
+  },
+  {
+    "id": "p2",
+    "imie": "Robert",
+    "nazwisko": "Mazur",
+    "funkcja": "Kierownik Oddziału"
+  }
+]

@@ -14,3 +14,5 @@ P2 18:05 Artur: Co dziś najbardziej boli w ocenie okresowej? Polecam: ogólniko
 P3 18:05 Artur: Co ma zyskać użytkownik? Polecam: rzetelną ocenę z konkretnymi przykładami szybciej i plan rozwoju po rozmowie — czeka
 P4 18:05 Artur: Czy produkt zbiera notatki przez cały rok, czy zaczyna dopiero przy ocenie? Polecam: notatki przez cały rok — czeka
 18:07 Szef: krok 1a — znacznik przeplywy-pm jest; recenzja przejścia R1 → Analityk.
+18:07 Programista: stos — statyczna strona (HTML/CSS/JS, bez budowania) w `app/` + serwer `server.mjs` (Node, port 3000, Dockerfile); łatwe do zmiany. Powód: makieta na gh-pages bez kroku budowania, MVP w tym samym kodzie.
+18:07 Programista: dane sztuczne z `node scripts/generuj-dane.mjs` (deterministyczne, ziarno 12) → `dane/*.json` + `app/dane.js`. Pola arkusza (kryteria, skala 1–5, ocena końcowa) = założenie ogólne, DO POPRAWY wg `docs/materialy.md`.

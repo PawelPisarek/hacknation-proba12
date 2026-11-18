@@ -1,0 +1,10 @@
+{
+  "name": "asystent-ocen-okresowych",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dane": "node scripts/generuj-dane.mjs",
+    "test": "node scripts/test-dymny.mjs"
+  }
+}

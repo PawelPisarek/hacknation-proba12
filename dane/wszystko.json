@@ -1,0 +1,1614 @@
+{
+  "urzad": "Urząd Wojewódzki w Przykładowie (dane sztuczne)",
+  "wygenerowano_ziarnem": 12,
+  "skala": {
+    "1": "znacznie poniżej oczekiwań",
+    "2": "poniżej oczekiwań",
+    "3": "na poziomie oczekiwań",
+    "4": "powyżej oczekiwań",
+    "5": "znacznie powyżej oczekiwań"
+  },
+  "kryteria_obowiazkowe": [
+    "sumienność",
+    "sprawność",
+    "bezstronność",
+    "umiejętność stosowania odpowiednich przepisów"
+  ],
+  "kryteria_do_wyboru": [
+    "planowanie i organizacja pracy",
+    "komunikacja",
+    "współpraca",
+    "orientacja na klienta",
+    "umiejętności analityczne",
+    "zarządzanie wiedzą",
+    "inicjatywa"
+  ],
+  "stanowiska": [
+    {
+      "id": "st1",
+      "nazwa": "Starszy specjalista ds. zamówień publicznych",
+      "komorka": "Wydział Administracji",
+      "cele": "Przygotowanie i prowadzenie postępowań o udzielenie zamówienia publicznego.",
+      "zadania": [
+        "Przygotowanie dokumentacji postępowań",
+        "Prowadzenie rejestru zamówień",
+        "Udział w pracach komisji przetargowych",
+        "Sporządzanie sprawozdań do UZP"
+      ]
+    },
+    {
+      "id": "st2",
+      "nazwa": "Inspektor wojewódzki ds. skarg i wniosków",
+      "komorka": "Biuro Wojewody",
+      "cele": "Rozpatrywanie skarg i wniosków obywateli w terminach KPA.",
+      "zadania": [
+        "Rejestracja i analiza skarg",
+        "Przygotowanie projektów odpowiedzi",
+        "Monitorowanie terminów",
+        "Raporty kwartalne"
+      ]
+    },
+    {
+      "id": "st3",
+      "nazwa": "Specjalista ds. kadr",
+      "komorka": "Biuro Kadr",
+      "cele": "Obsługa kadrowa członków korpusu służby cywilnej.",
+      "zadania": [
+        "Prowadzenie akt osobowych",
+        "Organizacja naborów",
+        "Koordynacja ocen okresowych",
+        "Planowanie szkoleń"
+      ]
+    },
+    {
+      "id": "st4",
+      "nazwa": "Główny specjalista ds. funduszy UE",
+      "komorka": "Wydział Finansów",
+      "cele": "Kontrola wydatkowania środków unijnych przez beneficjentów.",
+      "zadania": [
+        "Kontrole na miejscu",
+        "Weryfikacja wniosków o płatność",
+        "Sporządzanie informacji pokontrolnych"
+      ]
+    },
+    {
+      "id": "st5",
+      "nazwa": "Referent ds. obsługi klienta",
+      "komorka": "Wydział Spraw Obywatelskich",
+      "cele": "Obsługa interesantów w sprawach paszportowych.",
+      "zadania": [
+        "Przyjmowanie wniosków",
+        "Wydawanie dokumentów",
+        "Udzielanie informacji"
+      ]
+    }
+  ],
+  "przelozeni": [
+    {
+      "id": "p1",
+      "imie": "Halina",
+      "nazwisko": "Grabowska",
+      "funkcja": "Dyrektor Wydziału Administracji"
+    },
+    {
+      "id": "p2",
+      "imie": "Robert",
+      "nazwisko": "Mazur",
+      "funkcja": "Kierownik Oddziału"
+    }
+  ],
+  "pracownicy": [
+    {
+      "id": "pr1",
+      "imie": "Katarzyna",
+      "nazwisko": "Kozłowska",
+      "stanowisko": "st1",
+      "przelozony": "p1",
+      "staz_lat": 14,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2024-08-15"
+    },
+    {
+      "id": "pr2",
+      "imie": "Agnieszka",
+      "nazwisko": "Kowalska",
+      "stanowisko": "st2",
+      "przelozony": "p2",
+      "staz_lat": 20,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2022-06-15"
+    },
+    {
+      "id": "pr3",
+      "imie": "Michał",
+      "nazwisko": "Nowaki",
+      "stanowisko": "st3",
+      "przelozony": "p1",
+      "staz_lat": 3,
+      "korpus": "pracownik służby cywilnej",
+      "ostatnia_ocena": "2024-09-15"
+    },
+    {
+      "id": "pr4",
+      "imie": "Tomasz",
+      "nazwisko": "Wiśniewski",
+      "stanowisko": "st4",
+      "przelozony": "p2",
+      "staz_lat": 3,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2022-03-15"
+    },
+    {
+      "id": "pr5",
+      "imie": "Paweł",
+      "nazwisko": "Kamiński",
+      "stanowisko": "st5",
+      "przelozony": "p1",
+      "staz_lat": 14,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2023-04-15"
+    },
+    {
+      "id": "pr6",
+      "imie": "Łukasz",
+      "nazwisko": "Kowalski",
+      "stanowisko": "st1",
+      "przelozony": "p2",
+      "staz_lat": 14,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2023-07-15"
+    },
+    {
+      "id": "pr7",
+      "imie": "Barbara",
+      "nazwisko": "Lewandowska",
+      "stanowisko": "st2",
+      "przelozony": "p1",
+      "staz_lat": 20,
+      "korpus": "pracownik służby cywilnej",
+      "ostatnia_ocena": "2024-01-15"
+    },
+    {
+      "id": "pr8",
+      "imie": "Marcin",
+      "nazwisko": "Wiśniewski",
+      "stanowisko": "st3",
+      "przelozony": "p2",
+      "staz_lat": 16,
+      "korpus": "pracownik służby cywilnej",
+      "ostatnia_ocena": "2024-11-15"
+    },
+    {
+      "id": "pr9",
+      "imie": "Joanna",
+      "nazwisko": "Zielińska",
+      "stanowisko": "st4",
+      "przelozony": "p1",
+      "staz_lat": 14,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2024-01-15"
+    },
+    {
+      "id": "pr10",
+      "imie": "Ewa",
+      "nazwisko": "Kowalska",
+      "stanowisko": "st5",
+      "przelozony": "p2",
+      "staz_lat": 14,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2024-11-15"
+    },
+    {
+      "id": "pr11",
+      "imie": "Barbara",
+      "nazwisko": "Kamińska",
+      "stanowisko": "st1",
+      "przelozony": "p1",
+      "staz_lat": 5,
+      "korpus": "pracownik służby cywilnej",
+      "ostatnia_ocena": "2023-07-15"
+    },
+    {
+      "id": "pr12",
+      "imie": "Tomasz",
+      "nazwisko": "Wójciki",
+      "stanowisko": "st2",
+      "przelozony": "p2",
+      "staz_lat": 10,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2022-05-15"
+    },
+    {
+      "id": "pr13",
+      "imie": "Agnieszka",
+      "nazwisko": "Dąbrowska",
+      "stanowisko": "st3",
+      "przelozony": "p1",
+      "staz_lat": 6,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2023-05-15"
+    },
+    {
+      "id": "pr14",
+      "imie": "Barbara",
+      "nazwisko": "Zielińska",
+      "stanowisko": "st4",
+      "przelozony": "p2",
+      "staz_lat": 1,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2024-05-15"
+    },
+    {
+      "id": "pr15",
+      "imie": "Marcin",
+      "nazwisko": "Zieliński",
+      "stanowisko": "st5",
+      "przelozony": "p1",
+      "staz_lat": 2,
+      "korpus": "urzędnik służby cywilnej",
+      "ostatnia_ocena": "2023-10-15"
+    }
+  ],
+  "notatki": [
+    {
+      "id": "n31",
+      "pracownik": "pr7",
+      "autor": "p1",
+      "data": "2025-01-01",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z KPA."
+    },
+    {
+      "id": "n54",
+      "pracownik": "pr13",
+      "autor": "p1",
+      "data": "2025-01-02",
+      "typ": "plus",
+      "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: planowanie szkoleń."
+    },
+    {
+      "id": "n47",
+      "pracownik": "pr11",
+      "autor": "p1",
+      "data": "2025-01-03",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z KPA."
+    },
+    {
+      "id": "n60",
+      "pracownik": "pr15",
+      "autor": "p1",
+      "data": "2025-01-04",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: udzielanie informacji."
+    },
+    {
+      "id": "n40",
+      "pracownik": "pr9",
+      "autor": "p1",
+      "data": "2025-01-09",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 5 dni przy: kontrole na miejscu."
+    },
+    {
+      "id": "n14",
+      "pracownik": "pr4",
+      "autor": "p2",
+      "data": "2025-01-13",
+      "typ": "minus",
+      "tresc": "Błędy formalne wymagające poprawek w: sporządzanie informacji pokontrolnych."
+    },
+    {
+      "id": "n9",
+      "pracownik": "pr3",
+      "autor": "p1",
+      "data": "2025-01-16",
+      "typ": "neutral",
+      "tresc": "Zastępstwo za nieobecną osobę (10 dni)."
+    },
+    {
+      "id": "n51",
+      "pracownik": "pr13",
+      "autor": "p1",
+      "data": "2025-02-15",
+      "typ": "neutral",
+      "tresc": "Zastępstwo za nieobecną osobę (8 dni)."
+    },
+    {
+      "id": "n11",
+      "pracownik": "pr3",
+      "autor": "p1",
+      "data": "2025-02-16",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: planowanie szkoleń — do omówienia."
+    },
+    {
+      "id": "n32",
+      "pracownik": "pr8",
+      "autor": "p2",
+      "data": "2025-02-27",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z Prawa zamówień publicznych."
+    },
+    {
+      "id": "n56",
+      "pracownik": "pr14",
+      "autor": "p2",
+      "data": "2025-03-10",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 6 dni przy: kontrole na miejscu."
+    },
+    {
+      "id": "n61",
+      "pracownik": "pr15",
+      "autor": "p1",
+      "data": "2025-03-18",
+      "typ": "minus",
+      "tresc": "Błędy formalne wymagające poprawek w: wydawanie dokumentów."
+    },
+    {
+      "id": "n12",
+      "pracownik": "pr3",
+      "autor": "p1",
+      "data": "2025-03-25",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) planowanie szkoleń mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n3",
+      "pracownik": "pr1",
+      "autor": "p1",
+      "data": "2025-03-28",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: udział w pracach komisji przetargowych — do omówienia."
+    },
+    {
+      "id": "n22",
+      "pracownik": "pr6",
+      "autor": "p2",
+      "data": "2025-04-12",
+      "typ": "neutral",
+      "tresc": "Zastępstwo za nieobecną osobę (4 dni)."
+    },
+    {
+      "id": "n30",
+      "pracownik": "pr7",
+      "autor": "p1",
+      "data": "2025-04-13",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: monitorowanie terminów — do omówienia."
+    },
+    {
+      "id": "n2",
+      "pracownik": "pr1",
+      "autor": "p1",
+      "data": "2025-04-24",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) prowadzenie rejestru zamówień mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n10",
+      "pracownik": "pr3",
+      "autor": "p1",
+      "data": "2025-05-07",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: organizacja naborów — do omówienia."
+    },
+    {
+      "id": "n41",
+      "pracownik": "pr10",
+      "autor": "p2",
+      "data": "2025-05-12",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 9 dni przy: udzielanie informacji."
+    },
+    {
+      "id": "n6",
+      "pracownik": "pr2",
+      "autor": "p2",
+      "data": "2025-05-13",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: rejestracja i analiza skarg."
+    },
+    {
+      "id": "n19",
+      "pracownik": "pr5",
+      "autor": "p1",
+      "data": "2025-05-21",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z Excela."
+    },
+    {
+      "id": "n21",
+      "pracownik": "pr6",
+      "autor": "p2",
+      "data": "2025-05-23",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) udział w pracach komisji przetargowych mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n33",
+      "pracownik": "pr8",
+      "autor": "p2",
+      "data": "2025-06-03",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z komunikacji z klientem."
+    },
+    {
+      "id": "n20",
+      "pracownik": "pr6",
+      "autor": "p2",
+      "data": "2025-06-10",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) udział w pracach komisji przetargowych mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n37",
+      "pracownik": "pr8",
+      "autor": "p2",
+      "data": "2025-06-12",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: organizacja naborów."
+    },
+    {
+      "id": "n5",
+      "pracownik": "pr2",
+      "autor": "p2",
+      "data": "2025-06-13",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) rejestracja i analiza skarg mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n1",
+      "pracownik": "pr1",
+      "autor": "p1",
+      "data": "2025-06-27",
+      "typ": "neutral",
+      "tresc": "Rozmowa bieżąca: plan na kolejny kwartał, prowadzenie rejestru zamówień."
+    },
+    {
+      "id": "n15",
+      "pracownik": "pr4",
+      "autor": "p2",
+      "data": "2025-06-28",
+      "typ": "plus",
+      "tresc": "Przeszkolił(a) nową osobę w zakresie: sporządzanie informacji pokontrolnych."
+    },
+    {
+      "id": "n16",
+      "pracownik": "pr5",
+      "autor": "p1",
+      "data": "2025-06-28",
+      "typ": "plus",
+      "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: udzielanie informacji."
+    },
+    {
+      "id": "n24",
+      "pracownik": "pr6",
+      "autor": "p2",
+      "data": "2025-07-16",
+      "typ": "neutral",
+      "tresc": "Rozmowa bieżąca: plan na kolejny kwartał, prowadzenie rejestru zamówień."
+    },
+    {
+      "id": "n29",
+      "pracownik": "pr7",
+      "autor": "p1",
+      "data": "2025-07-22",
+      "typ": "neutral",
+      "tresc": "Zastępstwo za nieobecną osobę (4 dni)."
+    },
+    {
+      "id": "n48",
+      "pracownik": "pr12",
+      "autor": "p2",
+      "data": "2025-07-28",
+      "typ": "minus",
+      "tresc": "Błędy formalne wymagające poprawek w: przygotowanie projektów odpowiedzi."
+    },
+    {
+      "id": "n8",
+      "pracownik": "pr3",
+      "autor": "p1",
+      "data": "2025-08-01",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: organizacja naborów — do omówienia."
+    },
+    {
+      "id": "n27",
+      "pracownik": "pr7",
+      "autor": "p1",
+      "data": "2025-08-03",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 5 dni przy: przygotowanie projektów odpowiedzi."
+    },
+    {
+      "id": "n57",
+      "pracownik": "pr14",
+      "autor": "p2",
+      "data": "2025-08-07",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 8 dni przy: kontrole na miejscu."
+    },
+    {
+      "id": "n55",
+      "pracownik": "pr14",
+      "autor": "p2",
+      "data": "2025-08-12",
+      "typ": "plus",
+      "tresc": "Przeszkolił(a) nową osobę w zakresie: weryfikacja wniosków o płatność."
+    },
+    {
+      "id": "n44",
+      "pracownik": "pr10",
+      "autor": "p2",
+      "data": "2025-08-17",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: udzielanie informacji — do omówienia."
+    },
+    {
+      "id": "n42",
+      "pracownik": "pr10",
+      "autor": "p2",
+      "data": "2025-08-18",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: udzielanie informacji."
+    },
+    {
+      "id": "n35",
+      "pracownik": "pr8",
+      "autor": "p2",
+      "data": "2025-08-22",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z Prawa zamówień publicznych."
+    },
+    {
+      "id": "n46",
+      "pracownik": "pr11",
+      "autor": "p1",
+      "data": "2025-08-22",
+      "typ": "plus",
+      "tresc": "Przeszkolił(a) nową osobę w zakresie: udział w pracach komisji przetargowych."
+    },
+    {
+      "id": "n43",
+      "pracownik": "pr10",
+      "autor": "p2",
+      "data": "2025-08-23",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: udzielanie informacji."
+    },
+    {
+      "id": "n13",
+      "pracownik": "pr4",
+      "autor": "p2",
+      "data": "2025-09-01",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 2 dni przy: sporządzanie informacji pokontrolnych."
+    },
+    {
+      "id": "n52",
+      "pracownik": "pr13",
+      "autor": "p1",
+      "data": "2025-09-05",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z Prawa zamówień publicznych."
+    },
+    {
+      "id": "n58",
+      "pracownik": "pr15",
+      "autor": "p1",
+      "data": "2025-09-08",
+      "typ": "plus",
+      "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: przyjmowanie wniosków."
+    },
+    {
+      "id": "n50",
+      "pracownik": "pr12",
+      "autor": "p2",
+      "data": "2025-09-11",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: monitorowanie terminów."
+    },
+    {
+      "id": "n23",
+      "pracownik": "pr6",
+      "autor": "p2",
+      "data": "2025-09-15",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: udział w pracach komisji przetargowych — do omówienia."
+    },
+    {
+      "id": "n45",
+      "pracownik": "pr11",
+      "autor": "p1",
+      "data": "2025-10-01",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: sporządzanie sprawozdań do uzp — do omówienia."
+    },
+    {
+      "id": "n36",
+      "pracownik": "pr8",
+      "autor": "p2",
+      "data": "2025-10-04",
+      "typ": "plus",
+      "tresc": "Przeszkolił(a) nową osobę w zakresie: prowadzenie akt osobowych."
+    },
+    {
+      "id": "n53",
+      "pracownik": "pr13",
+      "autor": "p1",
+      "data": "2025-10-13",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) prowadzenie akt osobowych mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n34",
+      "pracownik": "pr8",
+      "autor": "p2",
+      "data": "2025-10-14",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: organizacja naborów."
+    },
+    {
+      "id": "n49",
+      "pracownik": "pr12",
+      "autor": "p2",
+      "data": "2025-10-24",
+      "typ": "plus",
+      "tresc": "Pozytywna opinia interesanta/komórki współpracującej po: raporty kwartalne."
+    },
+    {
+      "id": "n4",
+      "pracownik": "pr1",
+      "autor": "p1",
+      "data": "2025-10-27",
+      "typ": "plus",
+      "tresc": "Przeszkolił(a) nową osobę w zakresie: prowadzenie rejestru zamówień."
+    },
+    {
+      "id": "n17",
+      "pracownik": "pr5",
+      "autor": "p1",
+      "data": "2025-11-10",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z komunikacji z klientem."
+    },
+    {
+      "id": "n28",
+      "pracownik": "pr7",
+      "autor": "p1",
+      "data": "2025-11-13",
+      "typ": "minus",
+      "tresc": "Potrzebne wsparcie przy: raporty kwartalne — do omówienia."
+    },
+    {
+      "id": "n7",
+      "pracownik": "pr2",
+      "autor": "p2",
+      "data": "2025-11-15",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: raporty kwartalne."
+    },
+    {
+      "id": "n39",
+      "pracownik": "pr9",
+      "autor": "p1",
+      "data": "2025-11-27",
+      "typ": "neutral",
+      "tresc": "Rozmowa bieżąca: plan na kolejny kwartał, weryfikacja wniosków o płatność."
+    },
+    {
+      "id": "n25",
+      "pracownik": "pr6",
+      "autor": "p2",
+      "data": "2025-12-02",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) prowadzenie rejestru zamówień mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n38",
+      "pracownik": "pr9",
+      "autor": "p1",
+      "data": "2025-12-20",
+      "typ": "plus",
+      "tresc": "Terminowo zakończył(a) sporządzanie informacji pokontrolnych mimo zwiększonej liczby spraw."
+    },
+    {
+      "id": "n18",
+      "pracownik": "pr5",
+      "autor": "p1",
+      "data": "2025-12-24",
+      "typ": "neutral",
+      "tresc": "Udział w szkoleniu z Excela."
+    },
+    {
+      "id": "n26",
+      "pracownik": "pr7",
+      "autor": "p1",
+      "data": "2025-12-27",
+      "typ": "minus",
+      "tresc": "Opóźnienie ok. 10 dni przy: raporty kwartalne."
+    },
+    {
+      "id": "n59",
+      "pracownik": "pr15",
+      "autor": "p1",
+      "data": "2025-12-27",
+      "typ": "plus",
+      "tresc": "Samodzielnie zaproponował(a) usprawnienie: przyjmowanie wniosków."
+    }
+  ],
+  "arkusze": [
+    {
+      "id": "a1",
+      "pracownik": "pr1",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        }
+      ],
+      "srednia": 3.43,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: komunikacji z klientem"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a2",
+      "pracownik": "pr2",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "zakończony",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "współpraca",
+          "obowiazkowe": false,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "inicjatywa",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „inicjatywa”."
+        }
+      ],
+      "srednia": 3.86,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: komunikacji z klientem"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a3",
+      "pracownik": "pr3",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "zarządzanie wiedzą",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        }
+      ],
+      "srednia": 3,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: ochrony danych osobowych"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a4",
+      "pracownik": "pr4",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "zakończony",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        }
+      ],
+      "srednia": 2.86,
+      "ocena_koncowa": "negatywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: KPA"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a5",
+      "pracownik": "pr5",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "zarządzanie wiedzą",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+        }
+      ],
+      "srednia": 3.57,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: komunikacji z klientem"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a6",
+      "pracownik": "pr6",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        },
+        {
+          "kryterium": "inicjatywa",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „inicjatywa”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        }
+      ],
+      "srednia": 3.43,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: Prawa zamówień publicznych"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a7",
+      "pracownik": "pr7",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "zarządzanie wiedzą",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+        }
+      ],
+      "srednia": 4,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: Prawa zamówień publicznych"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a8",
+      "pracownik": "pr8",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        },
+        {
+          "kryterium": "współpraca",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+        },
+        {
+          "kryterium": "zarządzanie wiedzą",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+        }
+      ],
+      "srednia": 3.29,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: KPA"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a9",
+      "pracownik": "pr9",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "szkic",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "współpraca",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+        }
+      ],
+      "srednia": 2.71,
+      "ocena_koncowa": "negatywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: komunikacji z klientem"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a10",
+      "pracownik": "pr10",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "szkic",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "zarządzanie wiedzą",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        }
+      ],
+      "srednia": 3,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: KPA"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a11",
+      "pracownik": "pr11",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "szkic",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "współpraca",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        }
+      ],
+      "srednia": 3.57,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: Prawa zamówień publicznych"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a12",
+      "pracownik": "pr12",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "szkic",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        },
+        {
+          "kryterium": "współpraca",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+        }
+      ],
+      "srednia": 3.14,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: Excela"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a13",
+      "pracownik": "pr13",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "współpraca",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+        }
+      ],
+      "srednia": 3.43,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: ochrony danych osobowych"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a14",
+      "pracownik": "pr14",
+      "oceniajacy": "p2",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 4,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 2,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "orientacja na klienta",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+        }
+      ],
+      "srednia": 4.14,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: KPA"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    },
+    {
+      "id": "a15",
+      "pracownik": "pr15",
+      "oceniajacy": "p1",
+      "okres_od": "2024-01-01",
+      "okres_do": "2025-12-31",
+      "status": "do rozmowy",
+      "oceny": [
+        {
+          "kryterium": "sumienność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+        },
+        {
+          "kryterium": "sprawność",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+        },
+        {
+          "kryterium": "bezstronność",
+          "obowiazkowe": true,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+        },
+        {
+          "kryterium": "umiejętność stosowania odpowiednich przepisów",
+          "obowiazkowe": true,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+        },
+        {
+          "kryterium": "komunikacja",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+        },
+        {
+          "kryterium": "planowanie i organizacja pracy",
+          "obowiazkowe": false,
+          "ocena": 3,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+        },
+        {
+          "kryterium": "umiejętności analityczne",
+          "obowiazkowe": false,
+          "ocena": 5,
+          "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+        }
+      ],
+      "srednia": 3.86,
+      "ocena_koncowa": "pozytywna",
+      "wnioski_rozwojowe": [
+        "Szkolenie: komunikacji z klientem"
+      ],
+      "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "st1",
+    "nazwa": "Starszy specjalista ds. zamówień publicznych",
+    "komorka": "Wydział Administracji",
+    "cele": "Przygotowanie i prowadzenie postępowań o udzielenie zamówienia publicznego.",
+    "zadania": [
+      "Przygotowanie dokumentacji postępowań",
+      "Prowadzenie rejestru zamówień",
+      "Udział w pracach komisji przetargowych",
+      "Sporządzanie sprawozdań do UZP"
+    ]
+  },
+  {
+    "id": "st2",
+    "nazwa": "Inspektor wojewódzki ds. skarg i wniosków",
+    "komorka": "Biuro Wojewody",
+    "cele": "Rozpatrywanie skarg i wniosków obywateli w terminach KPA.",
+    "zadania": [
+      "Rejestracja i analiza skarg",
+      "Przygotowanie projektów odpowiedzi",
+      "Monitorowanie terminów",
+      "Raporty kwartalne"
+    ]
+  },
+  {
+    "id": "st3",
+    "nazwa": "Specjalista ds. kadr",
+    "komorka": "Biuro Kadr",
+    "cele": "Obsługa kadrowa członków korpusu służby cywilnej.",
+    "zadania": [
+      "Prowadzenie akt osobowych",
+      "Organizacja naborów",
+      "Koordynacja ocen okresowych",
+      "Planowanie szkoleń"
+    ]
+  },
+  {
+    "id": "st4",
+    "nazwa": "Główny specjalista ds. funduszy UE",
+    "komorka": "Wydział Finansów",
+    "cele": "Kontrola wydatkowania środków unijnych przez beneficjentów.",
+    "zadania": [
+      "Kontrole na miejscu",
+      "Weryfikacja wniosków o płatność",
+      "Sporządzanie informacji pokontrolnych"
+    ]
+  },
+  {
+    "id": "st5",
+    "nazwa": "Referent ds. obsługi klienta",
+    "komorka": "Wydział Spraw Obywatelskich",
+    "cele": "Obsługa interesantów w sprawach paszportowych.",
+    "zadania": [
+      "Przyjmowanie wniosków",
+      "Wydawanie dokumentów",
+      "Udzielanie informacji"
+    ]
+  }
+]

@@ -1,0 +1,872 @@
+[
+  {
+    "id": "a1",
+    "pracownik": "pr1",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      }
+    ],
+    "srednia": 3.43,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: komunikacji z klientem"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a2",
+    "pracownik": "pr2",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "zakończony",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "współpraca",
+        "obowiazkowe": false,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "inicjatywa",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „inicjatywa”."
+      }
+    ],
+    "srednia": 3.86,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: komunikacji z klientem"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a3",
+    "pracownik": "pr3",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "zarządzanie wiedzą",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      }
+    ],
+    "srednia": 3,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: ochrony danych osobowych"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a4",
+    "pracownik": "pr4",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "zakończony",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      }
+    ],
+    "srednia": 2.86,
+    "ocena_koncowa": "negatywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: KPA"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a5",
+    "pracownik": "pr5",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "zarządzanie wiedzą",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+      }
+    ],
+    "srednia": 3.57,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: komunikacji z klientem"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a6",
+    "pracownik": "pr6",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      },
+      {
+        "kryterium": "inicjatywa",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „inicjatywa”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      }
+    ],
+    "srednia": 3.43,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: Prawa zamówień publicznych"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a7",
+    "pracownik": "pr7",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "zarządzanie wiedzą",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+      }
+    ],
+    "srednia": 4,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: Prawa zamówień publicznych"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a8",
+    "pracownik": "pr8",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      },
+      {
+        "kryterium": "współpraca",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+      },
+      {
+        "kryterium": "zarządzanie wiedzą",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+      }
+    ],
+    "srednia": 3.29,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: KPA"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a9",
+    "pracownik": "pr9",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "szkic",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "współpraca",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+      }
+    ],
+    "srednia": 2.71,
+    "ocena_koncowa": "negatywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: komunikacji z klientem"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a10",
+    "pracownik": "pr10",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "szkic",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "zarządzanie wiedzą",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „zarządzanie wiedzą”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      }
+    ],
+    "srednia": 3,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: KPA"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a11",
+    "pracownik": "pr11",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "szkic",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "współpraca",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      }
+    ],
+    "srednia": 3.57,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: Prawa zamówień publicznych"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a12",
+    "pracownik": "pr12",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "szkic",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      },
+      {
+        "kryterium": "współpraca",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+      }
+    ],
+    "srednia": 3.14,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: Excela"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a13",
+    "pracownik": "pr13",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "współpraca",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „współpraca”."
+      }
+    ],
+    "srednia": 3.43,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: ochrony danych osobowych"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a14",
+    "pracownik": "pr14",
+    "oceniajacy": "p2",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 4,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 2,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "orientacja na klienta",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „orientacja na klienta”."
+      }
+    ],
+    "srednia": 4.14,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: KPA"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  },
+  {
+    "id": "a15",
+    "pracownik": "pr15",
+    "oceniajacy": "p1",
+    "okres_od": "2024-01-01",
+    "okres_do": "2025-12-31",
+    "status": "do rozmowy",
+    "oceny": [
+      {
+        "kryterium": "sumienność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sumienność”."
+      },
+      {
+        "kryterium": "sprawność",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „sprawność”."
+      },
+      {
+        "kryterium": "bezstronność",
+        "obowiazkowe": true,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „bezstronność”."
+      },
+      {
+        "kryterium": "umiejętność stosowania odpowiednich przepisów",
+        "obowiazkowe": true,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętność stosowania odpowiednich przepisów”."
+      },
+      {
+        "kryterium": "komunikacja",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „komunikacja”."
+      },
+      {
+        "kryterium": "planowanie i organizacja pracy",
+        "obowiazkowe": false,
+        "ocena": 3,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „planowanie i organizacja pracy”."
+      },
+      {
+        "kryterium": "umiejętności analityczne",
+        "obowiazkowe": false,
+        "ocena": 5,
+        "uzasadnienie": "Uzasadnienie przykładowe dla kryterium „umiejętności analityczne”."
+      }
+    ],
+    "srednia": 3.86,
+    "ocena_koncowa": "pozytywna",
+    "wnioski_rozwojowe": [
+      "Szkolenie: komunikacji z klientem"
+    ],
+    "_uwaga": "kształt ogólny — DO POPRAWY wg docs/materialy.md"
+  }
+]
