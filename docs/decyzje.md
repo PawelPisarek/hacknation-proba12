@@ -28,3 +28,8 @@ P4 18:10 odpowiedź: terminy zależą od daty zatrudnienia; nie ma potrzeby zbie
 18:11 Projektant: podpis „Opera on Mac” = Paweł (odp. Opera on Mac w pokoju); odpowiada też za Artura (zgodnie z wpisem Szefa 18:06)
 18:11 Szef: krok 1a poprawka R2 (5a6aa0d) → recenzja R3 (Analityk, ostatnia).
 18:12 Szef: krok 1a zamknięty po R3 (Analityk: brak braków zmieniających zakres lub kryteria). Rundy 1a: 3. Start 1b /discover (Projektant).
+18:12 Projektant: pominięte (co badamy w /discover) — z zadania: pomoc przełożonemu i pracownikowi przejść ustawową ocenę; reszta kontekstu z P1–P4
+P5 18:12 Artur: Co robi pracownik w produkcie — tylko widzi status, czy też potwierdza zapoznanie z oceną? Polecam: widzi status i potwierdza zapoznanie — czeka
+P6 18:12 Artur: Czy produkt ma sam przypominać o terminach, czy wystarczy widok „co przed Tobą”? Polecam: widok z wyróżnionymi bliskimi terminami — czeka
+P7 18:12 Artur: Czy dział kadr ma mieć swój widok? Polecam: nie w pierwszej wersji — czeka
+P8 18:12 Artur: Które 3–5 pomysłów z 10 bierzemy do dalszej pracy (albo wszystkie)? Polecam: 1, 2, 3, 4, 5 — czeka

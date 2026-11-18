@@ -35,7 +35,7 @@ Komercyjne narzędzia do ocen (Lattice, 15Five, Leapsome, Workday, SAP SuccessFa
 | Terminy liczone z daty zatrudnienia i poprzedniej oceny (30 dni, 24 mies., ocena poza cyklem, 7 dni na sprzeciw) | tak (założenie, P3/P4; reguły z `docs/materialy.md` sekcje 1 i 6) | brak | brak/ręcznie | brak (założenie) | ręcznie |
 | Widok statusu dla pracownika: na jakim etapie jest jego ocena, jakie kryteria, jaki termin | tak (założenie, P1/P3) | częściowo, inny proces | częściowo | brak (założenie) | brak |
 | Widok przełożonego: kogo i kiedy ocenić, co zostało do zrobienia | tak (założenie, P1) | częściowo | częściowo | brak (założenie) | brak |
-| Historia oceny w jednym miejscu (kto, kiedy, co ustalono) | tak (założenie, P2) | częściowo | tak | tylko rejestr (założenie) | papier w aktach |
+| Historia oceny w jednym miejscu (kto, kiedy, co ustalono) | tak (założenie, P2) | częściowo | tak (założenie) | tylko rejestr (założenie) | papier w aktach |
 | Wnioski do planu rozwoju (IPRZ) | planowane (założenie) | tak | tak | brak (założenie) | ręcznie w arkuszu |
 | Człowiek decyduje, AI proponuje | tak (ustalenie z zadania) | częściowo | n/d | n/d | n/d |
 | Wdrożenie w urzędzie od ręki | założenie (makieta i dane sztuczne w demo) | brak | brak | n/d | tak |
