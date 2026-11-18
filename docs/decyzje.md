@@ -113,3 +113,4 @@ P25 19:11 odpowiedź: tak — górny pasek na telefonie przewija się razem z tr
 19:12 Szef: P24 i P25 (tak, tak) → Programista wprowadza z testami, nadpisuje zrzuty R3; krytyk R3 po meldunku.
 P23 19:12 odpowiedź: tak, puszczamy dalej
 19:12 Szef: krok 2 (/write-prd) zamknięty po 3 rundach + P23 (tak); spec do budowy po recenzji odbiorcy (Programista, 4 braki w meldunku). Od 19:12 za Pawła i Artura odpowiada Claude (Paweł wyszedł).
+19:15 Prezenter: hacktribe.md dopasowany do spec z 19:12 (IPRZ z podpowiedzią AI tylko dla przełożonego, data następnej oceny wstępna, pracownik widzi tylko swój termin sprzeciwu, trzy miary sukcesu).
