@@ -17,16 +17,18 @@ for (const [urz, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon',
   const s = await przegl.newPage({ viewport: vp });
   const zrzut = async (nazwa, cel) => { const path = `${wyj}/${urz}-${nazwa}.png`; await (cel ? s.locator(cel).first().screenshot({ path }) : s.screenshot({ path, fullPage: true })); n++; };
   await s.goto('http://localhost:4125/');
-  await zrzut('01-start-ocena-wisniewski');
-  await s.click('#wybierz'); await zrzut('02-wybor-pracownika', 'dialog'); await s.click('dialog [data-zamknij]');
-  await s.click('.dzwonek'); await zrzut('03-przypomnienia', 'header'); await s.click('.dzwonek');
+  await zrzut('01-lista-osob');                                                   // P16
+  await s.click('.dzwonek'); await zrzut('02-dzwonek-terminy', 'header'); await s.click('.dzwonek'); // P17
+  await s.click('button[data-osoba="wisniewski"]'); await zrzut('03-ocena-wisniewski');       // P18, P19
   await s.click('button[data-popraw="termin"]'); await s.fill('dialog input[name=w]', '20.11.2026'); await zrzut('04-popraw-termin', 'dialog'); await s.click('dialog button[value=ok]');
-  await s.click('button[data-kryt="rzetelność"][data-ocena="3"]'); await zrzut('05-po-zmianie-oceny-pozytywna');
-  await s.click('button[data-kryt="komunikacja"][data-ocena="9"]'); await zrzut('06-ocena-9-ze-znaczkiem-arkusz', '#ark');
-  await s.click('#wybierz'); await s.click('dialog button[data-id="bielecki"]'); await s.click('button[data-kryt="negocjowanie"][data-ocena="9"]');
-  await zrzut('07-bielecki-ocena-9-ze-znaczkiem', '#ark');
-  await s.selectOption('#rola select', 'wisniewski'); await zrzut('08-pracownik-moja-ocena');
-  await s.click('[data-potwierdz]'); await zrzut('09-pracownik-potwierdzono');
+  await s.click('button[data-kryt="komunikacja"][data-ocena="9"]'); await s.locator('.reczne.zmiana').first().waitFor();
+  await zrzut('05-ocena-9-ze-znaczkiem', '#ark');                                   // usterka R1 po poprawce
+  await s.click('button[data-idz="podsumowanie"]'); await s.locator('#podsumowanie').waitFor(); await zrzut('06-ostatni-krok-podsumowanie-wisniewski'); // P20
+  await s.click('button[data-idz="lista"]'); await s.click('button[data-osoba="bielecki"]');
+  await s.click('button[data-kryt="negocjowanie"][data-ocena="9"]'); await s.locator('.reczne.zmiana').first().waitFor(); await zrzut('07-bielecki-ocena-9-ze-znaczkiem', '#ark');
+  await s.click('button[data-idz="podsumowanie"]'); await s.locator('#podsumowanie').waitFor(); await zrzut('08-ostatni-krok-podsumowanie-bielecki');
+  await s.selectOption('#rola select', 'wisniewski'); await zrzut('09-pracownik-moja-ocena');
+  await s.click('[data-potwierdz]'); await zrzut('10-pracownik-potwierdzono');
   await s.close();
 }
 await przegl.close(); srv.close();

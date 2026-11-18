@@ -1,4 +1,4 @@
-// Test klikania 3 makiet wariantów (ścieżki demo z docs/pm/03a-warianty.md). Wymaga playwright-core i chromium:
+// Test klikania makiety głównej (/makieta/, P16–P20, usterka R1) i 3 makiet wariantów (ścieżki demo z docs/pm/03a-warianty.md). Wymaga playwright-core i chromium:
 // PLAYWRIGHT_CORE=/ścieżka/playwright-core/index.mjs CHROMIUM=/ścieżka/chrome node scripts/test-makiety.mjs [katalog=makieta]
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
@@ -16,20 +16,46 @@ const u = 'http://localhost:4123/';
 for (const [nazwa, vp] of [['komputer', { width: 1280, height: 900 }], ['telefon', { width: 390, height: 844 }]]) {
   const s = await przegl.newPage({ viewport: vp }); const bledy = []; s.on('pageerror', (e) => bledy.push(e.message));
   const widac = (sel) => s.locator(sel).first().waitFor({ timeout: 3000 }).then(() => true, () => false);
-  // Makieta główna (/makieta/ = W1, P14): start + usterka R1 — wiersz z oceną 9 i znaczkiem w jednej linii
-  await s.goto(u); t(`${nazwa} M start`, (await s.textContent('header')).includes('Asystent ocen okresowych — makieta') && (await s.textContent('h2')).includes('Wiśniewski'));
-  for (const [kto, kr] of [[null, 'komunikacja'], ['bielecki', 'negocjowanie']]) {
-    if (kto) { await s.click('#wybierz'); await s.click(`dialog button[data-id="${kto}"]`); }
+  // Makieta główna (/makieta/ = W1, P14) z P16–P20 i usterką R1
+  await s.goto(u); t(`${nazwa} M nagłówek`, (await s.textContent('header')).includes('Asystent ocen okresowych — makieta'));
+  t(`${nazwa} M P16 start = lista 6 osób, bez arkusza`, (await s.$$('button[data-osoba]')).length === 6 && (await s.$$('#ark')).length === 0);
+  await s.click('.dzwonek'); const przyp = await s.$$eval('.przyp', (l) => l.map((x) => x.textContent));
+  t(`${nazwa} M P17 terminy pozostałych w dzwonku (${przyp.length})`, przyp.length === 5 && przyp.every((x) => /do \d{2}\.\d{2}\.\d{4}/.test(x)));
+  await s.click('.dzwonek');
+  for (const [kto, kr] of [['wisniewski', 'komunikacja'], ['bielecki', 'negocjowanie']]) {
+    if (kto === 'bielecki') { await s.click('button[data-idz="lista"]'); }
+    await s.click(`button[data-osoba="${kto}"]`);
+    if (kto === 'wisniewski') {
+      t(`${nazwa} M otwarta ocena Wiśniewskiego`, (await s.textContent('h2')).includes('Wiśniewski'));
+      t(`${nazwa} M P18 poprzednia ocena tuż pod paskiem etapów`, await s.evaluate(() => { const e = document.querySelector('.etapy'); return !!e && e.nextElementSibling?.textContent.includes('Poprzednia ocena:'); }));
+      const pop = await s.$$eval('[data-popraw]', (l) => l.map((b) => b.dataset.popraw).sort().join(','));
+      t(`${nazwa} M P19 „popraw” przy każdej wartości (${pop})`, pop === 'nastepna,poziom,srednia,termin,wynik');
+      await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'pozytywna'); await s.fill('dialog input[name=p]', 'test'); await s.click('dialog button[value=ok]');
+      t(`${nazwa} M P19 poprawiony wynik ma znaczek`, await widac('.wynik .reczne'));
+      await s.click('button[data-popraw="wynik"]'); await s.fill('dialog input[name=w]', 'negatywna'); await s.click('dialog button[value=ok]');
+    }
     const wiersz = () => s.locator(`tr:has(button[data-kryt="${kr}"])`);
+    await wiersz().first().waitFor({ timeout: 3000 });
     const przed = (await wiersz().boundingBox()).height;
     await s.click(`button[data-kryt="${kr}"][data-ocena="9"]`);
     const po = await wiersz().evaluate((tr) => { const z = tr.querySelector('.reczne'); const b = [...tr.querySelectorAll('.skala button')].map((x) => x.getBoundingClientRect().top);
       return { h: tr.getBoundingClientRect().height, znak: !!z && z.getClientRects().length === 1 && z.getBoundingClientRect().height < 24, przyciski: Math.max(...b) - Math.min(...b) < 2, szer: tr.getBoundingClientRect().right <= document.documentElement.clientWidth }; });
     t(`${nazwa} M ${kr}=9: znaczek w jednej linii`, po.znak); t(`${nazwa} M ${kr}=9: przyciski w jednym rzędzie`, po.przyciski && po.szer);
     t(`${nazwa} M ${kr}=9: wiersz nie urósł (${przed}→${po.h})`, po.h <= przed + 1);
+    if (nazwa === 'komputer') { const luka = await s.evaluate(() => Math.min(...[...document.querySelectorAll('.tab-ark tbody tr')].map((tr) => { const r = document.createRange(); r.selectNodeContents(tr.cells[0]); return tr.querySelector('.skala').getBoundingClientRect().left - Math.max(...[...r.getClientRects()].map((x) => x.right)); })));
+      t(`komputer M ${kto} odstęp tekst→przyciski ${Math.round(luka)}px ≤ 120`, luka <= 120); }
+    // P20: ostatni krok — podsumowanie tylko do odczytu
+    await s.click('button[data-idz="podsumowanie"]'); const pd = await s.textContent('#podsumowanie');
+    t(`${nazwa} M P20 ${kto} podsumowanie: średnia, poziom, wynik, data następnej`, ['Średnia', 'Poziom', 'Wynik', 'Data następnej oceny'].every((x) => pd.includes(x)));
+    t(`${nazwa} M P20 ${kto} data następnej i wynik`, pd.includes(kto === 'wisniewski' ? '18.05.2027' : '18.11.2028') && pd.includes(kto === 'wisniewski' ? 'negatywna' : 'pozytywna'));
+    t(`${nazwa} M P20 ${kto} bez klikalnych elementów`, (await s.$$('#podsumowanie :is(button,a,input,select,textarea,[contenteditable],[onclick])')).length === 0);
+    t(`${nazwa} M P20 ${kto} znaczek przy wartości poprawionej`, kto === 'bielecki' || (await s.$$('#podsumowanie .reczne')).length >= 1);
+    await s.click('button[data-idz="ocena"]');
   }
-  if (nazwa === 'komputer') { const luka = await s.evaluate(() => Math.min(...[...document.querySelectorAll('.tab-ark tbody tr')].map((tr) => { const td = tr.cells[0]; const r = document.createRange(); r.selectNodeContents(td); return tr.querySelector('.skala').getBoundingClientRect().left - Math.max(...[...r.getClientRects()].map((x) => x.right)); })));
-    t(`komputer M odstęp tekst→przyciski ${Math.round(luka)}px ≤ 120`, luka <= 120); }
+  await s.click('button[data-idz="lista"]'); await s.selectOption('#rola select', 'wisniewski');
+  t(`${nazwa} M pracownik: moja ocena + poprzednia`, (await s.textContent('h2')).includes('Moja ocena') && await widac('text=Poprzednia ocena:'));
+  await s.click('[data-potwierdz]'); t(`${nazwa} M pracownik potwierdził`, await widac('.potw'));
+  if (nazwa === 'telefon') { await s.goto(u); const sz = await s.evaluate(() => document.documentElement.scrollWidth); t(`telefon M szerokość ${sz}px ≤ 400`, sz <= 400); }
   // W1: Wiśniewski → 1 na 3 → popraw termin → wybór → pracownik → potwierdzenie → dzwonek
   await s.goto(u + 'warianty/1/'); t(`${nazwa} W1 start Wiśniewski`, (await s.textContent('h2')).includes('Wiśniewski'));
   t(`${nazwa} W1 reguła 1`, await widac('text=Jedna ocena „1” = ocena negatywna'));

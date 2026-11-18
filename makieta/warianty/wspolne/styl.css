@@ -39,3 +39,6 @@ table{width:100%;border-collapse:collapse}td,th{padding:.45rem .4rem;border-bott
 /* arkusz: wiersz z oceną i znaczkiem w jednej linii, przyciski blisko nazwy kryterium (usterka R1) */
 .reczne{white-space:nowrap}.tab-ark{width:auto;min-width:min(100%,32rem)}.tab-ark td:first-child{padding-right:1rem}.tab-ark td:last-child{width:1%;white-space:nowrap}.tab-ark .skala{flex-wrap:nowrap}
 @media(max-width:760px){.tab-ark{width:100%;min-width:0}.tab-ark td:first-child{padding-right:.3rem}.reczne.zmiana .tx{display:none}}
+/* makieta główna: lista osób, okruchy, podsumowanie (P16, P20) */
+.okruchy{display:flex;gap:1rem;min-height:1rem}.lista-osob td:last-child{text-align:right}
+.podsum{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:1rem;margin:1rem 0}.podsum dt{font-size:.8rem;color:var(--szary)}.podsum dd{margin:.2rem 0 0;font-weight:600}.podsum dd.duzy{font-size:1.6rem}
