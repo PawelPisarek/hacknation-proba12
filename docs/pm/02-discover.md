@@ -5,7 +5,8 @@ Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: wybór Ar
 ## Kontekst (Krok 1)
 - **Co badamy:** jak pomóc przełożonemu i pracownikowi przejść ustawową ocenę okresową dobrze, w urzędach służby cywilnej (`docs/zadanie.md`).
 - **Co już wiemy:** użytkownik to przełożony, pracownik jako drugi (P1); boli brak jasnej historii, wszystko na papierze (P2); zysk to aktualne informacje o etapach, kryteriach i terminach (P3); terminy zależą od daty zatrudnienia, notatki przez rok niepotrzebne (P4); kryteria, skala, etapy i terminy są ustawowe (`docs/materialy.md`); konkurenci: `docs/pm/01-competitive-analysis.md`.
-- **Jaką decyzję ustawia:** które funkcje wchodzą do makiety i demo (do 2 min) oraz do `docs/spec.md`.
+- **Jaką decyzję ustawia:** które funkcje wchodzą do makiety i demo oraz do `docs/spec.md`. Pokaz produktu trwa do 2 min — ustalenie Szefa (`docs/decyzje.md`, commit f38d0b9).
+- **Skąd kontekst (zamiast pytań):** „co już wiemy” pochodzi z odpowiedzi Artura P1–P4 i z zadania, „jaką decyzję ustawia” — z zadania (zbudować makietę i demo ustawowej oceny); wpis w `docs/decyzje.md` z 18:2x.
 
 ## 10 pomysłów (PM, projektant, inżynier)
 1. **Oś oceny** — etapy procesu (rozmowa wstępna → zapoznanie z kryteriami → rozmowa oceniająca → ocena na piśmie → zapoznanie) i status jednej oceny.
@@ -24,6 +25,10 @@ Etap: nowy produkt (dane sztuczne, bez realnych użytkowników). Stan: wybór Ar
 - **Zmiany (P9, P10):** do kolejki dochodzi widok etapów jednej oceny; etapy z pomysłu 1 wchodzą jako pasek postępu w „Mojej ocenie”. Pozostałe odrzucone (1 poza paskiem, 7–10) odpadają.
 - **Pracownik** widzi status i potwierdza zapoznanie z oceną (P5). **Produkt sam przypomina** o terminach (P6). **Kadry** bez własnego widoku w pierwszej wersji (P7).
 - **Zasada ogólna (P11):** człowiek może zmienić wszystko, jeśli system się pomyli (data, termin, średnia, poziom).
+
+## Pokrycie bólu P2 (brak historii, papier) i IPRZ
+- **P2 — brak jasnej historii, wszystko na papierze:** pokrywają częściowo 3 (kolejka z widokiem etapów jednej oceny), 4 („Moja ocena” z paskiem etapów i statusem) i 5 (arkusz zapisany w produkcie zamiast na papierze). Historia poprzednich ocen (pomysł 10) nie weszła do wyboru — pytanie **P12** do Artura, czy wchodzi choć w części (czeka; rekomendacja: tak, jako pole „poprzednia ocena: data i poziom” w arkuszu i w „Mojej ocenie”, zgodnie z polem arkusza w `docs/materialy.md`).
+- **IPRZ** (wnioski do planu rozwoju, `docs/pm/01-competitive-analysis.md` „Dogonić”): pomysł 9 odpadł osobno, ale pomysł 5 (arkusz krok po kroku) obejmuje część z IPRZ jako obowiązkowe pole arkusza (`docs/materialy.md`, część II arkusza); szkic wniosków z AI nie wchodzi.
 
 ## Najryzykowniejsze założenia (potwierdzone, P11)
 - **A.** Przełożony uzna terminy policzone z daty zatrudnienia za wiarygodne i ważniejsze od papieru.
